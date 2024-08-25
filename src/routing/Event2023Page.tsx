@@ -12,6 +12,7 @@ import { BlockTeamGrid } from "../components/BlockTeamGrid";
 import { BlockVideoGallery } from "../components/BlockVideoGallery";
 import { BlockGallery } from "../components/BlockGallery";
 import { BlockEvent } from "../components/BlockEvent";
+import { ParallaxSection } from "../components/ParallaxSection";
 
 const Event2023Page: React.FC = () => {
   const [boxLoaded, setBoxLoaded] = useState(false);
@@ -36,6 +37,7 @@ const Event2023Page: React.FC = () => {
         <BlockHero2023 />
         <BlockScrollingTeamImage />
         <BlockTeamGrid />
+        {/* <ParallaxSection /> */}
         <BlockSpeakerGrid />
         <BlockEvent />
         <BlockGallery />

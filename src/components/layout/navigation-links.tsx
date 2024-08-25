@@ -46,8 +46,8 @@
           icon: <FaUniversity size="25px" color="white"/>,
         },
         {
-          name: "tedxavelorne",
-          description: "tedxavelorneSubtitle",
+          name: "tedxplateaumontroyal",
+          description: "tedxplateaumontroyalSubtitle",
           link: "/#more-info-section",
           color: "#0a75f0",
           icon: <PiTelevision size="25px" color="white" />,

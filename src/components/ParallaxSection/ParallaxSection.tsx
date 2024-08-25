@@ -26,7 +26,7 @@ export const ParallaxSection: React.FC = () => {
                 right="0"
                 bottom="0"
                 bg="blue"
-                opacity="0.27"
+                opacity="0.22"
             ></Box>
 
             <Box
@@ -53,7 +53,7 @@ export const ParallaxSection: React.FC = () => {
                     fontWeight="bold"
                     fontFamily="'Acme', sans-serif"
                 >
-                    at <span style={{ color: "#FF0000" }}> TEDxAveLorne </span> 2023
+                    {t("fromOurPreviousEvent")}
                 </Text>
                 <Text
                     fontSize={{ base: "1.5rem", lg: "2.5rem" }}

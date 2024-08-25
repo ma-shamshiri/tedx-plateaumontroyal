@@ -116,7 +116,7 @@ export const Navigationbar: React.FC = () => {
                   />
                   <Image
                     src={tedxImg}
-                    width={{ base: 160, md: 220, lg: 170, xl: 220 }}
+                    width={{ base: 160, md: 220, lg: 170, xl: 280 }}
                   />
                 </HStack>
               </Flex>
