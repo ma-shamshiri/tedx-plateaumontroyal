@@ -155,7 +155,7 @@ export const BlockHero2024: React.FC = () => {
                     fontWeight="bold"
                     fontFamily="'Acme', sans-serif"
                     lineHeight={{ base: "1.4", lg: "1.1" }}
-                    color={useColorModeValue("#FF3A2D", "#fff")}
+                    color={useColorModeValue("#fff", "#fff")}
                     letterSpacing={2}
                     maxWidth={{ base: "80%", lg: "initial" }}
                   // sx={sx}
