@@ -48,6 +48,7 @@ import ark from "./assets/images/ARK.webp";
 import aryana from "./assets/images/Aryana-removedBG.webp";
 import aryanaBadge from "./assets/images/badge-curation.webp";
 import aryanaBG from "./assets/images/Aryana.webp";
+import BackgroundImage2024 from "./assets/images/BackgroundImage2024.webp";
 import backgroundImg from "./assets/images/speakerbg.webp";
 import baharan from "./assets/images/Baharan-removedBG.webp";
 import baharanBadge from "./assets/images/badge-marketing.webp";
@@ -285,6 +286,7 @@ export {
     aryana,
     aryanaBadge,
     aryanaBG,
+    BackgroundImage2024,
     backgroundImg,
     baharan,
     baharanBadge,

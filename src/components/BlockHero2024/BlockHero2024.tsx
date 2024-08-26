@@ -1,17 +1,16 @@
 import React, { useEffect, useState } from "react";
 import {
   Box,
-  Flex,
-  Image,
-  Skeleton,
+  HStack,
   Text,
+  VStack,
   chakra,
   useColorModeValue,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Typed from "react-typed";
-import { event2023 } from "../../assets";
+import { BackgroundImage2024 } from "../../assets";
 
 const SuperscriptX = chakra("sup", {
   baseStyle: {
@@ -67,7 +66,7 @@ export const BlockHero2024: React.FC = () => {
 
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024);
 
-  useEffect(() => {}, [boxLoaded]);
+  useEffect(() => { }, [boxLoaded]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -91,108 +90,95 @@ export const BlockHero2024: React.FC = () => {
         transition={{ duration: 1, ease: "easeInOut" }}
         onAnimationComplete={handleBoxLoad}
       >
-        <Box className="block block--dark" bg="#000">
+        <Box
+          position="relative"
+          width="100%"
+          // height={{ lg: "100vh" }}
+          bg={useColorModeValue("white", "#232323")}
+        >
           <Box
-            className="block block--dark"
-            padding="6rem 2rem 6rem 2rem"
-            bg={useColorModeValue("#F1F1F1", "#000")}
-            color="#7b858b"
-            // display={{ base: "none", xl: "block" }}
-            // _hover={{ bg: "red" }}
-            // transition="background 0.3s ease-in-out" // Adjust the duration and easing function as needed
+            position="relative"
+            width="100%"
+            height={{ base: "30rem", lg: "55vh" }}
+            opacity="1"
+            overflow="hidden"
           >
+
+            {/* Background Image */}
             <Box
-              className="block__header container"
-              textAlign="left"
-              maxWidth="1140px"
-              margin="0 auto"
+              position="absolute"
+              top="0"
+              left="0"
+              width="100%"
+              height="100%"
+              backgroundImage={`url(${BackgroundImage2024})`}
+              backgroundSize="cover"
+              backgroundPosition="center"
+              backgroundRepeat="no-repeat"
+              filter="blur(5px)"
+            opacity={0.8}
+            // zIndex="-1"
+            />
+
+            {/* Image Overlay */}
+            {/* <Box
+              position="absolute"
+              top="0"
+              left="0"
+              width="100%"
+              height="100%"
+              //   bg="linear-gradient(to left, blue, transparent, red)"
+              //   bg="linear-gradient(to left, #fcba03, transparent, #fcba03)"
+              bg="green"
+              opacity="0.40"
+            /> */}
+
+            <Box
+              className="headingContainer"
+              position="absolute"
+              top={{ base: "50%", lg: "35%" }}
+              left="50%"
+              transform="translate(-50%, -50%)"
+              width={{ base: "100%", lg: "100%" }}
+              // margin="0 auto"
+              textAlign="center"
+              zIndex="1"
             >
-              {/* <Text
-                className="h2 block__heading"
-                color={useColorModeValue("#FF3A2D", "#fff")}
-                marginBottom="1rem"
-                marginTop="0"
-                fontSize="4rem"
-                fontWeight="bold"
-                lineHeight="1.1"
-              >
-                {t("hero2024Title")}
-              </Text> */}
-
-              <Box
-                className="h2 block__heading"
-                color={useColorModeValue("#FF3A2D", "#fff")}
-                marginBottom="1rem"
-                marginTop="0"
-                fontSize={{ base: "2.2rem", md: "2.5rem", lg: "2.6rem", xl: "3.2rem" }}
-                fontWeight="bold"
-                lineHeight="1.5"
-                textAlign={{ base: "center", lg: "left" }}
-                height={{ base: "5rem", md:"initial", lg: "initial" }}
-              >
-                <Typed
-                  strings={[t("hero2024Title")]}
-                  typeSpeed={50}
-                  backSpeed={20}
-                  loop
-                  backDelay={3000}
-                />
-              </Box>
-
-              <Text
-                className="p"
-                marginTop={10}
-                color={useColorModeValue("gray.800", "#FF3A2D")}
-                fontSize={{ base: "1.6rem", md: "1.7rem", lg: "2rem", xl: "2rem" }}
-                textAlign={{ base: "center", lg: "left" }}
-              >
-                {t("hero2024SubTitle")}                
-              </Text>
+              <VStack>
+                <HStack
+                  marginBottom={{ base: "1rem", lg: "3rem" }}
+                  justifyContent="center"
+                >
+                  <Text
+                    className="headingTitle"
+                    fontSize={{ base: "2.8rem", lg: "4rem" }}
+                    fontWeight="bold"
+                    fontFamily="'Acme', sans-serif"
+                    lineHeight={{ base: "1.4", lg: "1.1" }}
+                    color={useColorModeValue("#FF3A2D", "#fff")}
+                    letterSpacing={2}
+                    maxWidth={{ base: "80%", lg: "initial" }}
+                  // sx={sx}
+                  >
+                    {t("hero2024Title")}
+                  </Text>
+                </HStack>
+                <Text
+                  className="headingSubTitle"
+                  fontSize={{ base: "1.5rem", lg: "2.5rem" }}
+                  fontWeight="bold"
+                  // fontFamily="'Acme', sans-serif"
+                  lineHeight={{ base: "1.4", lg: "1.5" }}
+                  color={useColorModeValue("gray.700", "gray.100")}
+                  letterSpacing={2}
+                  maxWidth={{ base: "80%", lg: "85rem" }}
+                // sx={sx}
+                >
+                  {t("hero2024SubTitle")}
+                </Text>
+              </VStack>
             </Box>
           </Box>
-
-          <Flex
-            className="heroImageContainer"
-            width={"100%"}
-            justifyContent="center"
-            position="relative"
-            alignItems="center"
-          >
-            <Skeleton
-              isLoaded={imageLoaded}
-              style={{
-                width: "100%",
-                height: "100%",
-              }}
-            >
-              <Image
-                className="heroImage"
-                src={event2023}
-                width="100%"
-                objectFit="fill"
-                opacity="0"
-                style={{ transition: "opacity 1s ease-in-out" }}
-                onLoad={(e) => {
-                  e.currentTarget.style.opacity = "0.8";
-                  handleImageLoad();
-                }}
-              />
-            </Skeleton>
-          </Flex>
-          <Flex
-            className="blockBelowHero"
-            justifyContent="center"
-            position="absolute"
-            top={{
-              // sm: "1%",
-              base: "1%",
-              md: "3%",
-              lg: "9%",
-              xl: "35%",
-            }}
-            transform="translateY(-50%)"
-            width="100%"
-          ></Flex>
         </Box>
       </motion.div>
     </>
