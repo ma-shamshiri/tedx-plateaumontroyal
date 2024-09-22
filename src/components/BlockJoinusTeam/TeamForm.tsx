@@ -75,25 +75,41 @@ const TeamForm = () => {
   } = useForm<FormData>({ resolver: zodResolver(schema) });
 
   const onSubmit = async (data: FieldValues) => {
+    const formattedData = {
+      "First Name": data.firstName,
+      "Middle Name": data.middleName,
+      "Last Name": data.lastName,
+      "Reason to Join": data.reasonToJoin,
+      "Choose Committee": data.chooseCommittee,
+      "Contact Info": data.contactInfo,
+      "Date of Birth": data.dateOfBirth,
+      "Preferred Pronoun": data.preferredPronoun,
+      "Education Level": data.educationLevel,
+      "Occupation": data.occupation,
+    };
+
     try {
       const response = await fetch("https://formspree.io/f/meojblal", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify(formattedData),
       });
 
       if (response.ok) {
         toast.success("Form submitted successfully!");
         // Reset the form after a successful submission
         reset();
+        window.scrollTo(0, 0);
       } else {
         toast.error("Error submitting form");
+        window.scrollTo(0, 0);
       }
     } catch (error) {
       console.error("Error submitting form:", error);
       toast.error("Error submitting form");
+      window.scrollTo(0, 0);
     }
   };
 
