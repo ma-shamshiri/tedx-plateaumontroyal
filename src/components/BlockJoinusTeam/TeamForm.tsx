@@ -76,7 +76,7 @@ const TeamForm = () => {
 
   const onSubmit = async (data: FieldValues) => {
     try {
-      const response = await fetch("https://formspree.io/f/xpzvzjno", {
+      const response = await fetch("https://formspree.io/f/xvgpjbzy", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

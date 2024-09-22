@@ -109,8 +109,6 @@ const JanetPerlman: React.FC = () => {
           slides={sliderData}
         />
         <BlockFooter />
-
-        <BlockFooter />
       </motion.div>
     </>
   );

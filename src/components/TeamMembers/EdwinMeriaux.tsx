@@ -45,7 +45,7 @@ const EdwinMeriaux: React.FC = () => {
         <BlockTeamProfiles
           firstName="Edwin"
           lastName="Meriaux"
-          fullName=" Meriaux"
+          fullName="Edwin Meriaux"
           title="M.Sc. Student in Electrical Engineering | McGill"
           role="Curation"
           imageSrc={edwin}
