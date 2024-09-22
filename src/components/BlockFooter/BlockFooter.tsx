@@ -710,9 +710,9 @@ export const BlockFooter = () => {
                     <Link
                       className="link-arrow"
                       as={RouterLink}
-                      to={"https://www.linkedin.com/company/tedxavelorne/"}
+                      to={"https://www.linkedin.com/company/tedx-plateaumontroyal/"}
                       cursor="pointer"
-                      // href="https://www.linkedin.com/company/tedxavelorne/"
+                      // href="https://www.linkedin.com/company/tedx-plateaumontroyal/"
                       target="_blank"
                       rel="noopener noreferrer"
                       fontSize={{ base: "2rem", lg: "1.5rem" }}
@@ -728,9 +728,9 @@ export const BlockFooter = () => {
                     <Link
                       className="link-arrow"
                       as={RouterLink}
-                      to={"https://instagram.com/tedxavelorne?igshid=MzRIODBiNWFIZA=="}
+                      to={"https://www.instagram.com/tedxplateaumontroyal?igsh=MW16MGNhc3RuaXQ3dg=="}
                       cursor="pointer"
-                      // href="https://instagram.com/tedxavelorne?igshid=MzRIODBiNWFIZA=="
+                      // href="https://www.instagram.com/tedxplateaumontroyal?igsh=MW16MGNhc3RuaXQ3dg=="
                       target="_blank"
                       rel="noopener noreferrer"
                       fontSize={{ base: "2rem", lg: "1.5rem" }}
@@ -746,9 +746,9 @@ export const BlockFooter = () => {
                     <Link
                       className="link-arrow"
                       as={RouterLink}
-                      to={"https://twitter.com/tedxavelorne?=gQ5JPPcDU0I54uaHmdPlew&s=35"}
+                      to={"https://x.com/TEDxPlateauMR?t=O9yzFdCp7zgNZ7eXTYr5mw&s=35"}
                       cursor="pointer"
-                      // href="https://twitter.com/tedxavelorne?=gQ5JPPcDU0I54uaHmdPlew&s=35"
+                      // href="https://x.com/TEDxPlateauMR?t=O9yzFdCp7zgNZ7eXTYr5mw&s=35"
                       target="_blank"
                       rel="noopener noreferrer"
                       fontSize={{ base: "2rem", lg: "1.5rem" }}
@@ -764,7 +764,7 @@ export const BlockFooter = () => {
                     <Link
                       className="link-arrow"
                       as={RouterLink}
-                      // to={"#"}
+                      to={"https://www.facebook.com/people/tedxplateaumontroyal/61565416427305/"}
                       cursor="pointer"
                       // href="#"
                       fontSize={{ base: "2rem", lg: "1.5rem" }}
@@ -838,9 +838,9 @@ export const BlockFooter = () => {
                     <Link
                       className="link-arrow"
                       as={RouterLink}
-                      to={"https://www.linkedin.com/company/tedxavelorne/"}
+                      to={"https://www.linkedin.com/company/tedx-plateaumontroyal/"}
                       cursor="pointer"
-                      // href="https://www.linkedin.com/company/tedxavelorne/"
+                      // href="https://www.linkedin.com/company/tedx-plateaumontroyal/"
                       target="_blank"
                       rel="noopener noreferrer"
                       fontSize={{ base: "2rem", lg: "1.5rem" }}
@@ -857,9 +857,9 @@ export const BlockFooter = () => {
                     <Link
                       className="link-arrow"
                       as={RouterLink}
-                      to={"https://instagram.com/tedxavelorne?igshid=MzRIODBiNWFIZA=="}
+                      to={"https://www.instagram.com/tedxplateaumontroyal?igsh=MW16MGNhc3RuaXQ3dg=="}
                       cursor="pointer"
-                      // href="https://instagram.com/tedxavelorne?igshid=MzRIODBiNWFIZA=="
+                      // href="https://www.instagram.com/tedxplateaumontroyal?igsh=MW16MGNhc3RuaXQ3dg=="
                       target="_blank"
                       rel="noopener noreferrer"
                       fontSize={{ base: "2rem", lg: "1.5rem" }}
@@ -877,7 +877,7 @@ export const BlockFooter = () => {
                       as={RouterLink}
                       to={"https://twitter.com/tedxavelorne?=gQ5JPPcDU0I54uaHmdPlew&s=35"}
                       cursor="pointer"
-                      // href="https://twitter.com/tedxavelorne?=gQ5JPPcDU0I54uaHmdPlew&s=35"
+                      // href="https://x.com/TEDxPlateauMR?t=O9yzFdCp7zgNZ7eXTYr5mw&s=35"
                       target="_blank"
                       rel="noopener noreferrer"
                       fontSize={{ base: "2rem", lg: "1.5rem" }}
@@ -893,7 +893,7 @@ export const BlockFooter = () => {
                     <Link
                       className="link-arrow"
                       as={RouterLink}
-                      // to={"#"}
+                      to={"https://www.facebook.com/people/tedxplateaumontroyal/61565416427305/"}
                       cursor="pointer"
                       // href="#"
                       fontSize={{ base: "2rem", lg: "1.5rem" }}
@@ -958,7 +958,7 @@ export const BlockFooter = () => {
       >
         <Box
           as="a"
-          href="https://www.linkedin.com/company/tedxavelorne/"
+          href="https://www.linkedin.com/company/tedx-plateaumontroyal/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -977,7 +977,7 @@ export const BlockFooter = () => {
         </Box>
         <Box
           as="a"
-          href="https://twitter.com/tedxavelorne?=gQ5JPPcDU0I54uaHmdPlew&s=35"
+          href="https://x.com/TEDxPlateauMR?t=O9yzFdCp7zgNZ7eXTYr5mw&s=35"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -996,7 +996,7 @@ export const BlockFooter = () => {
         </Box>
         <Box
           as="a"
-          href="https://instagram.com/tedxavelorne?igshid=MzRIODBiNWFIZA=="
+          href="https://www.instagram.com/tedxplateaumontroyal?igsh=MW16MGNhc3RuaXQ3dg=="
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -1015,7 +1015,7 @@ export const BlockFooter = () => {
         </Box>
         <Box
           as="a"
-          // href="#"
+          href="https://www.facebook.com/people/tedxplateaumontroyal/61565416427305/"
           target="_blank"
           rel="noopener noreferrer"
         >
