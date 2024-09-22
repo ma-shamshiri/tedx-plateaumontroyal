@@ -48,7 +48,7 @@ import {
   
     const onSubmit = async (data: FieldValues) => {
       try {
-        const response = await fetch("https://formspree.io/f/xpwagjqk", {
+        const response = await fetch("https://formspree.io/f/myzgqdej", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
