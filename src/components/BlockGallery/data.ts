@@ -51,6 +51,10 @@ import {
     peggy_talk80,
     peggy_talk120,
     galleryImage1,
+    teamGroupPic1,
+    teamGroupPic2,
+    teamGroupPic3,
+    teamGroupPic4,
     sliderImage1
 } from "../../assets";
 
@@ -240,6 +244,30 @@ export const slides = [
     src: peggy_talk80,
     title: "Peggy Bell",
     description: "Revolutionizing Mining: From Challenges to Empowerment",
+  },
+  {
+    id: "32",
+    src: teamGroupPic3,
+    title: "TEDxAveLorne Team",
+    description: "TEDxAveLorne Team",
+  },
+  {
+    id: "33",
+    src: teamGroupPic1,
+    title: "TEDxAveLorne Team",
+    description: "TEDxAveLorne Team",
+  },
+  {
+    id: "34",
+    src: teamGroupPic4,
+    title: "TEDxAveLorne Team",
+    description: "TEDxAveLorne Team",
+  },
+  {
+    id: "35",
+    src: teamGroupPic2,
+    title: "TEDxAveLorne Team",
+    description: "TEDxAveLorne Team",
   },
   // {
   //   id: "6",

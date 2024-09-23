@@ -1,4 +1,3 @@
-// import testimonial from "./assets/images/testimonial.jpg";
 import alina from "./assets/images/Alina.webp";
 import alina_noBG from "./assets/images/alina_talk60_noBG_cropped.png";
 import alina_talk10 from "./assets/images/alina_talk10.webp";
@@ -234,9 +233,20 @@ import zahra from "./assets/images/Zahra-removedBG.webp";
 import zahraBadge from "./assets/images/badge-content-creator.webp";
 import zahraBG from "./assets/images/Zahra.webp";
 import zproduction from "./assets/images/ZProduction.webp";
-
+import hero1 from "./assets/images/hero1.jpeg";
+import hero2 from "./assets/images/heroPlateauMR.jpg";
+import teamGroupPic1 from "./assets/images/teamGroupPic1.webp"
+import teamGroupPic2 from "./assets/images/teamGroupPic2.webp"
+import teamGroupPic3 from "./assets/images/teamGroupPic3.webp"
+import teamGroupPic4 from "./assets/images/teamGroupPic4.webp"
 
 export {
+    teamGroupPic1,
+    teamGroupPic2,
+    teamGroupPic3,
+    teamGroupPic4,
+    hero1,
+    hero2,
     alina_noBG,
     alina_talk10,
     alina_talk100,
