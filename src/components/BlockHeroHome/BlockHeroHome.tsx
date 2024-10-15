@@ -55,7 +55,7 @@ export const BlockHeroHome: React.FC = () => {
   // Finally, transform the smooth value to a percentage string
   const yBg = useTransform(smoothYTransform, (value) => `${value}%`);
 
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const [boxLoaded, setBoxLoaded] = useState(false);
 
@@ -144,6 +144,9 @@ export const BlockHeroHome: React.FC = () => {
             textAlign="left"
             maxWidth="1140px"
             margin="0 auto"
+            dir={i18n.language === "fa" ? "rtl" : "ltr"}
+            fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+          // fontFamily={i18n.language === "fa" ? "'Vazirmatn', sans-serif" : ""}  
           >
             <Text
               className="h2 block__heading"
@@ -154,7 +157,6 @@ export const BlockHeroHome: React.FC = () => {
               fontWeight="bold"
               lineHeight="1.5"
               textAlign={{ base: "center", lg: "initial" }}
-            // fontFamily="'Acme', sans-serif"
             >
               {t("heroTitle")}
             </Text>
@@ -165,8 +167,6 @@ export const BlockHeroHome: React.FC = () => {
               color={useColorModeValue("gray.200", "#04c97a")}
               textAlign={{ base: "center", lg: "initial" }}
               lineHeight="1.5"
-            // fontFamily="'Acme', sans-serif"
-            // fontFamily="'Englebert', cursive"
             >
               {t("heroSubTitle")}
             </Text>
@@ -199,12 +199,14 @@ export const BlockHeroHome: React.FC = () => {
             top="10%"
             zIndex={5}
           >
-            <ScrollLink to="more-info-section" smooth={true} duration={500}>
+            <ScrollLink to="ticket-section" smooth={true} duration={500}>
               <Button
                 border="2px solid #FF0000"
                 borderRadius="10px"
                 cursor="pointer"
-                fontSize={{ base: "1.2rem", lg: "2.2rem" }}
+                fontSize={{ base: "1.2rem", lg: "3.2rem" }}
+                fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+                dir={i18n.language === "fa" ? "rtl" : "ltr"}
                 padding={{ base: "0.5rem", lg: "2rem" }}
                 textAlign="center"
                 whiteSpace="nowrap"
@@ -212,8 +214,8 @@ export const BlockHeroHome: React.FC = () => {
                 color="#fff"
                 boxShadow="0px 6px 10px rgba(0, 0, 0, 0.2), 0px -6px 10px rgba(0, 0, 0, 0.2)"
                 display="inline-block"
-                width={{ base: "11rem", lg: "25rem" }}
-                height={{ base: "5rem", lg: "7rem" }}
+                width={{ base: "11rem", lg: "30rem" }}
+                height={{ base: "5rem", lg: "10rem" }}
                 _hover={{
                   border: "0.2rem solid",
                   borderColor: buttonHoverBorderColor,
@@ -225,9 +227,8 @@ export const BlockHeroHome: React.FC = () => {
                 transition="background-color 0.25s ease-out, border 0.25s ease-out, box-shadow 0.25s ease"
                 onMouseEnter={handleHoverButton}
                 onMouseLeave={handleUnHoverButton}
-
               >
-                Tell Me More
+                {t("getTicket")}
               </Button>
             </ScrollLink>
           </Flex>
