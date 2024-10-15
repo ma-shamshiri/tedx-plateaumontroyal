@@ -39,7 +39,7 @@ const ImageGrid: React.FC<ImageGridProps> = ({ data, onClick }) => {
 
   return (
     <SimpleGrid
-      columns={{ sm: 1, base: 1, md: 3, lg: 4, xl: 5 }}
+      columns={{ base: 1, md: 3, lg: 4, xl: 5 }}
       spacing={35}
       padding="10px"
     >

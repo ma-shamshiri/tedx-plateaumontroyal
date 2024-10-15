@@ -8,6 +8,10 @@ import { BlockScrollingText } from "../components/BlockScrollingText";
 import { ParallaxSection } from "../components/ParallaxSection";
 import { PageTransition } from "../components/PageTransition";
 import { PageTransition2 } from "../components/PageTransition2";
+import NeoculturalCouture from "../components/NeoculturalCouture";
+import BlockHeroMosaic from "../components/BlockHeroMosaic";
+import TicketCard from "../components/TicketCard";
+import BlockSponsors2024 from "../components/BlockSponsors2024";
 
 const HomePage: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -24,11 +28,15 @@ const HomePage: React.FC = () => {
     <>
       {/* <Header /> */}
       <Navigationbar />
+      {/* <NeoculturalCouture /> */}
+      {/* <BlockHeroMosaic/> */}
       <BlockHeroHome />
+      <TicketCard />
       <BlockStatistics />
       <ParallaxSection />
       {/* <BlockScrollingText /> */}
       <BlockFeatures />
+      <BlockSponsors2024 />
       <BlockFooter />
     </>
   );
