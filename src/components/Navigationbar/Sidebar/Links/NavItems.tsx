@@ -42,7 +42,7 @@ interface NavItem {
         //   href: "#",
         // },
         {
-          label: "agenda",
+          label: "ticket",
           subLabel: "agendaSubLabel",
           href: "/event/",
         },

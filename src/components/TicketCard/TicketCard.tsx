@@ -404,7 +404,7 @@ const TicketCard = () => {
                                                 <Text
                                                     fontWeight="bold"
                                                 >
-                                                    Buy Your Tickets
+                                                    {t("buyYourTickets")}
                                                 </Text>
                                                 <PiTicket size={"30px"} />
                                             </HStack>
