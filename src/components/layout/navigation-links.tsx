@@ -26,6 +26,7 @@
   import { IoIosPeople } from "react-icons/io";
   import { ImVideoCamera } from "react-icons/im";
   import { FaPhotoVideo } from "react-icons/fa";
+import { LuTicket } from "react-icons/lu";
 
   export const navigationLinks = [
     {
@@ -58,18 +59,18 @@
       name: "event",
       subLinks: [
         {
+          name: "ticket",
+          description: "agendaSubtitle",
+          link: "/event",
+          color: "#4a18f0",
+          icon: <LuTicket size="25px" color="white" />,
+        },
+        {
           name: "dateAndTime",
           description: "dateAndTimeSubtitle",
           link: "/event",
           color: "#be02cc",
           icon: <BsCalendarDate size="25px" color="white" />,
-        },
-        {
-          name: "agenda",
-          description: "agendaSubtitle",
-          link: "/event",
-          color: "#4a18f0",
-          icon: <GrScheduleNew size="25px" color="white" />,
         },
       ],
     },
