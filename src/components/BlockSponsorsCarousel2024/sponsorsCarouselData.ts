@@ -1,12 +1,8 @@
 import {
     arash,
-    cafe,
-    medad,
-    poulet,
     dental,
-    ark,
-    shaygraphy,
-    zproduction
+    bazaar,
+    hafteh
 } from "../../assets";
 
 
@@ -18,12 +14,26 @@ export const sponsorData = [
         sourceUrl: `https://www.londonogroup.com/broker/viewBroker.php?broker=114792`,
     },
 
-    /* ======================== cafe ======================== */
-    // {
-    //     name: `cafe`,
-    //     imageUrl: `${cafe}`,
-    //     sourceUrl: `https://www.aunja.com/`,
-    // },
+    /* ======================== hafteh ======================== */
+    {
+        name: `hafteh`,
+        imageUrl: `${hafteh}`,
+        sourceUrl: `https://hafteh.ca/`,
+    },
+    
+    /* ======================== dental ======================== */
+    {
+        name: `dental`,
+        imageUrl: `${dental}`,
+        sourceUrl: `https://clinique-arya.ca/`,
+    },
+
+    /* ======================== bazaar ======================== */
+    {
+        name: `bazaar`,
+        imageUrl: `${bazaar}`,
+        sourceUrl: `https://www.bazaarfood.ca/`,
+    },
 
     /* ======================== medad ======================== */
     // {
@@ -39,12 +49,7 @@ export const sponsorData = [
     //     sourceUrl: `https://poulet-rouge.ca/`,
     // },
 
-    /* ======================== dental ======================== */
-    {
-        name: `dental`,
-        imageUrl: `${dental}`,
-        sourceUrl: `https://clinique-arya.ca/`,
-    },
+
 
     /* ======================== ark ======================== */
     // {

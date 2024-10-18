@@ -192,5 +192,13 @@
     "getTicketTitle": "Buy Your Ticket, Unlock New Ideas!",
     "getTicketSubTitle": "Join Us for a Day of Ideas, Performances, and Connections..",
     "ticket": "Ticket",
-    "buyYourTickets": "Buy Your Tickets"
+    "buyYourTickets": "Buy Your Tickets",
+    "countdownTitle": "Time is Ticking... TEDxPlateauMontRoyal is Just a Blink Away!",
+    "countdownSubTitle": "Get Set for a Day of Inspiration and Ideas!",
+    "seconds": "Seconds",
+    "minutes": "Minutes",
+    "hours": "Hours",
+    "days": "Days",
+    "heroMosaicTitle": "A Journey Through Time: TEDx Past and Future",
+    "heroMosaicSubTitle": "Miss the Last TEDx? Don't Worry, We've Got the Recap and a Whole New Adventure Ahead!"
 }

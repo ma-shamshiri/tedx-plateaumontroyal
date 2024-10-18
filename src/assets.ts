@@ -97,6 +97,7 @@ import flore_talk60 from "./assets/images/flore_talk60.webp";
 import flore_talk70 from "./assets/images/flore_talk70.webp";
 import flore_talk80 from "./assets/images/flore_talk80.webp";
 import flore_talk90 from "./assets/images/flore_talk90.webp";
+import franceFlag from "./assets/images/france.webp"
 import galleryImage1 from "./assets/images/galleryImage1.webp";
 import gezal from "./assets/images/Gezal-removedBG.webp";
 import gezalBadge from "./assets/images/badge-operation.webp";
@@ -106,7 +107,9 @@ import hallSalon from "./assets/images/hallsalon.webp";
 import hamidreza from "./assets/images/Hamidreza-removedBG.webp";
 import hamidrezaBadge from "./assets/images/badge-curation.webp";
 import hamidrezaBG from "./assets/images/Hamidreza.webp";
+import heroPlateauMR from "./assets/images/heroPlateauMR.jpg";
 import heroimage from "./assets/images/heroimage.webp";
+import iranFlag from "./assets/images/iran.webp"
 import janet from "./assets/images/Janet.webp";
 import janet_noBG from "./assets/images/janet_talk80_noBG_cropped.png";
 import janet_talk10 from "./assets/images/janet_talk10.webp";
@@ -217,6 +220,10 @@ import sponsor from "./assets/images/sponsor.webp";
 import sponsorBackgroundImage from "./assets/images/sponsor-page-bg.webp";
 import starsImage from "./assets/images/stars.webp";
 import sunImage from "./assets/images/sun.webp";
+import teamGroupPic1 from "./assets/images/teamGroupPic1.webp"
+import teamGroupPic2 from "./assets/images/teamGroupPic2.webp"
+import teamGroupPic3 from "./assets/images/teamGroupPic3.webp"
+import teamGroupPic4 from "./assets/images/teamGroupPic4.webp"
 import teamMember from "./assets/images/teamMember.webp";
 import ted from "./assets/images/ted.webp";
 import tedx from "./assets/images/tedx.webp";
@@ -227,26 +234,37 @@ import tickImage from "./assets/images/tick.svg";
 import unknownGirlProfile from "./assets/images/unknownGirlProfile.jpg";
 import unknownProfile from "./assets/images/unknown.webp";
 import unkown from "./assets/images/unknownGirlProfile.jpg";
+import usaFlag from "./assets/images/usa.webp"
 import videoThumbnail from "./assets/images/videoThumbnail.webp";
 import youChooseLogo from "./assets/images/logo.png";
 import zahra from "./assets/images/Zahra-removedBG.webp";
 import zahraBadge from "./assets/images/badge-content-creator.webp";
 import zahraBG from "./assets/images/Zahra.webp";
 import zproduction from "./assets/images/ZProduction.webp";
-import hero1 from "./assets/images/hero1.jpeg";
-import hero2 from "./assets/images/heroPlateauMR.jpg";
-import teamGroupPic1 from "./assets/images/teamGroupPic1.webp"
-import teamGroupPic2 from "./assets/images/teamGroupPic2.webp"
-import teamGroupPic3 from "./assets/images/teamGroupPic3.webp"
-import teamGroupPic4 from "./assets/images/teamGroupPic4.webp"
+import bazaar from "./assets/images/bazaar.webp";
+import hafteh from "./assets/images/hafteh.webp";
+import cubes61 from "./assets/images/cubes6-1.png";
+import cubes62 from "./assets/images/cubes6-2.png";
+import cubes63 from "./assets/images/cubes6-3.png";
+import cubes64 from "./assets/images/cubes6-4.png";
+import cubes65 from "./assets/images/cubes6-5.png";
+import cubes66 from "./assets/images/cubes6-6.png";
+import cubes67 from "./assets/images/cubes6-7.png";
+import cubes68 from "./assets/images/cubes6-8.png";
+import cubes69 from "./assets/images/cubes6-9.png";
 
 export {
-    teamGroupPic1,
-    teamGroupPic2,
-    teamGroupPic3,
-    teamGroupPic4,
-    hero1,
-    hero2,
+    cubes61,
+    cubes62,
+    cubes63,
+    cubes64,
+    cubes65,
+    cubes66,
+    cubes67,
+    cubes68,
+    cubes69,
+    bazaar,
+    hafteh,
     alina_noBG,
     alina_talk10,
     alina_talk100,
@@ -346,6 +364,7 @@ export {
     flore_talk80,
     flore_talk90,
     flore,
+    franceFlag,
     galleryImage1,
     gezal,
     gezalBadge,
@@ -355,7 +374,9 @@ export {
     hamidreza,
     hamidrezaBadge,
     hamidrezaBG,
+    heroPlateauMR,
     heroimage,
+    iranFlag,
     janet_noBG,
     janet_talk10,
     janet_talk20,
@@ -466,6 +487,10 @@ export {
     sponsorBackgroundImage,
     starsImage,
     sunImage,
+    teamGroupPic1,
+    teamGroupPic2,
+    teamGroupPic3,
+    teamGroupPic4,
     teamMember,
     ted,
     tedx,
@@ -476,6 +501,7 @@ export {
     unknownGirlProfile,
     unknownProfile,
     unkown,
+    usaFlag,
     videoThumbnail,
     youChooseLogo,
     zahra,

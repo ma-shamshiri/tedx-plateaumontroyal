@@ -256,6 +256,7 @@ const TicketCard = () => {
                 >
                     {cardData.map((data, index) => (
                         <Link
+                            key={index}
                             as={RouterLink}
                             to={"https://www.zeffy.com/en-CA/ticketing/4caf8991-c63e-45a3-a898-d0ff1aaf402f?fbclid=PAZXh0bgNhZW0CMTEAAaZHKIkPEAHO6Sr4oebYGUDJsNBPItj1aTVjuYqEHvu91xKZw-SXlrRWSX0_aem_enJOtqnPq19sRgYUQOlRkg"}
                             cursor="pointer"

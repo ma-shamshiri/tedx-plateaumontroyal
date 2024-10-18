@@ -1,18 +1,16 @@
 import React, { useEffect, useState } from "react";
+import { Navigationbar } from "../components/Navigationbar";
 import { motion } from 'framer-motion';
 import { BlockFooter } from "../components/BlockFooter";
 import { BlockHero2023 } from "../components/BlockHero2023";
 import { BlockScrollingTeamImage } from "../components/BlockScrollingTeamImage";
 import { BlockSponsors } from "../components/BlockSponsors";
-import { Navigationbar } from "../components/Navigationbar";
-import { PageTransition } from "../components/PageTransition";
-import { PageTransition2 } from "../components/PageTransition2";
 import { BlockSpeakerGrid } from "../components/BlockSpeakerGrid";
 import { BlockTeamGrid } from "../components/BlockTeamGrid";
-import { BlockVideoGallery } from "../components/BlockVideoGallery";
 import { BlockGallery } from "../components/BlockGallery";
 import { BlockEvent } from "../components/BlockEvent";
-import { ParallaxSection } from "../components/ParallaxSection";
+// import { PageTransition } from "../components/PageTransition";
+// import { PageTransition2 } from "../components/PageTransition2";
 
 const Event2023Page: React.FC = () => {
   const [boxLoaded, setBoxLoaded] = useState(false);
@@ -21,9 +19,9 @@ const Event2023Page: React.FC = () => {
     setBoxLoaded(true);
   };
 
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
@@ -37,7 +35,6 @@ const Event2023Page: React.FC = () => {
         <BlockHero2023 />
         <BlockScrollingTeamImage />
         <BlockTeamGrid />
-        {/* <ParallaxSection /> */}
         <BlockSpeakerGrid />
         <BlockEvent />
         <BlockGallery />

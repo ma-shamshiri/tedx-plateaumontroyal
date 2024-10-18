@@ -1,21 +1,37 @@
-import React, { useEffect } from "react";
-import { BlockFooter } from "../components/BlockFooter";
-import { BlockHero2024 } from "../components/BlockHero2024";
+import React, { useEffect, useState } from "react";
+import { motion } from 'framer-motion';
 import { Navigationbar } from "../components/Navigationbar";
-import { PageTransition } from "../components/PageTransition";
-import { PageTransition2 } from "../components/PageTransition2";
+import { BlockFooter } from "../components/BlockFooter";
+import BlockHeroFlip from "../components/BlockHeroFlip";
+// import { BlockHero2024 } from "../components/BlockHero2024";
+// import { PageTransition } from "../components/PageTransition";
+// import { PageTransition2 } from "../components/PageTransition2";
 
 const Event2024Page: React.FC = () => {
+  const [boxLoaded, setBoxLoaded] = useState(false);
+
+  const handleBoxLoad = () => {
+    setBoxLoaded(true);
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+      onAnimationComplete={handleBoxLoad}
+    >
       <Navigationbar />
-      <BlockHero2024 />
+      <BlockHeroFlip />
+      {/* <BlockHero2024 /> */}
       <BlockFooter />
-    </>
+      </motion.div>
+      </>
   );
 };
 

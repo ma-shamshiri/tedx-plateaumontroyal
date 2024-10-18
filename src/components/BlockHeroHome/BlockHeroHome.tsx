@@ -131,7 +131,7 @@ export const BlockHeroHome: React.FC = () => {
         transition={{ duration: 1, ease: "easeInOut" }}
         onAnimationComplete={handleBoxLoad}
       >
-        <Box
+        {/* <Box
           className="block block--dark"
           padding="6rem 2rem 6rem 2rem"
           bg={useColorModeValue(
@@ -171,7 +171,7 @@ export const BlockHeroHome: React.FC = () => {
               {t("heroSubTitle")}
             </Text>
           </Box>
-        </Box>
+        </Box> */}
 
         <Box
           // className="parallax"
@@ -188,7 +188,7 @@ export const BlockHeroHome: React.FC = () => {
             "linear-gradient(180deg, #0e0e29, #0e0e29, #272763, #272763)"
           )}
         >
-          <Flex
+          {/* <Flex
             className="tellMeMoreButton"
             display={{ base: "none", lg: "block" }}
             justifyContent="center"
@@ -231,7 +231,7 @@ export const BlockHeroHome: React.FC = () => {
                 {t("getTicket")}
               </Button>
             </ScrollLink>
-          </Flex>
+          </Flex> */}
 
 
           <Flex
