@@ -43,20 +43,20 @@ const TicketCard = () => {
         const mouse = svg?.createSVGPoint();
         const leftEye = createEye(leftEyeRef.current, "left");
         const rightEye = createEye(rightEyeRef.current, "right");
-    
+
         let requestId: number | null = null;
-    
+
         function onMouseMove(event: MouseEvent) {
             if (mouse) {
                 mouse.x = event.clientX;
                 mouse.y = event.clientY;
-    
+
                 if (!requestId) {
                     requestId = requestAnimationFrame(onFrame);
                 }
             }
         }
-    
+
         function onFrame() {
             if (svg && mouse) {
                 const point = mouse.matrixTransform(svg.getScreenCTM()!.inverse());
@@ -65,38 +65,38 @@ const TicketCard = () => {
                 requestId = null;
             }
         }
-    
+
         function createEye(element: SVGGElement | null, side: "left" | "right") {
             if (!element) return null;
-    
+
             gsap.set(element, { transformOrigin: "center" });
             const bbox = element.getBBox();
             const centerX = bbox.x + bbox.width / 2;
             const centerY = bbox.y + bbox.height / 2;
-    
+
             return {
                 rotateTo(point: DOMPoint) {
                     const dx = point.x - centerX;
                     const dy = point.y - centerY;
                     let angle = Math.atan2(dy, dx);
-    
+
                     // Handle angle normalization and smooth transitions
                     angle = normalizeAngle(angle, side);
-    
+
                     gsap.to(element, { rotation: `${angle}_rad_short`, duration: 0.3 });
                 },
             };
         }
-    
+
         function normalizeAngle(angle: number, side: "left" | "right") {
             if (angle < 0) {
                 angle += Math.PI * 2;
             }
-    
+
             if (side === "left") {
                 if (prevLeftAngle !== null) {
                     const delta = angle - prevLeftAngle;
-    
+
                     if (delta > Math.PI) {
                         angle -= Math.PI * 2;
                     } else if (delta < -Math.PI) {
@@ -105,11 +105,11 @@ const TicketCard = () => {
                 }
                 setPrevLeftAngle(angle);
             }
-    
+
             if (side === "right") {
                 if (prevRightAngle !== null) {
                     const delta = angle - prevRightAngle;
-    
+
                     if (delta > Math.PI) {
                         angle -= Math.PI * 2;
                     } else if (delta < -Math.PI) {
@@ -118,13 +118,13 @@ const TicketCard = () => {
                 }
                 setPrevRightAngle(angle);
             }
-    
+
             return angle;
         }
-    
+
         // Event listener for mouse movement
         window.addEventListener("mousemove", onMouseMove);
-    
+
         // Screen size handling
         const updateTopValue = () => {
             const svgElement = svgRef.current;
@@ -136,17 +136,17 @@ const TicketCard = () => {
                 }
             }
         };
-    
+
         // Event listener for resize
         window.addEventListener("resize", updateTopValue);
         updateTopValue(); // Initial call to set top value based on current screen size
-    
+
         return () => {
             window.removeEventListener("mousemove", onMouseMove);
             window.removeEventListener("resize", updateTopValue);
         };
     }, [prevLeftAngle, prevRightAngle, svgRef]);
-    
+
 
 
     return (
@@ -165,48 +165,50 @@ const TicketCard = () => {
                 "linear-gradient(45deg, #685ACD, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d)",
                 "gray.800"
             )}
-            paddingBottom={{base:"6rem", lg:"initial"}}
+            paddingBottom={{ base: "6rem", lg: "initial" }}
         >
-            <svg
-                id="svg"
-                viewBox="0 0 1000 1000"
-                ref={svgRef}
-                style={{
-                    position: "absolute",
-                    width: "80%",
-                    height: "80%",
-                    top: "38%",
-                    left: "50%",
-                    transform: "translate(-50%, -50%)",
-                    pointerEvents: "none",
-                    zIndex: 2,
-                }}
-            >
-                <g id="left-eye" ref={leftEyeRef}>
-                    <circle
-                        className="eye-outer"
-                        cx="400"
-                        cy="500"
-                        r="100"
-                        stroke="#0f0f0f"
-                        strokeWidth="2"
-                        fill="#fff"
-                    />
-                    <circle className="eye-inner" cx="480" cy="500" r="20" fill="#0f0f0f" />
-                </g>
-                <g id="right-eye" ref={rightEyeRef}>
-                    <circle
-                        className="eye-outer"
-                        cx="600"
-                        cy="500"
-                        r="100"
-                        stroke="#0f0f0f"
-                        strokeWidth="2"
-                        fill="#fff"
-                    />
-                    <circle className="eye-inner" cx="680" cy="500" r="20" fill="#0f0f0f" />
-                </g>
-            </svg>
+            <Box display="none"> 
+                <svg
+                    id="svg"
+                    viewBox="0 0 1000 1000"
+                    ref={svgRef}
+                    style={{
+                        position: "absolute",
+                        width: "80%",
+                        height: "80%",
+                        top: "38%",
+                        left: "50%",
+                        transform: "translate(-50%, -50%)",
+                        pointerEvents: "none",
+                        zIndex: 2,
+                    }}
+                >
+                    <g id="left-eye" ref={leftEyeRef}>
+                        <circle
+                            className="eye-outer"
+                            cx="400"
+                            cy="500"
+                            r="100"
+                            stroke="#0f0f0f"
+                            strokeWidth="2"
+                            fill="#fff"
+                        />
+                        <circle className="eye-inner" cx="480" cy="500" r="20" fill="#0f0f0f" />
+                    </g>
+                    <g id="right-eye" ref={rightEyeRef}>
+                        <circle
+                            className="eye-outer"
+                            cx="600"
+                            cy="500"
+                            r="100"
+                            stroke="#0f0f0f"
+                            strokeWidth="2"
+                            fill="#fff"
+                        />
+                        <circle className="eye-inner" cx="680" cy="500" r="20" fill="#0f0f0f" />
+                    </g>
+                </svg>
+            </Box>
             <motion.div
                 ref={ref}
                 variants={variants}
@@ -225,7 +227,7 @@ const TicketCard = () => {
                     <Text
                         color={useColorModeValue("white", "gray.100")}
                         marginBottom="2rem"
-                        fontSize={{ base: "3rem", lg: "4.5rem" }}
+                        fontSize={{ base: "2rem", lg: "4rem" }}
                         fontWeight="bold"
                         lineHeight="1.4"
                     >
@@ -233,7 +235,7 @@ const TicketCard = () => {
                     </Text>
                     <Text
                         color={useColorModeValue("gray.100", "gray.100")}
-                        fontSize={{ base: "1.8rem", lg: "3rem" }}
+                        fontSize={{ base: "1.7rem", lg: "2.5rem" }}
                         lineHeight="1.4"
                     >
                         {t("getTicketSubTitle")}
@@ -403,7 +405,10 @@ const TicketCard = () => {
                                         >
                                             <HStack gap={5}>
                                                 <Text
+                                                    fontSize={{ base: "1.5rem", lg: "1.6rem" }}
                                                     fontWeight="bold"
+                                                    fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+                                                    dir={i18n.language === "fa" ? "rtl" : "ltr"}
                                                 >
                                                     {t("buyYourTickets")}
                                                 </Text>

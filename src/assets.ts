@@ -252,8 +252,29 @@ import cubes66 from "./assets/images/cubes6-6.png";
 import cubes67 from "./assets/images/cubes6-7.png";
 import cubes68 from "./assets/images/cubes6-8.png";
 import cubes69 from "./assets/images/cubes6-9.png";
+import erfanBGNew from "./assets/images/erfanBGNew.jpg"
+import reihanehBGNew from "./assets/images/reihanehBGNew.jpg"
+import fatemehBGNew from "./assets/images/fatemehBGNew.jpg"
+import minaBGNew from "./assets/images/minaBGNew.jpg"
+import zahraBGNew from "./assets/images/zahraBGNew.jpg"
+import ehsanBGNew from "./assets/images/ehsanBGNew.jpg"
+import mohammadHasanBGNew from "./assets/images/mohammadHassanBGNew.jpg"
+import aminBGNew from "./assets/images/aminBGNew.jpg"
+import rooyanBGNew from "./assets/images/rooyanBGNew.jpg"
+import iranBGNew from "./assets/images/iranBGNew.jpg"
+
 
 export {
+    iranBGNew,
+    erfanBGNew,
+    reihanehBGNew,
+    fatemehBGNew,
+    minaBGNew,
+    zahraBGNew,
+    ehsanBGNew,
+    mohammadHasanBGNew,
+    rooyanBGNew,
+    aminBGNew,
     cubes61,
     cubes62,
     cubes63,

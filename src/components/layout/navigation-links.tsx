@@ -85,6 +85,27 @@ import { LuTicket } from "react-icons/lu";
           color: "#01DAFE",
           icon: <IoIosPeople size="25px" color="white" />,
         },
+        {
+          name: "Design1",
+          description: "Design1",
+          link: "/team-design1",
+          color: "#be02cc",
+          icon: <IoIosPeople size="25px" color="white" />,
+        },
+        {
+          name: "Design2",
+          description: "Design2",
+          link: "/team-design2",
+          color: "#01DAFE",
+          icon: <IoIosPeople size="25px" color="white" />,
+        },
+        {
+          name: "Design3",
+          description: "Design3",
+          link: "/team-design3",
+          color: "#00b536",
+          icon: <IoIosPeople size="25px" color="white" />,
+        },
       ],
     },
     {
