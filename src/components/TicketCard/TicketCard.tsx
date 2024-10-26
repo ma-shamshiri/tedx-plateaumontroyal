@@ -254,7 +254,7 @@ const TicketCard = () => {
                     flexDirection={{ base: "column", lg: "initial" }}
                     gap={{ base: "10rem", lg: "20rem", xl: "40rem" }}
                     paddingBottom={{ lg: "13rem" }}
-                    paddingTop={{ lg: "20rem" }}
+                    // paddingTop={{ lg: "20rem" }}
                 >
                     {cardData.map((data, index) => (
                         <Link
