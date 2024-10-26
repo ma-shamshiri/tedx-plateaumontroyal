@@ -8,6 +8,7 @@ import {
     iranBGNew,
     melikaBG,
     minaBGNew,
+    mohammadHasanBGNew,
     motaharehBG,
     pegahBG,
     reihanehBGNew,
@@ -176,7 +177,7 @@ export const items: Item[] = [
     // ======================== Mohammad Hassan Azad Jafari ========================
     {
         id: 13,
-        imageSrc: rooyanBGNew,
+        imageSrc: mohammadHasanBGNew,
         profileSrc: "/mohammadhasan-azad",
         firstName: "mohammadHasan",
         lastName: "azad",
