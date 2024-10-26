@@ -67,8 +67,8 @@ const BlockSponsorsCarousel2024: React.FC = () => {
     const settings = {
         dots: false,
         infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToShow: 5,
+        slidesToScroll: 5,
         // centerMode: true,
         autoplay: true,
         // cssEase: "linear",
@@ -81,7 +81,7 @@ const BlockSponsorsCarousel2024: React.FC = () => {
         prevArrow: <SamplePrevArrow />,
         afterChange: (current: number) => {
             // Adjust calculation based on number of slides shown
-            const slidesToShow = window.innerWidth < 1400 ? 2 : 4;
+            const slidesToShow = window.innerWidth < 1400 ? 2 : 5;
             setCenterSlide(Math.floor(current / slidesToShow));
         },
         responsive: [
@@ -128,7 +128,7 @@ const BlockSponsorsCarousel2024: React.FC = () => {
     };
     return (
         <Box
-            width={{ base: "80%", md: "85%", lg: "60%", xl:"55%" }}
+            width={{ base: "80%", md: "85%", lg: "65%", xl:"70%" }}
             marginX="auto"
             padding="2rem"
             paddingY="6rem"

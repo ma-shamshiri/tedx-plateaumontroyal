@@ -2,7 +2,8 @@ import {
     arash,
     dental,
     bazaar,
-    hafteh
+    hafteh,
+    medad
 } from "../../assets";
 
 
@@ -36,11 +37,11 @@ export const sponsorData = [
     },
 
     /* ======================== medad ======================== */
-    // {
-    //     name: `medad`,
-    //     imageUrl: `${medad}`,
-    //     sourceUrl: `https://www.medad.ca/`,
-    // },
+    {
+        name: `medad`,
+        imageUrl: `${medad}`,
+        sourceUrl: `https://www.medad.ca/`,
+    },
 
     /* ======================== poulet ======================== */
     // {
