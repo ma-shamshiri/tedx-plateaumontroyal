@@ -7,7 +7,6 @@ import {
     HStack,
     IconButton,
     Image,
-    Link,
     Text,
     VStack,
     useBreakpointValue,
@@ -16,12 +15,10 @@ import {
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { LuAlarmClock } from "react-icons/lu";
-import { CgEventbrite } from "react-icons/cg";
 import { GoLocation } from "react-icons/go";
-import { hallBuilding, hallSalon, mcgill } from "../assets";
+import { hallBuilding, hallSalon, mcgill } from "../../assets";
 import { IoCalendarNumberSharp } from "react-icons/io5";
 import { Link as ScrollLink } from 'react-scroll';
-import TicketCard from "./TicketCard";
 
 const initialVariants: { [key: string]: any } = {
     initial: {
@@ -86,7 +83,9 @@ const rightVariants: { [key: string]: any } = {
 
 const MotionBox = motion(Box);
 
-export const ComingSoonEventPage: React.FC = () => {
+const BlockEvent2024: React.FC = () => {
+    const { t, i18n } = useTranslation();
+
     const ref = useRef<HTMLDivElement>(null);
 
     const buttonHoverTextColor = useColorModeValue("black", "#FF0000");
@@ -113,8 +112,6 @@ export const ComingSoonEventPage: React.FC = () => {
     };
 
     const buttonIconColor = isHoveredButton ? '#F04E2D' : 'white';
-
-    const { t, i18n } = useTranslation();
 
     return (
         <>
@@ -166,7 +163,7 @@ export const ComingSoonEventPage: React.FC = () => {
                                     fontWeight="bold"
                                     lineHeight="1.1"
                                 >
-                                    Your Ticket Awaits
+                                    {t("yourTicketAwaits")}
                                 </Text>
                                 <Text
                                     className="p"
@@ -212,13 +209,13 @@ export const ComingSoonEventPage: React.FC = () => {
                                         isRound
                                         pointerEvents="none"
                                     />
-                                    <HStack>
+                                    <HStack dir={i18n.language === "fa" ? "rtl" : "ltr"}>
                                         <Text fontSize={{ base: "5.2rem", lg: "5.2rem" }}>
-                                            16
+                                            {t("16")}
                                         </Text>
                                         <VStack>
-                                            <Text fontSize={{ base: "1.5rem", lg: "1.5rem" }}>SAT</Text>
-                                            <Text fontSize={{ base: "1.5rem", lg: "1.5rem" }}>NOV</Text>
+                                            <Text fontSize={{ base: "1.5rem", lg: "1.5rem" }}>{t("SAT")}</Text>
+                                            <Text fontSize={{ base: "1.5rem", lg: "1.5rem" }}>{t("NOV")}</Text>
                                         </VStack>
                                     </HStack>
                                 </VStack>
@@ -257,7 +254,7 @@ export const ComingSoonEventPage: React.FC = () => {
                                         isRound
                                         pointerEvents="none"
                                     />
-                                    <Box className="addressContainer">
+                                    <Box className="addressContainer" dir={i18n.language === "fa" ? "rtl" : "ltr"}>
                                         <Text fontSize={{ base: "1.8rem", lg: "2rem" }} >
                                             10:00
                                         </Text>
@@ -363,7 +360,7 @@ export const ComingSoonEventPage: React.FC = () => {
                                                 left="50%"
                                                 transform="translate(-50%, -50%)"
                                             >
-                                                McGill University
+                                                {t("mcgillUniversity")}
                                             </Text>
                                         </Box>
                                         <Image
@@ -495,10 +492,8 @@ export const ComingSoonEventPage: React.FC = () => {
                     </Box>
                 </Box>
             </Box>
-
-            <TicketCard />
         </>
     );
 };
 
-// export default ComingSoonEventPage;
+export default BlockEvent2024;

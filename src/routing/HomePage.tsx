@@ -11,12 +11,11 @@ import BlockSponsors2024 from "../components/BlockSponsors2024";
 import BlockHeroHomeFinal from "../components/BlockHeroHomeFinal";
 import BlockDivider from "../components/BlockDivider";
 import MarqueeComponent from "../components/MarqueeComponent";
+import TeamGridDesign2 from "../components/TeamGridDesign2";
 // import { PageTransition } from "../components/PageTransition";
 // import { PageTransition2 } from "../components/PageTransition2";
 
 const HomePage: React.FC = () => {
-
-
   const [boxLoaded, setBoxLoaded] = useState(false);
 
   const handleBoxLoad = () => {
@@ -49,6 +48,7 @@ const HomePage: React.FC = () => {
         <Navigationbar />
         <BlockHeroHomeFinal />
         <BlockDivider />
+        <TeamGridDesign2 />
         <BlockHeroHome />
         <TicketCard />
         <MarqueeComponent />

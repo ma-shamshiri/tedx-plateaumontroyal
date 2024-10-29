@@ -36,9 +36,9 @@ import MohammaderfanMohit from "../components/TeamMembers/MohammaderfanMohit";
 import ZahraAhmadi from "../components/TeamMembers/ZahraAhmadi";
 import SpeakersPage from "./SpeakersPage";
 import TeamPage from "./TeamPage";
-import TeamPageDesign1 from './TeamPageDesign1';
-import TeamPageDesign2 from './TeamPageDesign2';
-import TeamPageDesign3 from './TeamPageDesign3';
+// import TeamPageDesign1 from './TeamPageDesign1';
+// import TeamPageDesign2 from './TeamPageDesign2';
+// import TeamPageDesign3 from './TeamPageDesign3';
 import EventPage from "./EventPage";
 import Event2024Page from "./Event2024Page";
 import { BlockVideoGallery } from '../components/BlockVideoGallery';
@@ -70,9 +70,9 @@ const AnimatedRoutes: React.FC = () => {
         <Route path="/tedx-2023/alina-gutierrez-mejia/" element={<AlinaGutierrezMejia />} />
         <Route path="/tedx-2023/andrew-churchil/" element={<AndrewChurchil />} />
         <Route path="/team/" element={<TeamPage />} />
-        <Route path="/team-design1/" element={<TeamPageDesign1 />} />
-        <Route path="/team-design2/" element={<TeamPageDesign2 />} />
-        <Route path="/team-design3/" element={<TeamPageDesign3 />} />
+        {/* <Route path="/team-design1/" element={<TeamPageDesign1 />} /> */}
+        {/* <Route path="/team-design2/" element={<TeamPageDesign2 />} /> */}
+        {/* <Route path="/team-design3/" element={<TeamPageDesign3 />} /> */}
         <Route path="/tedx-2023/samin-majidi/" element={<SaminMajidi />} />
         <Route path="/tedx-2023/fatemeh-tavanaei/" element={<FatemehTavanaei />} />
         <Route path="/tedx-2023/reihaneh-ghoroghchian/" element={<ReihanehGhoroghchian />} />

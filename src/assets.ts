@@ -262,9 +262,24 @@ import mohammadHasanBGNew from "./assets/images/mohammadHassanBGNew.jpg"
 import aminBGNew from "./assets/images/aminBGNew.jpg"
 import rooyanBGNew from "./assets/images/rooyanBGNew.jpg"
 import iranBGNew from "./assets/images/iranBGNew.jpg"
-
+import brian from "./assets/images/brian.jpg"
+import buddle from "./assets/images/buddle.jpg"
+import charles from "./assets/images/charles.jpg"
+import ehson from "./assets/images/ehson.jpg"
+import henry from "./assets/images/henry.png"
+import sami from "./assets/images/sami.jpg"
+import shaun from "./assets/images/shaun.png"
+import sylvain from "./assets/images/sylvain.jpg"
 
 export {
+    brian,
+    buddle,
+    charles,
+    ehson,
+    henry,
+    sami,
+    shaun,
+    sylvain,
     iranBGNew,
     erfanBGNew,
     reihanehBGNew,

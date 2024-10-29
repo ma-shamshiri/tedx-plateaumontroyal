@@ -83,7 +83,7 @@ const rightVariants: { [key: string]: any } = {
 
 const MotionBox = motion(Box);
 
-export const BlockEvent: React.FC = () => {
+const BlockEvent2023: React.FC = () => {
     const ref = useRef<HTMLDivElement>(null);
 
     const iconColor = useColorModeValue("#160578", "#4299E1");
@@ -108,7 +108,7 @@ export const BlockEvent: React.FC = () => {
 
     const buttonIconColor = isHoveredButton ? '#F04E2D' : 'white';
 
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     return (
         <Box
@@ -119,6 +119,7 @@ export const BlockEvent: React.FC = () => {
             // width="100vh"
             // minWidth="90rem"
             overflow={"hidden"}
+            fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
         >
             <Box
                 className="block container block-domain"
@@ -141,7 +142,13 @@ export const BlockEvent: React.FC = () => {
                         initial="initial"
                         whileInView="animate"
                     >
-                        <Box className="block__header" textAlign="center" width="100%">
+                        <Box
+                            className="block__header"
+                            textAlign="center"
+                            width="100%"
+                            fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+                            dir={i18n.language === "fa" ? "rtl" : "ltr"}
+                        >
                             <Text
                                 className="h2"
                                 color={useColorModeValue("gray.800", "#16F8B6")}
@@ -354,11 +361,12 @@ export const BlockEvent: React.FC = () => {
                                             left="50%"
                                             transform="translate(-50%, -50%)"
                                         >
-                                            McGill University
+                                             {t("mcgillUniversity")}
                                         </Text>
                                     </Box>
                                     <Image
                                         src={mcgill}
+                                        alt="McGill University"
                                         width="100%"
                                         height="100%"
                                         // boxShadow="0 0 30px 0.5px black"
@@ -414,6 +422,7 @@ export const BlockEvent: React.FC = () => {
                                     </Box>
                                     <Image
                                         src={hallBuilding}
+                                        alt="Hall Building"
                                         width="100%"
                                         height="100%"
                                         boxShadow="0 7px 30px 0.5px black"
@@ -468,6 +477,7 @@ export const BlockEvent: React.FC = () => {
                                     </Box>
                                     <Image
                                         src={hallSalon}
+                                        alt="Hall Salon"
                                         width="100%"
                                         height="100%"
                                         // boxShadow="5px 5px 30px 0px black"
@@ -486,4 +496,4 @@ export const BlockEvent: React.FC = () => {
     );
 };
 
-// export default BlockEvent;
+export default BlockEvent2023;

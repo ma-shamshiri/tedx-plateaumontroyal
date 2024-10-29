@@ -27,7 +27,7 @@ const CountdownTimer: React.FC<{ eventStartTime: Date }> = ({
     const { t, i18n } = useTranslation();
 
     const buttonHoverTextColor = useColorModeValue("#fff", "#fff");
-    const buttonHoverBorderColor = useColorModeValue("black", "#FF0000");
+    const buttonHoverBorderColor = useColorModeValue("#FF0000", "#FF0000");
 
     const [isHoveredButton, setIsHoveredButton] = useState(false);
 
@@ -59,17 +59,23 @@ const CountdownTimer: React.FC<{ eventStartTime: Date }> = ({
     return (
         <Box
             textAlign="center"
-            overflow={"hidden"}
             margin="0 auto"
             padding="2rem"
             paddingBottom="0"
+            overflow="hidden"
         >
             <Text
-                fontSize={useBreakpointValue({ base: "1.5rem", md: "2.8rem", lg: "3rem", xl: "4rem" })}
+                fontSize={
+                    i18n.language === "fa" ?
+                        useBreakpointValue({ base: "1.5rem", md: "2.2rem", lg: "2.8rem", xl: "2.8rem" }) :
+                        useBreakpointValue({ base: "1.5rem", md: "2.8rem", lg: "3rem", xl: "4rem" })
+                }
                 color="gray.800"
                 fontWeight="bold"
-                fontFamily="'Big Shoulders Display', sans-serif"
+                fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Big Shoulders Display', sans-serif"}
+                dir={i18n.language === "fa" ? "rtl" : "ltr"}
                 marginBottom={{ base: "2rem", lg: "4rem" }}
+                aria-label="Countdown to TEDxPlateauMontRoyal event"
             >
                 {t("countdownTitle")}
             </Text>
@@ -83,11 +89,13 @@ const CountdownTimer: React.FC<{ eventStartTime: Date }> = ({
                         justifyContent="center"
                         width={boxSize}
                         height={boxSize}
-                        bgColor={useColorModeValue("rgba(0, 124, 124, 0.79)", "rgba(255, 0, 0, 0.79)")}
+                        bgColor={useColorModeValue("rgba(255, 0, 0, 0.79)", "rgba(255, 0, 0, 0.79)")}
+                        // bgColor={useColorModeValue("rgba(0, 124, 124, 0.79)", "rgba(255, 0, 0, 0.79)")}
                         color="white"
                         fontWeight="bold"
                         borderWidth="1px"
-                        borderColor={useColorModeValue("rgba(0, 124, 124, 1)", "rgba(255, 0, 0, 1)")}
+                        borderColor={useColorModeValue("rgba(255, 0, 0, 1)", "rgba(255, 0, 0, 1)")}
+                        // borderColor={useColorModeValue("rgba(0, 124, 124, 1)", "rgba(255, 0, 0, 1)")}
                         borderRadius="7px"
                         boxShadow="0 8px 16px rgba(0, 0, 0, 0.3)"
                         transition="transform 0.3s ease, box-shadow 0.3s ease"
@@ -99,12 +107,16 @@ const CountdownTimer: React.FC<{ eventStartTime: Date }> = ({
                     >
                         <Text
                             fontSize={numberFontSize}
-                            fontFamily="'Acme', sans-serif"
+                            dir={i18n.language === "fa" ? "rtl" : "ltr"}
                             letterSpacing={4}
                         >
                             {formatTimeUnit(timeLeft[unit as keyof typeof timeLeft])}
                         </Text>
-                        <Text fontSize={textFontSize}>
+                        <Text
+                            fontSize={textFontSize}
+                            fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+                            dir={i18n.language === "fa" ? "rtl" : "ltr"}
+                        >
                             {t(unit)}
                         </Text>
                     </Box>
@@ -115,11 +127,12 @@ const CountdownTimer: React.FC<{ eventStartTime: Date }> = ({
                 justifyContent="center"
                 alignItems="center"
                 bg="transparent"
-                paddingTop={{base:"1.5rem", lg:"3rem"}}
+                paddingTop={{ base: "1.5rem", lg: "3rem" }}
                 zIndex={500000}
             >
                 <ScrollLink to="ticket-section" smooth={true} duration={500}>
                     <Button
+                        aria-label="Get Ticket for TEDxPlateauMontRoyal Event in Montreal"
                         border="2px solid #000"
                         borderRadius="10px"
                         cursor="pointer"

@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { Box, Image, Text, useBreakpointValue, useColorModeValue, VStack, Link } from "@chakra-ui/react";
 import { slides as originalSlides } from "./data";
 import { useTranslation } from "react-i18next";
-// import { Link as RouterLink } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 
 const TeamGridDesign2: React.FC = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     const slides = originalSlides.map(item => ({
         ...item,
@@ -50,127 +50,116 @@ const TeamGridDesign2: React.FC = () => {
         <Box
             position="relative"
             width="100%"
-            height={isLargeScreen ? "100vh" : "auto"}
-            bg={useColorModeValue("white", "#0f0f0f")}
+            // height={isLargeScreen ? "80vh" : "auto"}
+            bg={useColorModeValue("#F0E2B6", "#0f0f0f")}
             display="flex"
             justifyContent="center"
             alignItems="center"
             overflow="hidden"
             padding={isLargeScreen ? "0" : "20px 20px"}
+            paddingY={{ base: "8rem", lg: "8rem" }}
         >
             {isLargeScreen ? (
                 <>
                     <Box
-                        position="absolute"
-                        top="50%"
-                        left="50%"
-                        transform="translate(-50%, -50%)"
                         width={{ base: "90%", md: "90%", lg: "90%", xl: "75%" }}
                         maxWidth="1600px"
                         display="flex"
                         justifyContent="center"
                     >
-                        <Box
-                            display="flex"
-                            justifyContent="space-around"
+                        <VStack
+                            position="relative"
                             width="100%"
-                            overflow="hidden"
+                            height="100%"
                         >
-                            {slides.map((slide, index) => (
-                                <Box
-                                    key={slide.lastName}
-                                    display="flex"
-                                    justifyContent="center"
-                                    alignItems="center"
-                                    flex={hoveredIndex === index ? "1 1 600px" : "0 1 60px"}
-                                    height="500px"
-                                    margin="0 5px"
-                                    bg="#000"
-                                    transition="flex 1.6s cubic-bezier(0.3, 1, 0.32, 1)"
-                                    onMouseEnter={() => handleMouseEnter(index)}
-                                    // onMouseLeave={handleMouseLeave}
-                                    overflow="hidden"
-                                >
-                                    <Image
-                                        src={slide.imageSrc}
-                                        alt={slide.fullName}
-                                        width="100%"
-                                        height="100%"
-                                        objectFit="cover"
-                                    />
-                                    <VStack
-                                        position="absolute"
-                                        bottom="10%"
-                                        gap={4}
+                            <Box
+                                display="flex"
+                                justifyContent="space-around"
+                                width="100%"
+                                overflow="hidden"
+                            >
+                                {slides.map((slide, index) => (
+                                    <Box
+                                        key={slide.lastName}
+                                        display="flex"
+                                        justifyContent="center"
+                                        alignItems="center"
+                                        flex={hoveredIndex === index ? "1 1 600px" : "0 1 60px"}
+                                        height="500px"
+                                        margin="0 5px"
+                                        bg="#000"
+                                        transition="flex 1.6s cubic-bezier(0.3, 1, 0.32, 1)"
+                                        onMouseEnter={() => handleMouseEnter(index)}
+                                        // onMouseLeave={handleMouseLeave}
+                                        overflow="hidden"
                                     >
-                                        {/* <Link
-                                            as={RouterLink}
-                                            to={slide.profileSrc}
-                                            _hover={{ textDecoration: 'none' }}
-                                        > */}
-                                        <Text
-                                            color="white"
-                                            fontSize="3rem"
-                                            fontWeight="bold"
-                                            fontFamily="'Acme', sans-serif"
-                                            opacity={hoveredIndex === index ? 1 : 0}
-                                            transition={`opacity ${hoveredIndex === index ? '1s' : '0.2s'} ease-in-out`}
-                                            pointerEvents="none"
-                                            maxWidth="25rem"
-                                            align="center"
-                                            sx={sx}
+                                        <Image
+                                            src={slide.imageSrc}
+                                            alt={slide.fullName}
+                                            width="100%"
+                                            height="100%"
+                                            objectFit="cover"
+                                        />
+                                        <VStack
+                                            position="absolute"
+                                            bottom="25%"
+                                            gap={4}
                                         >
-                                            {slide.fullName}
-                                        </Text>
-                                        {/* </Link> */}
+                                            <Text
+                                                color="white"
+                                                fontSize="3rem"
+                                                fontWeight="bold"
+                                                fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Acme', sans-serif"}
+                                                dir={i18n.language === "fa" ? "rtl" : "ltr"}
+                                                opacity={hoveredIndex === index ? 1 : 0}
+                                                transition={`opacity ${hoveredIndex === index ? '1s' : '0.2s'} ease-in-out`}
+                                                pointerEvents="none"
+                                                maxWidth="25rem"
+                                                align="center"
+                                                sx={sx}
+                                            >
+                                                {slide.fullName}
+                                            </Text>
+                                        </VStack>
+                                    </Box>
+                                ))}
+                            </Box>
 
-                                        {/* <Text
-                                            color="white"
-                                            fontSize="3rem"
-                                            fontWeight="bold"
-                                            fontFamily="'Acme', sans-serif"
-                                            opacity={hoveredIndex === index ? 1 : 0}
-                                            transition={`opacity ${hoveredIndex === index ? '1s' : '0.2s'} ease-in-out`}
-                                            pointerEvents="none"
-                                            align="center"
-                                            sx={sx}
-                                        >
-                                            {slide.lastName}
-                                        </Text> */}
-                                    </VStack>
-
-                                    {/* <Link
-                                        position="absolute"
-                                        top="3%"
-                                        className="btn btn--secondary btn--block"
-                                        as={RouterLink}
-                                        to={slide.profileSrc}
-                                        border="1px solid #d4d4d4"
-                                        borderRadius="5px"
-                                        cursor="pointer"
-                                        fontSize={{ base: "1.5rem", lg: "1.5rem" }}
-                                        padding="0.5rem 1.5rem"
-                                        textAlign="center"
-                                        whiteSpace="nowrap"
-                                        bg="transparent"
-                                        color="#d4d4d4"
-                                        display="inline-block"
-                                        width={{ base: "fit-content", lg: "fit-content" }}
-                                        _hover={{
-                                            border: "1px solid white",
-                                            bg: "transparent",
-                                            color: "white",
-                                        }}
-                                        opacity={hoveredIndex === index ? 1 : 0}
-                                        transition={`opacity ${hoveredIndex === index ? '1s' : '0.2s'} ease-in-out`}
-                                        onMouseEnter={handleHoverButton}
-                                        onMouseLeave={handleUnHoverButton}
-                                    >
-                                        <Text>{t("seeProfile")}</Text>
-                                    </Link> */}
-                                </Box>
-                            ))}
-                        </Box>
+                            <Link
+                                position="relative"
+                                className="btn btn--secondary btn--block"
+                                as={RouterLink}
+                                to={"/team/"}
+                                border="2px solid #F04E2D"
+                                borderRadius="7px"
+                                cursor="pointer"
+                                fontSize={{ base: "1.8rem", lg: "2rem" }}
+                                fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+                                dir={i18n.language === "fa" ? "rtl" : "ltr"}
+                                marginTop="5rem"
+                                padding="1.5rem"
+                                paddingX="3rem"
+                                textAlign="center"
+                                whiteSpace="nowrap"
+                                bg="#f04e2d"
+                                color="#fff"
+                                boxShadow="0px 6px 10px rgba(0, 0, 0, 0.2), 0px -6px 10px rgba(0, 0, 0, 0.2)"
+                                display="inline-block"
+                                width={{ base: "fit-content", lg: "fit-content" }}
+                                _hover={{
+                                    border: "0.2rem solid #f75540",
+                                    bg: "transparent",
+                                    color: "#f04e2d",
+                                    boxShadow:
+                                        "0px 8px 14px rgba(0, 0, 0, 0.3), 0px -8px 14px rgba(0, 0, 0, 0.3)",
+                                }}
+                                transition="background-color 0.25s ease-out, border 0.25s ease-out, box-shadow 0.25s ease"
+                                onMouseEnter={handleHoverButton}
+                                onMouseLeave={handleUnHoverButton}
+                            >
+                                <Text>{t("scrollingTeamButtonLabel")}</Text>
+                            </Link>
+                        </VStack>
                     </Box>
                 </>
             ) : (
@@ -182,7 +171,7 @@ const TeamGridDesign2: React.FC = () => {
                         flexDirection="column"
                         alignItems="center"
                         justifyContent="center"
-                        minHeight="100vh" // Ensure the container takes full height
+                        minHeight="100vh"
                     >
                         <Box
                             display="flex"
@@ -229,7 +218,8 @@ const TeamGridDesign2: React.FC = () => {
                                             color="white"
                                             fontSize="3rem"
                                             fontWeight="bold"
-                                            fontFamily="'Acme', sans-serif"
+                                            fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Acme', sans-serif"}
+                                            dir={i18n.language === "fa" ? "rtl" : "ltr"}
                                             opacity={hoveredIndex === index ? 1 : 0}
                                             transition={`opacity ${hoveredIndex === index ? '1s' : '0.3s'} ease-in-out`}
                                             pointerEvents="none"
@@ -242,6 +232,41 @@ const TeamGridDesign2: React.FC = () => {
                                     </VStack>
                                 </Box>
                             ))}
+
+                            <Link
+                                position="relative"
+                                className="btn btn--secondary btn--block"
+                                as={RouterLink}
+                                to={"/team/"}
+                                border="2px solid #F04E2D"
+                                borderRadius="7px"
+                                cursor="pointer"
+                                fontSize={{ base: "1.8rem", lg: "2rem" }}
+                                fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+                                dir={i18n.language === "fa" ? "rtl" : "ltr"}
+                                marginTop="5rem"
+                                padding="1.5rem"
+                                paddingX="3rem"
+                                textAlign="center"
+                                whiteSpace="nowrap"
+                                bg="#f04e2d"
+                                color="#fff"
+                                boxShadow="0px 6px 10px rgba(0, 0, 0, 0.2), 0px -6px 10px rgba(0, 0, 0, 0.2)"
+                                display="inline-block"
+                                width={{ base: "fit-content", lg: "fit-content" }}
+                                _hover={{
+                                    border: "0.2rem solid #f75540",
+                                    bg: "transparent",
+                                    color: "#f04e2d",
+                                    boxShadow:
+                                        "0px 8px 14px rgba(0, 0, 0, 0.3), 0px -8px 14px rgba(0, 0, 0, 0.3)",
+                                }}
+                                transition="background-color 0.25s ease-out, border 0.25s ease-out, box-shadow 0.25s ease"
+                                onMouseEnter={handleHoverButton}
+                                onMouseLeave={handleUnHoverButton}
+                            >
+                                <Text>{t("scrollingTeamButtonLabel")}</Text>
+                            </Link>
                         </Box>
                     </Box>
                 </>

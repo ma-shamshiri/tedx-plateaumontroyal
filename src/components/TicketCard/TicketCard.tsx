@@ -167,7 +167,7 @@ const TicketCard = () => {
             )}
             paddingBottom={{ base: "6rem", lg: "initial" }}
         >
-            <Box display="none"> 
+            <Box display={{ base: "none", lg: "block" }}>
                 <svg
                     id="svg"
                     viewBox="0 0 1000 1000"
@@ -254,7 +254,7 @@ const TicketCard = () => {
                     flexDirection={{ base: "column", lg: "initial" }}
                     gap={{ base: "10rem", lg: "20rem", xl: "40rem" }}
                     paddingBottom={{ lg: "13rem" }}
-                    // paddingTop={{ lg: "20rem" }}
+                    paddingTop={{ lg: "20rem" }}
                 >
                     {cardData.map((data, index) => (
                         <Link
@@ -315,7 +315,7 @@ const TicketCard = () => {
                                 >
                                     <Text
                                         position="absolute"
-                                        top="40%"
+                                        top="48%"
                                         right="-30%"
                                         transform="rotate(90deg)"
                                         color="#fff"
@@ -327,7 +327,7 @@ const TicketCard = () => {
                                     </Text>
                                     <Text
                                         position="absolute"
-                                        top="40%"
+                                        top="48%"
                                         right="-16%"
                                         transform="rotate(90deg)"
                                         color="#fff"
@@ -365,11 +365,13 @@ const TicketCard = () => {
                                             // className="case-study"
                                             fontSize="2rem"
                                             fontWeight="bold"
-                                            fontFamily="'Acme', sans-serif"
+                                            fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Acme', sans-serif"}
+                                            dir={i18n.language === "fa" ? "rtl" : "ltr"}
                                             // textTransform="uppercase"
                                             letterSpacing="1px"
+
                                         >
-                                            {data.type}
+                                            {t(data.type)}
                                         </Text>
                                         <Box
                                             display="flex"

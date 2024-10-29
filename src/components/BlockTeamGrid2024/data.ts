@@ -15,11 +15,10 @@ import {
     reihanehBGNew,
     rooyanBGNew,
     saminBG,
-    teamGroupPic3,
     zahraBGNew,
 } from "../../assets";
 
-export interface Slide {
+export interface Item {
     id?: number;
     imageSrc?: string;
     profileSrc?: string;
@@ -29,12 +28,12 @@ export interface Slide {
     role?: string;
 }
 
-export const slides: Slide[] = [
+export const items: Item[] = [
     // ======================== Samin Majidi ========================
     {
         id: 1,
         imageSrc: saminBG,
-        profileSrc: "/samin-majidi",
+        profileSrc: "https://ca.linkedin.com/in/samin-majidi-05b77a250",
         firstName: "samin",
         lastName: "majidi",
         fullName: "saminMajidi",
@@ -45,7 +44,7 @@ export const slides: Slide[] = [
     {
         id: 2,
         imageSrc: fatemehBGNew,
-        profileSrc: "/fatemeh-tavanaei",
+        profileSrc: "https://ca.linkedin.com/in/fatemeh-tavanaei-sereshgi-394a7957",
         firstName: "fatemeh",
         lastName: "tavanaei",
         fullName: "fatemehTavanaei",
@@ -56,7 +55,7 @@ export const slides: Slide[] = [
     {
         id: 3,
         imageSrc: erfanBGNew,
-        profileSrc: "/mohammaderfan-mohit",
+        profileSrc: "#",
         firstName: "mohammaderfan",
         lastName: "mohit",
         fullName: "mohammadErfanMohit",
@@ -67,7 +66,7 @@ export const slides: Slide[] = [
     {
         id: 4,
         imageSrc: reihanehBGNew,
-        profileSrc: "/reihaneh-ghoroghchian",
+        profileSrc: "https://ca.linkedin.com/in/reihaneh-ghoroghchian-636661182",
         firstName: "reihaneh",
         lastName: "ghoroghchian",
         fullName: "reihanehGhoroghchian",
@@ -78,7 +77,7 @@ export const slides: Slide[] = [
     {
         id: 5,
         imageSrc: minaBGNew,
-        profileSrc: "/mina-taraghi",
+        profileSrc: "https://ca.linkedin.com/in/minataraghi?trk=people-guest_people_search-card",
         firstName: "mina",
         lastName: "taraghi",
         fullName: "minaTaraghi",
@@ -89,7 +88,7 @@ export const slides: Slide[] = [
     {
         id: 6,
         imageSrc: motaharehBG,
-        profileSrc: "/motahareh-pourrahimi",
+        profileSrc: "https://ca.linkedin.com/in/motahareh-pour-ahimi-43550417b",
         firstName: "motahareh",
         lastName: "pourrahimi",
         fullName: "motaharehPourrahimi",
@@ -100,7 +99,7 @@ export const slides: Slide[] = [
     {
         id: 7,
         imageSrc: pegahBG,
-        profileSrc: "/pegah-einakchi",
+        profileSrc: "#",
         firstName: "pegah",
         lastName: "einakchi",
         fullName: "pegahEinakchi",
@@ -111,29 +110,18 @@ export const slides: Slide[] = [
     {
         id: 8,
         imageSrc: melikaBG,
-        profileSrc: "/melika-seyedi",
+        profileSrc: "https://ca.linkedin.com/in/melika-seyedi-048416140",
         firstName: "melika",
         lastName: "seyedi",
         fullName: "melikaSeyedi",
         role: "sponsorship"
     },
 
-    // ======================== Group Image ========================
-    {
-        id: 100,
-        imageSrc: teamGroupPic3,
-        profileSrc: "/",
-        firstName: "",
-        lastName: "",
-        fullName: "",
-        role: ""
-    },
-
     // ======================== Ehsan Mortazavi ========================
     {
         id: 9,
         imageSrc: ehsanBGNew,
-        profileSrc: "/ehsan-mortazavi",
+        profileSrc: "#",
         firstName: "ehsan",
         lastName: "mortazavi",
         fullName: "ehsanMortazavi",
@@ -145,7 +133,7 @@ export const slides: Slide[] = [
     {
         id: 10,
         imageSrc: hamidrezaBG,
-        profileSrc: "/hamidreza-ermagan",
+        profileSrc: "https://ca.linkedin.com/in/hrermagan",
         firstName: "hamidreza",
         lastName: "ermagan",
         fullName: "hamidrezaErmagan",
@@ -156,7 +144,7 @@ export const slides: Slide[] = [
     {
         id: 11,
         imageSrc: baharanBG,
-        profileSrc: "/baharan-nouriinanloo",
+        profileSrc: "https://ca.linkedin.com/in/baharan-nouriv",
         firstName: "baharan",
         lastName: "nouriinanloo",
         fullName: "baharanNouriinanloo",
@@ -167,7 +155,7 @@ export const slides: Slide[] = [
     {
         id: 12,
         imageSrc: rooyanBGNew,
-        profileSrc: "/royan-jafari",
+        profileSrc: "https://ca.linkedin.com/in/royan-jafari",
         firstName: "royan",
         lastName: "jafari",
         fullName: "royanJafari",
@@ -178,7 +166,7 @@ export const slides: Slide[] = [
     {
         id: 13,
         imageSrc: mohammadHasanBGNew,
-        profileSrc: "/mohammadhasan-azad",
+        profileSrc: "#",
         firstName: "mohammadHasan",
         lastName: "azad",
         fullName: "mohammadHasanAzad",
@@ -189,7 +177,7 @@ export const slides: Slide[] = [
     {
         id: 14,
         imageSrc: iranBGNew,
-        profileSrc: "/iran-zare",
+        profileSrc: "#",
         firstName: "iran",
         lastName: "zare",
         fullName: "iranZare",
@@ -200,7 +188,7 @@ export const slides: Slide[] = [
     {
         id: 15,
         imageSrc: aminBGNew,
-        profileSrc: "/amin-ghasemi",
+        profileSrc: "#",
         firstName: "amin",
         lastName: "ghasemi",
         fullName: "aminGhasemi",
@@ -211,7 +199,7 @@ export const slides: Slide[] = [
     {
         id: 16,
         imageSrc: zahraBGNew,
-        profileSrc: "/zahra-attaran",
+        profileSrc: "#",
         firstName: "zahra",
         lastName: "attaran",
         fullName: "zahraAttaran",
@@ -222,10 +210,30 @@ export const slides: Slide[] = [
     {
         id: 17,
         imageSrc: aminBG,
-        profileSrc: "/amin-shamshiri",
+        profileSrc: "https://ca.linkedin.com/in/ma-shamshiri",
         firstName: "mohammadAmin",
         lastName: "shamshiri",
         fullName: "mohammadAminShamshiri",
         role: "webmaster"
     },
+    {
+        id: 18,
+        imageSrc: "",
+        profileSrc: "",
+        firstName: "",
+        lastName: "",
+        fullName: "",
+        role: ""
+    },
+
+    // ======================== Group Image ========================
+    // {
+    //     id: 18,
+    //     imageSrc: sliderImage1,
+    //     profileSrc: "#",
+    //     firstName: "",
+    //     lastName: "",
+    //     fullName: "",
+    //     role: ""
+    // },
 ];

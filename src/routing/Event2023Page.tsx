@@ -8,7 +8,7 @@ import { BlockSponsors } from "../components/BlockSponsors";
 import { BlockSpeakerGrid } from "../components/BlockSpeakerGrid";
 import { BlockTeamGrid } from "../components/BlockTeamGrid";
 import { BlockGallery } from "../components/BlockGallery";
-import { BlockEvent } from "../components/BlockEvent";
+import BlockEvent2023 from "../components/BlockEvent2023";
 // import { PageTransition } from "../components/PageTransition";
 // import { PageTransition2 } from "../components/PageTransition2";
 
@@ -36,7 +36,7 @@ const Event2023Page: React.FC = () => {
         <BlockScrollingTeamImage />
         <BlockTeamGrid />
         <BlockSpeakerGrid />
-        <BlockEvent />
+        <BlockEvent2023 />
         <BlockGallery />
         <BlockSponsors />
         <BlockFooter />

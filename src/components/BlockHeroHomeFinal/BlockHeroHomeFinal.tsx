@@ -1,27 +1,10 @@
-import React, { useState } from 'react';
-import { Box, Button, Flex, Image, useColorModeValue } from '@chakra-ui/react';
-import { heroPlateauMR } from "../../assets";
+import React from 'react';
+import { Box, Flex, Image } from '@chakra-ui/react';
 import CountdownTimer from "./CountdownTimer"
-import { Link as ScrollLink } from 'react-scroll';
-import { useTranslation } from 'react-i18next';
+import { heroPlateauMR } from "../../assets";
 
 const BlockHeroHomeFinal: React.FC = () => {
-    const { t, i18n } = useTranslation();
-
     const eventStartTime = new Date("2024-11-16T10:00:00-04:00");
-
-    const buttonHoverTextColor = useColorModeValue("black", "#FF0000");
-    const buttonHoverBorderColor = useColorModeValue("black", "#FF0000");
-
-    const [isHoveredButton, setIsHoveredButton] = useState(false);
-
-    const handleHoverButton = () => {
-        setIsHoveredButton(true);
-    };
-
-    const handleUnHoverButton = () => {
-        setIsHoveredButton(false);
-    };
 
     return (
         <Box
@@ -56,7 +39,10 @@ const BlockHeroHomeFinal: React.FC = () => {
                 className='heroImageContainer'
                 width={{ base: "130%", lg: "110%" }}
             >
-                <Image src={heroPlateauMR} />
+                <Image
+                    src={heroPlateauMR}
+                    alt="TEDxPlateauMontRoyal 2024 event in Montreal - Inspiring Ideas"
+                />
             </Flex>
         </Box>
     );
