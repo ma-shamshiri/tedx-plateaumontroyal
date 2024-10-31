@@ -45,11 +45,11 @@ const SaminMajidi: React.FC = () => {
           quoteText={t("saminQuote")}
         /> */}
         <BlockTeamProfiles
-          firstName="Samin"
-          lastName="Majidi"
-          fullName="Samin Majidi"
+          firstName={t("samin")}
+          lastName={t("majidi")}
+          fullName={t("saminMajidi")}
           title="Ph.D. Student in Physics | McGill"
-          role="Organizer"
+          role={t("organizer")}
           imageSrc={samin}
           badgeSrc={saminBadge}
           linkedinHref="https://ca.linkedin.com/in/samin-majidi-05b77a250"
