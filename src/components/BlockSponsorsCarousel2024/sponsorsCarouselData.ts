@@ -1,9 +1,10 @@
 import {
-    arash,
+    shakour,
     dental,
     bazaar,
     hafteh,
-    medad
+    medad,
+    radaii
 } from "../../assets";
 
 
@@ -11,7 +12,7 @@ export const sponsorData = [
     /* ======================== arash ======================== */
     {
         name: `arash`,
-        imageUrl: `${arash}`,
+        imageUrl: `${shakour}`,
         sourceUrl: `https://www.londonogroup.com/broker/viewBroker.php?broker=114792`,
     },
 
@@ -43,12 +44,12 @@ export const sponsorData = [
         sourceUrl: `https://www.medad.ca/`,
     },
 
-    /* ======================== poulet ======================== */
-    // {
-    //     name: `poulet`,
-    //     imageUrl: `${poulet}`,
-    //     sourceUrl: `https://poulet-rouge.ca/`,
-    // },
+    /* ======================== radii ======================== */
+    {
+        name: `poulet`,
+        imageUrl: `${radaii}`,
+        sourceUrl: `https://linktr.ee/AmirRadaii`,
+    },
 
 
 

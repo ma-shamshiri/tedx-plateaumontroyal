@@ -67,8 +67,8 @@ const BlockSponsorsCarousel2024: React.FC = () => {
     const settings = {
         dots: false,
         infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 5,
+        slidesToShow: 3,
+        slidesToScroll: 3,
         // centerMode: true,
         autoplay: true,
         // cssEase: "linear",
