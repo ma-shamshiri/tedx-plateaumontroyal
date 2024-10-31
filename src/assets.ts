@@ -270,8 +270,12 @@ import henry from "./assets/images/henry.png"
 import sami from "./assets/images/sami.jpg"
 import shaun from "./assets/images/shaun.png"
 import sylvain from "./assets/images/sylvain.jpg"
+import radaii from "./assets/images/radaii.jpg"
+import shakour from "./assets/images/shakour.jpg"
 
 export {
+    radaii,
+    shakour,
     brian,
     buddle,
     charles,
