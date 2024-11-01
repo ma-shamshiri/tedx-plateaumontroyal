@@ -59,7 +59,7 @@ export const items: Item[] = [
         firstName: "mohammaderfan",
         lastName: "mohit",
         fullName: "mohammadErfanMohit",
-        role: "operation"
+        role: "Event Manager"
     },
 
     // ======================== Reihaneh Ghoroghchian ========================
@@ -214,7 +214,7 @@ export const items: Item[] = [
         firstName: "mohammadAmin",
         lastName: "shamshiri",
         fullName: "mohammadAminShamshiri",
-        role: "webmaster"
+        role: "Tech Specialist"
     },
     {
         id: 18,
