@@ -60,162 +60,7 @@ export const slides: Slide[] = [
         firstName: "mohammaderfan",
         lastName: "mohit",
         fullName: "mohammadErfanMohit",
-        role: "operation"
-    },
-
-    // ======================== Reihaneh Ghoroghchian ========================
-    {
-        id: 4,
-        imageSrc: reihanehBGNew,
-        profileSrc: "/reihaneh-ghoroghchian",
-        firstName: "reihaneh",
-        lastName: "ghoroghchian",
-        fullName: "reihanehGhoroghchian",
-        role: "creativity"
-    },
-
-    // ======================== Mina Taraghi ========================
-    {
-        id: 5,
-        imageSrc: minaBGNew,
-        profileSrc: "/mina-taraghi",
-        firstName: "mina",
-        lastName: "taraghi",
-        fullName: "minaTaraghi",
-        role: "marketing"
-    },
-
-    // ======================== Motahareh Pourrahimi ========================
-    {
-        id: 6,
-        imageSrc: motaharehBG,
-        profileSrc: "/motahareh-pourrahimi",
-        firstName: "motahareh",
-        lastName: "pourrahimi",
-        fullName: "motaharehPourrahimi",
-        role: "curation"
-    },
-
-    // ======================== Pegah Einakchi ========================
-    {
-        id: 7,
-        imageSrc: pegahBG,
-        profileSrc: "/pegah-einakchi",
-        firstName: "pegah",
-        lastName: "einakchi",
-        fullName: "pegahEinakchi",
-        role: "operation"
-    },
-
-    // ======================== Melika Seyedi ========================
-    {
-        id: 8,
-        imageSrc: melikaBG,
-        profileSrc: "/melika-seyedi",
-        firstName: "melika",
-        lastName: "seyedi",
-        fullName: "melikaSeyedi",
-        role: "sponsorship"
-    },
-
-    // ======================== Group Image ========================
-    {
-        id: 100,
-        imageSrc: teamGroupPic3,
-        profileSrc: "/",
-        firstName: "",
-        lastName: "",
-        fullName: "",
-        role: ""
-    },
-
-    // ======================== Ehsan Mortazavi ========================
-    {
-        id: 9,
-        imageSrc: ehsanBGNew,
-        profileSrc: "/ehsan-mortazavi",
-        firstName: "ehsan",
-        lastName: "mortazavi",
-        fullName: "ehsanMortazavi",
-        role: "marketing"
-    },
-
-
-    // ======================== Hamidreza Ermagan ========================
-    {
-        id: 10,
-        imageSrc: hamidrezaBG,
-        profileSrc: "/hamidreza-ermagan",
-        firstName: "hamidreza",
-        lastName: "ermagan",
-        fullName: "hamidrezaErmagan",
-        role: "curation"
-    },
-
-    // ======================== Baharan Nouriinanloo ========================
-    {
-        id: 11,
-        imageSrc: baharanBG,
-        profileSrc: "/baharan-nouriinanloo",
-        firstName: "baharan",
-        lastName: "nouriinanloo",
-        fullName: "baharanNouriinanloo",
-        role: "marketing"
-    },
-
-    // ======================== Royan Jafari ========================
-    {
-        id: 12,
-        imageSrc: rooyanBGNew,
-        profileSrc: "/royan-jafari",
-        firstName: "royan",
-        lastName: "jafari",
-        fullName: "royanJafari",
-        role: "sponsorship"
-    },
-
-    // ======================== Mohammad Hassan Azad Jafari ========================
-    {
-        id: 13,
-        imageSrc: mohammadHasanBGNew,
-        profileSrc: "/mohammadhasan-azad",
-        firstName: "mohammadHasan",
-        lastName: "azad",
-        fullName: "mohammadHasanAzad",
-        role: "marketing"
-    },
-
-    // ======================== Iran Zare ========================
-    {
-        id: 14,
-        imageSrc: iranBGNew,
-        profileSrc: "/iran-zare",
-        firstName: "iran",
-        lastName: "zare",
-        fullName: "iranZare",
-        role: "marketing"
-    },
-
-    // ======================== Amin Ghasemi ========================
-    {
-        id: 15,
-        imageSrc: aminBGNew,
-        profileSrc: "/amin-ghasemi",
-        firstName: "amin",
-        lastName: "ghasemi",
-        fullName: "aminGhasemi",
-        role: "creativity"
-    },
-
-    // ======================== Zahra Attaran ========================
-    {
-        id: 16,
-        imageSrc: zahraBGNew,
-        profileSrc: "/zahra-attaran",
-        firstName: "zahra",
-        lastName: "attaran",
-        fullName: "zahraAttaran",
-        role: "operation"
+        role: "Event Manager"
     },
 
     // ======================== Mohammad Amin Shamshiri ========================
@@ -226,6 +71,141 @@ export const slides: Slide[] = [
         firstName: "mohammadAmin",
         lastName: "shamshiri",
         fullName: "mohammadAminShamshiri",
-        role: "webmaster"
+        role: "Tech Specialist"
     },
+
+    // ======================== Pegah Einakchi ========================
+    {
+        id: 5,
+        imageSrc: pegahBG,
+        profileSrc: "/pegah-einakchi",
+        firstName: "pegah",
+        lastName: "einakchi",
+        fullName: "pegahEinakchi",
+        role: "Head of Operation"
+    },
+
+    // ======================== Reihaneh Ghoroghchian ========================
+    {
+        id: 6,
+        imageSrc: reihanehBGNew,
+        profileSrc: "/reihaneh-ghoroghchian",
+        firstName: "reihaneh",
+        lastName: "ghoroghchian",
+        fullName: "reihanehGhoroghchian",
+        role: "Head of Creativity"
+    },
+
+    // ======================== Motahareh Pourrahimi ========================
+    {
+        id: 7,
+        imageSrc: motaharehBG,
+        profileSrc: "/motahareh-pourrahimi",
+        firstName: "motahareh",
+        lastName: "pourrahimi",
+        fullName: "motaharehPourrahimi",
+        role: "Head of Curation"
+    },
+
+    // ======================== Melika Seyedi ========================
+    {
+        id: 8,
+        imageSrc: melikaBG,
+        profileSrc: "/melika-seyedi",
+        firstName: "melika",
+        lastName: "seyedi",
+        fullName: "melikaSeyedi",
+        role: "Head of Sponsorship"
+    },
+
+
+
+    // ======================== Baharan Nouriinanloo ========================
+    {
+        id: 10,
+        imageSrc: baharanBG,
+        profileSrc: "/baharan-nouriinanloo",
+        firstName: "baharan",
+        lastName: "nouriinanloo",
+        fullName: "baharanNouriinanloo",
+        role: "Head of Content Creation"
+    },
+
+    // ======================== Mohammad Hassan Azad ========================
+    {
+        id: 14,
+        imageSrc: mohammadHasanBGNew,
+        profileSrc: "/mohammadhasan-azad",
+        firstName: "mohammadHasan",
+        lastName: "azad",
+        fullName: "mohammadHasanAzad",
+        role: "Operation"
+    },
+
+    // ======================== Mina Taraghi ========================
+    {
+        id: 9,
+        imageSrc: minaBGNew,
+        profileSrc: "/mina-taraghi",
+        firstName: "mina",
+        lastName: "taraghi",
+        fullName: "minaTaraghi",
+        role: "curation"
+    },
+
+    // ======================== Hamidreza Ermagan ========================
+    {
+        id: 12,
+        imageSrc: hamidrezaBG,
+        profileSrc: "/hamidreza-ermagan",
+        firstName: "hamidreza",
+        lastName: "ermagan",
+        fullName: "hamidrezaErmagan",
+        role: "curation"
+    },
+
+    // ======================== Royan Jafari ========================
+    {
+        id: 13,
+        imageSrc: rooyanBGNew,
+        profileSrc: "/royan-jafari",
+        firstName: "royan",
+        lastName: "jafari",
+        fullName: "royanJafari",
+        role: "sponsorship"
+    },
+
+    // ======================== Ehsan Mortazavi ========================
+    {
+        id: 11,
+        imageSrc: ehsanBGNew,
+        profileSrc: "/ehsan-mortazavi",
+        firstName: "ehsan",
+        lastName: "mortazavi",
+        fullName: "ehsanMortazavi",
+        role: "Content Creation"
+    },
+
+    // ======================== Iran Zare ========================
+    {
+        id: 15,
+        imageSrc: iranBGNew,
+        profileSrc: "/iran-zare",
+        firstName: "iran",
+        lastName: "zare",
+        fullName: "iranZare",
+        role: "Content Creation"
+    },
+
+    // ======================== Amin Ghasemi ========================
+    {
+        id: 16,
+        imageSrc: aminBGNew,
+        profileSrc: "/amin-ghasemi",
+        firstName: "amin",
+        lastName: "ghasemi",
+        fullName: "aminGhasemi",
+        role: "creativity"
+    },
+
 ];

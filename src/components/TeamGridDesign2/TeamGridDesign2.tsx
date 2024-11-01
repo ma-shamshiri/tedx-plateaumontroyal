@@ -27,7 +27,7 @@ const TeamGridDesign2: React.FC = () => {
         color: lightColor,
     };
 
-    const [hoveredIndex, setHoveredIndex] = useState<number | null>(8);
+    const [hoveredIndex, setHoveredIndex] = useState<number | null>(0);
     const [isHoveredButton, setIsHoveredButton] = useState(false);
 
     const handleMouseEnter = (index: number) => {
