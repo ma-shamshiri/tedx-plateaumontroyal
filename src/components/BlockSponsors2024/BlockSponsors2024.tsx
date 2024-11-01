@@ -2,12 +2,22 @@ import React, { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import {
   Box,
+  SimpleGrid,
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
 import { motion } from 'framer-motion';
-import { BlockSponsorsCarousel } from "../BlockSponsorsCarousel";
-import BlockSponsorsCarousel2024 from "../BlockSponsorsCarousel2024";
+import SponsorCard from "./SponsorCard";
+// import { BlockSponsorsCarousel } from "../BlockSponsorsCarousel";
+// import BlockSponsorsCarousel2024 from "../BlockSponsorsCarousel2024";
+import {
+  shakour,
+  dental,
+  bazaar,
+  hafteh,
+  medad,
+  radaii
+} from "../../assets";
 
 const variants: { [key: string]: any } = {
   initial: {
@@ -98,11 +108,74 @@ const BlockSponsors2024: React.FC = () => {
         </Box>
       </motion.div>
       <Box
-        className="block__header container"
+        className="sponsor_grid_container"
+        paddingTop={{ base: "2rem", lg: "5rem" }}
         textAlign="center"
         margin="0 auto"
+        maxWidth={"1100px"}
       >
-        <BlockSponsorsCarousel2024 />
+        {/* <BlockSponsorsCarousel2024 /> */}
+
+        <SimpleGrid
+          columns={{ base: 2, md: 2, lg: 3, xl: 3 }}
+          // spacingX={{ base: "1rem", md: "0rem", lg: "1rem"}}
+          spacingY={{ base: "4rem", md: "5rem", lg: "5rem" }}
+        >
+          {/* ======================== ARASH ======================== */}
+          <SponsorCard
+            isHovered={isHoveredArray[2]}
+            handleHover={() => handleHover(2)}
+            handleUnhover={() => handleUnhover(2)}
+            imageUrl={shakour}
+            sourceUrl={`https://www.londonogroup.com/broker/viewBroker.php?broker=114792`}
+          />
+
+          {/* ======================== BAZAAR ======================== */}
+          <SponsorCard
+            isHovered={isHoveredArray[3]}
+            handleHover={() => handleHover(3)}
+            handleUnhover={() => handleUnhover(3)}
+            imageUrl={bazaar}
+            sourceUrl={`https://www.bazaarfood.ca/`}
+          />
+
+          {/* ======================== DENTAL CLIKIQUE ======================== */}
+          <SponsorCard
+            isHovered={isHoveredArray[4]}
+            handleHover={() => handleHover(4)}
+            handleUnhover={() => handleUnhover(4)}
+            imageUrl={dental}
+            sourceUrl={`https://clinique-arya.ca/`}
+          />
+
+          {/* ======================== MEDAD ======================== */}
+          <SponsorCard
+            isHovered={isHoveredArray[5]}
+            handleHover={() => handleHover(5)}
+            handleUnhover={() => handleUnhover(5)}
+            imageUrl={medad}
+            sourceUrl={`https://www.medad.ca/`}
+          />
+
+          {/* ======================== HAFTEH ======================== */}
+          <SponsorCard
+            isHovered={isHoveredArray[5]}
+            handleHover={() => handleHover(5)}
+            handleUnhover={() => handleUnhover(5)}
+            imageUrl={hafteh}
+            sourceUrl={`https://hafteh.ca/`}
+          />
+
+          {/* ======================== RADAII ======================== */}
+          <SponsorCard
+            isHovered={isHoveredArray[1]}
+            handleHover={() => handleHover(1)}
+            handleUnhover={() => handleUnhover(1)}
+            imageUrl={radaii}
+            sourceUrl={`https://linktr.ee/AmirRadaii`}
+          />
+        </SimpleGrid>
+
       </Box>
 
     </Box>
