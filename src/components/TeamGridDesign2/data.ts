@@ -60,7 +60,7 @@ export const slides: Slide[] = [
         firstName: "mohammaderfan",
         lastName: "mohit",
         fullName: "mohammadErfanMohit",
-        role: "Event Manager"
+        role: "Event Director"
     },
 
     // ======================== Mohammad Amin Shamshiri ========================
