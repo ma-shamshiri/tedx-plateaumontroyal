@@ -243,6 +243,22 @@ const TeamGridDesign2: React.FC = () => {
                                         >
                                             {slide.fullName}
                                         </Text>
+
+                                        <Text
+                                            color="white"
+                                            fontSize="2.3rem"
+                                            // fontWeight="bold"
+                                            fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Acme', sans-serif"}
+                                            dir={i18n.language === "fa" ? "rtl" : "ltr"}
+                                            opacity={hoveredIndex === index ? 1 : 0}
+                                            transition={`opacity ${hoveredIndex === index ? '1s' : '0.2s'} ease-in-out`}
+                                            pointerEvents="none"
+                                            maxWidth="25rem"
+                                            align="center"
+                                            sx={sx}
+                                        >
+                                            {slide.role}
+                                        </Text>
                                         {/* </Link> */}
                                     </VStack>
                                 </Box>
