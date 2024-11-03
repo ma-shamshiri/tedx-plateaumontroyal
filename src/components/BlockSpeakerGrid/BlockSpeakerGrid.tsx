@@ -21,7 +21,7 @@ const variants: { [key: string]: any } = {
 };
 
 export const BlockSpeakerGrid: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const ref = useRef<HTMLDivElement>(null);
 
@@ -74,6 +74,8 @@ export const BlockSpeakerGrid: React.FC = () => {
           textAlign="center"
           // maxWidth="100rem"
           margin="0 auto"
+          fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+          dir={i18n.language === "fa" ? "rtl" : "ltr"}
         >
           <Text
             className="h2"

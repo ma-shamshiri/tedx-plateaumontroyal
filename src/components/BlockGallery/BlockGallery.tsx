@@ -16,7 +16,7 @@ import Lightbox from "yet-another-react-lightbox";
 import ImageGrid from "./ImageGrid";
 
 export const BlockGallery: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const [index, setIndex] = useState<number>(-1);
 
@@ -39,6 +39,8 @@ export const BlockGallery: React.FC = () => {
           textAlign="center"
           // maxWidth="100rem"
           marginBottom="10rem"
+          fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+          dir={i18n.language === "fa" ? "rtl" : "ltr"}
         >
           <Text
             className="h2"

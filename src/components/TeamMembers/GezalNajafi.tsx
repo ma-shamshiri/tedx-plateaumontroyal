@@ -43,11 +43,11 @@ const GezalNajafi: React.FC = () => {
           quoteText={t("gezalQuote")}
         /> */}
         <BlockTeamProfiles
-          firstName="Gezal"
-          lastName="Najafi"
-          fullName="Gezal Najafi"
+          firstName={t("gezal")}
+          lastName={t("najafi")}
+          fullName={t("gezalNajafi")}
           title="M.Sc. Student in Clinical Nutrition | McGill"
-          role="Operation"
+          role={t("operation")}
           imageSrc={gezal}
           badgeSrc={gezalBadge}
           linkedinHref="https://ca.linkedin.com/"

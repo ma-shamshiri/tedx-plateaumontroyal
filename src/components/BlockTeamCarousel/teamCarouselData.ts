@@ -23,11 +23,11 @@ import {
 export const teamData = [
     /* ======================== Samin Majidi ======================== */
     {
-        name: `Samin Majidi`,
+        name: `saminMajidi`,
         title: `Ph.D. Student in Physics | McGill`,
         avatarUrl: `${saminBG}`,
         profileUrl: `/tedx-2023/samin-majidi`,
-        badgeText: `Organizer`,
+        badgeText: `organizer`,
         badgeTextColor: { light: "black", dark: "black" },
         badgeBackgroundColor: { light: "gold", dark: "gold" },
         badgeBorderColor: { light: "#b38300", dark: "#b38300" },
@@ -37,11 +37,11 @@ export const teamData = [
 
     /* ======================== Fatemeh Tavanaei ======================== */
     {
-        name: `Fatemeh Tavanaei`,
+        name: `fatemehTavanaei`,
         title: `Ph.D. Student in Mining Engineering | McGill`,
         avatarUrl: `${fatemehBG}`,
         profileUrl: `/tedx-2023/fatemeh-tavanaei`,
-        badgeText: `Co-organizer`,
+        badgeText: `coOrganizer`,
         badgeTextColor: { light: "white", dark: "white" },
         badgeBackgroundColor: { light: "tomato", dark: "tomato" },
         badgeBorderColor: { light: "red", dark: "red" },
@@ -51,11 +51,11 @@ export const teamData = [
 
     /* ======================== Reihaneh Ghoroghchian ======================== */
     {
-        name: `Reihaneh Ghoroghchian`,
+        name: `reihanehGhoroghchian`,
         title: `M.Sc. Student in Electrical Engineering | McGill`,
         avatarUrl: `${unknownGirlProfile}`,
         profileUrl: `/tedx-2023/reihaneh-ghoroghchian`,
-        badgeText: `Creativity`,
+        badgeText: `creativity`,
         badgeTextColor: { light: "white", dark: "white" },
         badgeBackgroundColor: { light: "#f558bd", dark: "#f558bd" },
         badgeBorderColor: { light: "#d10287", dark: "#d10287" },
@@ -65,11 +65,11 @@ export const teamData = [
 
     /* ======================== Fathima Nihatha Lathiff ======================== */
     {
-        name: `Fathima Nihatha Lathiff`,
+        name: `fathimaNihathaLathiff`,
         title: `M.Sc. Student in Computer Science | Concordia`,
         avatarUrl: `${fathimaBG}`,
         profileUrl: `/tedx-2023/fathima-nihatha-lathiff`,
-        badgeText: `Operation`,
+        badgeText: `operation`,
         badgeTextColor: { light: "white", dark: "white" },
         badgeBackgroundColor: { light: "#02bdaf", dark: "#02bdaf" },
         badgeBorderColor: { light: "#01877d", dark: "#01877d" },
@@ -79,11 +79,11 @@ export const teamData = [
 
     /* ======================== Hamidreza Ermagan ======================== */
     {
-        name: `Hamidreza Ermagan`,
+        name: `hamidrezaErmagan`,
         title: `Ph.D. Student in Mining Engineering | McGill`,
         avatarUrl: `${hamidrezaBG}`,
         profileUrl: `/tedx-2023/hamidreza-ermagan`,
-        badgeText: `Curation`,
+        badgeText: `curation`,
         badgeTextColor: { light: "white", dark: "white" },
         badgeBackgroundColor: { light: "dodgerblue", dark: "dodgerblue" },
         badgeBorderColor: { light: "blue", dark: "blue" },
@@ -93,11 +93,11 @@ export const teamData = [
 
     /* ======================== Baharan Nouriinanloo ======================== */
     {
-        name: `Baharan Nouriinanloo`,
+        name: `baharanNouriinanloo`,
         title: `M.Sc. Student in Computer Engineering | Polytechnique Montreal`,
         avatarUrl: `${baharanBG}`,
         profileUrl: `/tedx-2023/baharan-nouriinanloo/`,
-        badgeText: `Marketing`,
+        badgeText: `marketing`,
         badgeTextColor: { light: "white", dark: "white" },
         badgeBackgroundColor: { light: "#904FF7", dark: "#904FF7" },
         badgeBorderColor: { light: "#4d02c4", dark: "#4d02c4" },
@@ -107,11 +107,11 @@ export const teamData = [
 
     /* ======================== Melika Seyedi ======================== */
     {
-        name: `Melika Seyedi`,
+        name: `melikaSeyedi`,
         title: `Ph.D. Student in Computer Engineering | Concordia`,
         avatarUrl: `${melikaBG}`,
         profileUrl: `/tedx-2023/melika-seyedi/`,
-        badgeText: `Sponsorship`,
+        badgeText: `sponsorship`,
         badgeTextColor: { light: "black", dark: "black" },
         badgeBackgroundColor: { light: "#05ff26", dark: "#05ff26" },
         badgeBorderColor: { light: "#00b318", dark: "#00b318" },
@@ -121,11 +121,11 @@ export const teamData = [
 
     /* ======================== Mohammad Zaid ======================== */
     {
-        name: `Mohammad Zaid`,
+        name: `mohammadZaid`,
         title: `Graduate Research Assistant | McGill`,
         avatarUrl: `${mohammadBG}`,
         profileUrl: `/tedx-2023/mohammad-zaid`,
-        badgeText: `Content Creator`,
+        badgeText: `contentCreation`,
         badgeTextColor: { light: "black", dark: "black" },
         badgeBackgroundColor: { light: "#02fafa", dark: "#02fafa" },
         badgeBorderColor: { light: "#02b3b3", dark: "#02b3b3" },
@@ -135,11 +135,11 @@ export const teamData = [
 
     /* ======================== Mina Taraghi ======================== */
     {
-        name: `Mina Taraghi`,
+        name: `minaTaraghi`,
         title: `Ph.D. Student in Computer Engineering | Polytechnique Montreal`,
         avatarUrl: `${minaBG}`,
         profileUrl: `/tedx-2023/mina-taraghi`,
-        badgeText: `Marketing`,
+        badgeText: `marketing`,
         badgeTextColor: { light: "white", dark: "white" },
         badgeBackgroundColor: { light: "#f04f4f", dark: "#f04f4f" },
         badgeBorderColor: { light: "#de0000", dark: "#de0000" },
@@ -149,11 +149,11 @@ export const teamData = [
 
     /* ======================== Motahareh Pourrahimi ======================== */
     {
-        name: `Motahareh Pourrahimi`,
+        name: `motaharehPourrahimi`,
         title: `Ph.D. Student in Neuroscience | McGill`,
         avatarUrl: `${motaharehBG}`,
         profileUrl: `/tedx-2023/motahareh-pourrahimi`,
-        badgeText: `Curation`,
+        badgeText: `curation`,
         badgeTextColor: { light: "white", dark: "white" },
         badgeBackgroundColor: { light: "dodgerblue", dark: "dodgerblue" },
         badgeBorderColor: { light: "blue", dark: "blue" },
@@ -163,11 +163,11 @@ export const teamData = [
 
     /* ======================== Aryana Haghjoo ======================== */
     {
-        name: `Aryana Haghjoo`,
+        name: `aryanaHaghjoo`,
         title: `M.Sc. Student in Physics | McGill`,
         avatarUrl: `${aryanaBG}`,
         profileUrl: `/tedx-2023/aryana-haghjoo`,
-        badgeText: `Curation`,
+        badgeText: `curation`,
         badgeTextColor: { light: "white", dark: "white" },
         badgeBackgroundColor: { light: "#f520c0", dark: "#f520c0" },
         badgeBorderColor: { light: "#c40093", dark: "#c40093" },
@@ -177,11 +177,11 @@ export const teamData = [
 
     /* ======================== Pegah Einakchi ======================== */
     {
-        name: `Pegah Einakchi`,
+        name: `pegahEinakchi`,
         title: `Vocal Coach | Private`,
         avatarUrl: `${pegahBG}`,
         profileUrl: `/tedx-2023/pegah-einakchi`,
-        badgeText: `Creativity`,
+        badgeText: `creativity`,
         badgeTextColor: { light: "black", dark: "black" },
         badgeBackgroundColor: { light: "#14faa9", dark: "#14faa9" },
         badgeBorderColor: { light: "#24c98f", dark: "#24c98f" },
@@ -191,11 +191,11 @@ export const teamData = [
 
     /* ======================== Royan Jafari ======================== */
     {
-        name: `Royan Jafari`,
+        name: `royanJafari`,
         title: `M.Eng. Biological & Biomedical Engineering | McGill`,
         avatarUrl: `${royanBG}`,
         profileUrl: `/tedx-2023/royan-jafari`,
-        badgeText: `Content Creator`,
+        badgeText: `contentCreation`,
         badgeTextColor: { light: "white", dark: "white" },
         badgeBackgroundColor: { light: "#ff9500", dark: "#ff9500" },
         badgeBorderColor: { light: "#db6002", dark: "#db6002" },
@@ -205,11 +205,11 @@ export const teamData = [
 
     /* ======================== Zahra Ahmadi ======================== */
     {
-        name: `Zahra Ahmadi`,
+        name: `zahraAhmadi`,
         title: `Multimedia Editing Coordinator | Genetec Inc.`,
         avatarUrl: `${zahraBG}`,
         profileUrl: `/tedx-2023/zahra-ahmadi`,
-        badgeText: `Content Creator`,
+        badgeText: `contentCreation`,
         badgeTextColor: { light: "white", dark: "white" },
         badgeBackgroundColor: { light: "#cf6bfa", dark: "#cf6bfa" },
         badgeBorderColor: { light: "#9502d4", dark: "#9502d4" },
@@ -219,11 +219,11 @@ export const teamData = [
 
     /* ======================== Edwin Meriaux ======================== */
     {
-        name: `Edwin Meriaux`,
+        name: `edwinMeriaux`,
         title: `M.Sc. Student in Electrical Engineering | McGill`,
         avatarUrl: `${edwinBG}`,
         profileUrl: `/tedx-2023/edwin-meriaux`,
-        badgeText: `Curation`,
+        badgeText: `curation`,
         badgeTextColor: { light: "black", dark: "black" },
         badgeBackgroundColor: { light: "#d6ed3b", dark: "#d6ed3b" },
         badgeBorderColor: { light: "#a8bf08", dark: "#a8bf08" },
@@ -233,11 +233,11 @@ export const teamData = [
 
     /* ======================== Gezal Najafi ======================== */
     {
-        name: `Gezal Najafi`,
+        name: `gezalNajafi`,
         title: `M.Sc. Student in Clinical Nutriotion | McGill`,
         avatarUrl: `${gezalBG}`,
         profileUrl: `/tedx-2023/gezal-najafi`,
-        badgeText: `Operation`,
+        badgeText: `operation`,
         badgeTextColor: { light: "white", dark: "white" },
         badgeBackgroundColor: { light: "#e80589", dark: "#e80589" },
         badgeBorderColor: { light: "#b30068", dark: "#b30068" },
@@ -247,11 +247,11 @@ export const teamData = [
 
     /* ======================== Mohammad Amin Shamshiri ======================== */
     {
-        name: `Mohammad Amin Shamshiri`,
+        name: `mohammadAminShamshiri`,
         title: `Software Engineer | EnerZam Inc.`,
         avatarUrl: `${aminBG}`,
         profileUrl: `/tedx-2023/amin-shamshiri`,
-        badgeText: `Webmaster`,
+        badgeText: `webmaster`,
         badgeTextColor: { light: "black", dark: "black" },
         badgeBackgroundColor: { light: "#16F8B6", dark: "#16F8B6" },
         badgeBorderColor: { light: "#02c28a", dark: "#02c28a" },
@@ -261,11 +261,11 @@ export const teamData = [
 
     /* ======================== Mohammaderfan Mohit ======================== */
     {
-        name: `Mohammaderfan Mohit`,
+        name: `mohammadErfanMohit`,
         title: `Ph.D. Student in Mining Engineering | McGill`,
         avatarUrl: `${erfanBG}`,
         profileUrl: `/tedx-2023/mohammaderfan-mohit`,
-        badgeText: `Operation`,
+        badgeText: `operation`,
         badgeTextColor: { light: "white", dark: "white" },
         badgeBackgroundColor: { light: "#cd04db", dark: "#cd04db" },
         badgeBorderColor: { light: "#7d0296", dark: "#9902a3" },

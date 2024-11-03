@@ -43,11 +43,11 @@ const MohammaderfanMohit: React.FC = () => {
           quoteText={t("erfanQuote")}
         /> */}
         <BlockTeamProfiles
-          firstName="Mohammaderfan"
-          lastName="Mohit"
-          fullName="Mohammaderfan Mohit"
+          firstName={t("mohammadErfan")}
+          lastName={t("mohit")}
+          fullName={t("mohammadErfanMohit")}
           title="Ph.D. Student in Mining Engineering | McGill"
-          role="Operation"
+          role={t("operation")}
           imageSrc={erfan}
           badgeSrc={erfanBadge}
           linkedinHref="https://ca.linkedin.com/"

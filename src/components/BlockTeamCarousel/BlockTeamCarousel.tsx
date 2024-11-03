@@ -134,7 +134,7 @@ export const BlockTeamCarousel: React.FC = () => {
                         width="100%"
                     >
                         <CarouselCard
-                            name={d.name}
+                            name={t(d.name)}
                             title={d.title}
                             avatarUrl={d.avatarUrl}
                             profileUrl={d.profileUrl}

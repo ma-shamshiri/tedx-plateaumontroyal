@@ -89,7 +89,7 @@ const Feature: React.FC<FeatureProps> = ({
   image,
   size,
 }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <Box
@@ -121,6 +121,8 @@ const Feature: React.FC<FeatureProps> = ({
         fontWeight="bold"
         lineHeight="1.3"
         margin="1rem 0"
+        fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+        dir={i18n.language === "fa" ? "rtl" : "ltr"}
       >
         {title}
       </Text>
@@ -130,7 +132,9 @@ const Feature: React.FC<FeatureProps> = ({
         marginTop="0"
         marginBottom="1rem"
         color={useColorModeValue("gray.700", "gray.400")}
-      // textAlign={"justify"}
+        textAlign={i18n.language === "fa" ? "justify" : "initial"}
+        fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+        dir={i18n.language === "fa" ? "rtl" : "ltr"}
       >
         {t(description)}
       </Text>
@@ -196,7 +200,7 @@ export const BlockFeatures: React.FC = () => {
     };
   }, []);
 
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <Box
@@ -231,6 +235,8 @@ export const BlockFeatures: React.FC = () => {
             fontSize={{ base: "2.8rem", lg: "4rem" }}
             fontWeight="bold"
             lineHeight="1.1"
+            fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+            dir={i18n.language === "fa" ? "rtl" : "ltr"}
           >
             {t("featureTitle")}
           </Text>
@@ -238,8 +244,9 @@ export const BlockFeatures: React.FC = () => {
             className="p"
             color={useColorModeValue("gray.600", "silver")}
             fontSize={{ base: "1.5rem", lg: "2.1rem" }}
-            // fontWeight="bold"
             marginBottom={{ base: "3rem", lg: "6rem" }}
+            fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+            dir={i18n.language === "fa" ? "rtl" : "ltr"}
           >
             {t("featureSubTitle")}
           </Text>
@@ -249,7 +256,6 @@ export const BlockFeatures: React.FC = () => {
             key={index}
             className={`grid grid--1x2 feature feature-${index % 2 === 0 ? "even" : "odd"
               }`}
-
           >
             <Grid
               display="grid"
@@ -267,6 +273,7 @@ export const BlockFeatures: React.FC = () => {
                     className="aos-animate"
                     data-aos="fade-right"
                     data-aos-duration="500"
+                    fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
                   >
                     <Feature {...feature} size={feature.size} />
                   </Box>
@@ -294,6 +301,7 @@ export const BlockFeatures: React.FC = () => {
                     className="aos-animate"
                     data-aos="fade-left"
                     data-aos-duration="500"
+                    fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
                   >
                     <Feature {...feature} size={feature.size} />
                   </Box>

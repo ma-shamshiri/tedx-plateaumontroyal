@@ -37,7 +37,7 @@ export const BlockSpeakerProfiles: React.FC<BlockSpeakerProfilesProps> = ({
   videoDescription = "",
   slides
 }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const [isHoveredButton, setIsHoveredButton] = useState(false);
 
@@ -158,6 +158,8 @@ export const BlockSpeakerProfiles: React.FC<BlockSpeakerProfilesProps> = ({
               fontSize={{ base: "1.5rem", lg: "1.8rem" }}
               lineHeight={{ base: "", lg: "32px" }}
               color={useColorModeValue("gray.200", "gray.200")}
+              fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+              dir={i18n.language === "fa" ? "rtl" : "ltr"}
             >
               {videoDescription}
             </Text>
@@ -181,6 +183,8 @@ export const BlockSpeakerProfiles: React.FC<BlockSpeakerProfilesProps> = ({
             borderRadius="7px"
             cursor="pointer"
             fontSize={{ base: "1.8rem", lg: "2rem" }}
+            fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+            dir={i18n.language === "fa" ? "rtl" : "ltr"}
             padding="1.5rem"
             textAlign="center"
             whiteSpace="nowrap"

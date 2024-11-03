@@ -42,7 +42,7 @@ const CarouselCard: React.FC<CarouselCardProps> = ({
     starColor = { light: 'white', dark: 'white' },
     testimonial,
 }) => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     const { colorMode } = useColorMode();
 
@@ -101,6 +101,7 @@ const CarouselCard: React.FC<CarouselCardProps> = ({
                     "0 0 20px 5px rgba(0, 0, 0, 0.1)",  // Light mode boxShadow
                     "0 0 20px 5px rgba(0, 0, 0, 0.2)"  // Dark mode boxShadow
                 )}
+                fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
             >
                 <VStack spacing={10} align="right">
                     {isLargeScreen ? (
@@ -125,6 +126,7 @@ const CarouselCard: React.FC<CarouselCardProps> = ({
                                     fontWeight="bold"
                                     color={useColorModeValue("gray.900", "gray.50")}
                                     textAlign="center"
+                                    dir={i18n.language === "fa" ? "rtl" : "ltr"}
                                 >
                                     {name}
                                 </Text>
@@ -135,7 +137,7 @@ const CarouselCard: React.FC<CarouselCardProps> = ({
                                         color={useColorModeValue(starColor.light, starColor.dark)}
                                     />
                                     <Badges
-                                        text={badgeText}
+                                        text={t(badgeText)}
                                         textColor={{ light: badgeTextColor.light, dark: badgeTextColor.dark }}
                                         backgroundColor={{ light: badgeBackgroundColor.light, dark: badgeBackgroundColor.dark }}
                                         borderColor={{ light: badgeBorderColor.light, dark: badgeBorderColor.dark }}
@@ -165,6 +167,7 @@ const CarouselCard: React.FC<CarouselCardProps> = ({
                                     fontWeight="bold"
                                     color={useColorModeValue("gray.900", "gray.50")}
                                     textAlign="center"
+                                    dir={i18n.language === "fa" ? "rtl" : "ltr"}
                                 >
                                     {name}
                                 </Text>
@@ -174,7 +177,7 @@ const CarouselCard: React.FC<CarouselCardProps> = ({
                                         color={useColorModeValue(starColor.light, starColor.dark)}
                                     />
                                     <Badges
-                                        text={badgeText}
+                                        text={t(badgeText)}
                                         textColor={{ light: badgeTextColor.light, dark: badgeTextColor.dark }}
                                         backgroundColor={{ light: badgeBackgroundColor.light, dark: badgeBackgroundColor.dark }}
                                         borderColor={{ light: badgeBorderColor.light, dark: badgeBorderColor.dark }}
@@ -203,8 +206,9 @@ const CarouselCard: React.FC<CarouselCardProps> = ({
                         className='testimonial'
                         fontSize={{ base: "1.3rem", lg: "1.6rem" }}
                         color={useColorModeValue("gray.900", "gray.300")}
-                        textAlign="left"
                         paddingX={{ base: "3rem" }}
+                        textAlign={i18n.language === "fa" ? "right" : "left"}
+                        dir={i18n.language === "fa" ? "rtl" : "ltr"}
                     >
                         &ldquo;{testimonial}&rdquo;
                     </Text>
@@ -221,10 +225,12 @@ const CarouselCard: React.FC<CarouselCardProps> = ({
                             as={RouterLink}
                             to={profileUrl}
                             // href={profileUrl}
-                            width={{ base: "50%", lg: "11rem" }}
+                            width={{ base: "50%", lg: "fit-content" }}
                             bg="#7B4CF6"
                             color="#fff"
                             fontSize={{ base: "2rem", lg: "1.5rem" }}
+                            fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+                            dir={i18n.language === "fa" ? "rtl" : "ltr"}
                             padding="0.5rem"
                             border="2px solid #7B4CF6"
                             borderRadius="3px"

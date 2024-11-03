@@ -19,6 +19,7 @@ import { youChooseLogo, tedxWhite, tedxBlack } from "../../assets";
 import { MenuLinks } from "../MenuLinks";
 import { navigationLinks } from "../layout/navigation-links";
 import { KbarInput } from "../KbarInput";
+import LanguageSwitcher2 from "./LanguageSwitcher2";
 // import { HamburgerButton } from "../HamburgerButton";
 // import { MobileMenu } from "../MobileMenu";
 
@@ -67,8 +68,8 @@ export const Navigationbar: React.FC = () => {
         <Link as={RouterLink} to={"/"} cursor="pointer">
           <Flex justifyContent={"center"} alignItems={"center"}>
             <HStack>
-              <Image src={youChooseLogo} boxSize={{ base: "16%", lg: "70px" }} />
-              <Image src={tedxImg} width={{ base: "82%", lg: 300 }} />
+              <Image src={youChooseLogo} alt="You Choose Logo" boxSize={{ base: "16%", lg: "70px" }} />
+              <Image src={tedxImg} alt="TEDx Image" width={{ base: "82%", lg: 300 }} />
             </HStack>
           </Flex>
         </Link>
@@ -112,10 +113,12 @@ export const Navigationbar: React.FC = () => {
                 <HStack>
                   <Image
                     src={youChooseLogo}
+                    alt="You Choose Logo"
                     boxSize={{ base: "35px", md: "45px", lg: "45px", xl: "50px" }}
                   />
                   <Image
                     src={tedxImg}
+                    alt="TEDx Image"
                     width={{ base: 160, md: 220, lg: 170, xl: 280 }}
                   />
                 </HStack>
@@ -129,16 +132,18 @@ export const Navigationbar: React.FC = () => {
             </Box>
           </Flex>
           {isLargeScreen ? (
-            <HStack spacing={5} zIndex={999}>
+            <HStack spacing={8} zIndex={999}>
               <Flex display={{ md: "none", lg: "block" }} paddingRight="1.5rem" >
                 <KbarInput />
               </Flex>
-              <LanguageSwitcher />
+              {/* <LanguageSwitcher /> */}
+              <LanguageSwitcher2 />
               <ColorModeSwitch />
             </HStack>
           ) : (
             <>
-              <LanguageSwitcher />
+              {/* <LanguageSwitcher /> */}
+              <LanguageSwitcher2 />
               <ColorModeSwitch />
             </>
           )}

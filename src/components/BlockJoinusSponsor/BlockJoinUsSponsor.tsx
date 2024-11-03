@@ -13,7 +13,7 @@ import SponsorForm from "./SponsorForm";
 import { sponsorBackgroundImage } from "../../assets";
 
 export const BlockJoinusSponsor: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { colorMode } = useColorMode();
 
   return (
@@ -41,6 +41,8 @@ export const BlockJoinusSponsor: React.FC = () => {
               textAlign={{ base: "center", lg: "center" }}
               maxWidth="1140px"
               margin="0 auto"
+              fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+              dir={i18n.language === "fa" ? "rtl" : "ltr"}
             >
               <Text
                 className="h2 block__heading"
@@ -70,8 +72,8 @@ export const BlockJoinusSponsor: React.FC = () => {
             {/* Left Box */}
             <Box
               flex={{ base: "1", lg: "1.5" }}
-                // backgroundColor={useColorModeValue("black", "gray.800")}
-                backgroundColor={useColorModeValue("white", "gray.900")}
+              // backgroundColor={useColorModeValue("black", "gray.800")}
+              backgroundColor={useColorModeValue("white", "gray.900")}
               display="flex"
               justifyContent="center"
               alignItems="center"
@@ -79,8 +81,8 @@ export const BlockJoinusSponsor: React.FC = () => {
               <Box
                 display="flex"
                 justifyContent="center"
-                // width="100%"
-                // height="100%"
+              // width="100%"
+              // height="100%"
               >
                 <Image
                   src={sponsorBackgroundImage}
@@ -88,7 +90,7 @@ export const BlockJoinusSponsor: React.FC = () => {
                   // height="50%"
                   objectFit="fill"
                   opacity={colorMode === "dark" ? 0.8 : 1}
-                    // style={{ filter: "blur(1px)" }}
+                  // style={{ filter: "blur(1px)" }}
                   borderRadius="6rem"
                   boxShadow="0 0 30px 1px black"
                 />
@@ -102,9 +104,15 @@ export const BlockJoinusSponsor: React.FC = () => {
               backgroundColor={useColorModeValue("white", "gray.900")}
               display="flex"
               justifyContent="center"
-              //   alignItems="center"
+            //   alignItems="center"
             >
-              <Box display="flex" justifyContent="center" padding={50}>
+              <Box
+                display="flex"
+                justifyContent="center"
+                padding={50}
+                fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+                dir={i18n.language === "fa" ? "rtl" : "ltr"}
+              >
                 <SponsorForm />
               </Box>
             </Box>

@@ -25,7 +25,7 @@ const variants: { [key: string]: any } = {
 };
 
 export const BlockSponsors: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const ref = useRef<HTMLDivElement>(null);
 
@@ -69,6 +69,8 @@ export const BlockSponsors: React.FC = () => {
           className="block__header container"
           textAlign="center"
           margin="0 auto"
+          fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+          dir={i18n.language === "fa" ? "rtl" : "ltr"}
         >
           <Text
             className="h2"

@@ -43,11 +43,11 @@ const FathimaNihathaLathiff: React.FC = () => {
           quoteText={t("fathimaQuote")}
         /> */}
         <BlockTeamProfiles
-          firstName="Fathima Nihatha"
-          lastName="Lathiff"
-          fullName="Fathima Nihatha Lathiff"
+          firstName={t("fathimaNihatha")}
+          lastName={t("lathiff")}
+          fullName={t("fathimaNihathaLathiff")}
           title="M.Sc. Student in Computer Science | Concordia"
-          role="Operation"
+          role={t("operation")}
           imageSrc={fathima}
           badgeSrc={fathimaBadge}
           linkedinHref="https://ca.linkedin.com/in/nihatha"

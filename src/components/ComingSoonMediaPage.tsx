@@ -9,7 +9,7 @@ import Typed from "react-typed";
 
 export const ComingSoonMediaPage: React.FC = () => {
 
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     return (
         <Box
@@ -20,6 +20,8 @@ export const ComingSoonMediaPage: React.FC = () => {
             height="70vh"
             padding="10rem 2rem"
             margin="0 auto"
+            fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+            dir={i18n.language === "fa" ? "rtl" : "ltr"}
         >
 
             <Box className="block__header" textAlign="center" width="100%">

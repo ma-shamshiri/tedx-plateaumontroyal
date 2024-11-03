@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Flex, VStack, Text, ResponsiveValue } from "@chakra-ui/react";
 import AnimatingNumber from "./AnimatingNumber";
+import { useTranslation } from "react-i18next";
 
 interface NumberCardProps {
   // ----------- ContainerProperties -----------
@@ -43,6 +44,8 @@ const NumberCard: React.FC<NumberCardProps> = ({
   numberColor = "white",
   hasPlusSign = false,
 }) => {
+  const { i18n } = useTranslation();
+
   return (
     <Flex justifyContent="center" alignItems="center">
       <Box
@@ -95,6 +98,8 @@ const NumberCard: React.FC<NumberCardProps> = ({
               fontWeight={"bold"}
               color={textColor}
               whiteSpace="nowrap"
+              fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+              dir={i18n.language === "fa" ? "rtl" : "ltr"}
             >
               {text}
             </Text>

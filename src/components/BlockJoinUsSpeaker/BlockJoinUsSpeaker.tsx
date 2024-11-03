@@ -5,7 +5,7 @@ import SpeakerForm from "./SpeakerForm";
 import { speakerBackgroundImage } from "../../assets";
 
 export const BlockJoinUsSpeaker: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <Box position="relative">
@@ -25,6 +25,8 @@ export const BlockJoinUsSpeaker: React.FC = () => {
           textAlign={{ base: "center", lg: "center" }}
           maxWidth="1140px"
           margin="0 auto"
+          fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+          dir={i18n.language === "fa" ? "rtl" : "ltr"}
         >
           <Text
             className="h2 block__heading"
@@ -77,6 +79,8 @@ export const BlockJoinUsSpeaker: React.FC = () => {
           padding="3rem"
           paddingTop={{ base: "35rem" }}
           paddingLeft={{ lg: "15rem" }}
+          fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+          dir={i18n.language === "fa" ? "rtl" : "ltr"}
         >
           <SpeakerForm />
         </Box>

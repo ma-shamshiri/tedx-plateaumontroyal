@@ -98,7 +98,7 @@ const SponsorForm = () => {
         <VStack className="form_header" align="center">
           <Text
             className="form_title"
-            fontSize={{ base: "2.8rem", lg: "5rem" }}
+            fontSize={{ base: "2.8rem", lg: "4rem" }}
             textAlign="center"
             color={useColorModeValue("gray.700", "gray.50")}
           >

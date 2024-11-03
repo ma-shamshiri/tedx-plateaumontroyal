@@ -44,11 +44,11 @@ const AryanaHaghjoo: React.FC = () => {
           quoteText={t("aryanaQuote")}
         /> */}
         <BlockTeamProfiles
-          firstName="Aryana"
-          lastName="Haghjoo"
-          fullName="Aryana Haghjoo"
+          firstName={t("aryana")}
+          lastName={t("haghjoo")}
+          fullName={t("aryanaHaghjoo")}
           title="M.Sc. Student in Physics | McGill"
-          role="Curation"
+          role={t("curation")}
           imageSrc={aryana}
           badgeSrc={aryanaBadge}
           linkedinHref="https://ca.linkedin.com/"

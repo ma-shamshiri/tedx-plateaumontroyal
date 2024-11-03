@@ -17,14 +17,21 @@ const TeamGridDesign2: React.FC = () => {
 
     const isLargeScreen = useBreakpointValue({ base: false, lg: true });
 
-    const lightColor = useColorModeValue("white", "white");
+    const titleLightColor = useColorModeValue("white", "white");
+    const subTitleLightColor = useColorModeValue("#16F8B6", "#16F8B6");
     const darkColor = useColorModeValue("red", "red");
     const strokeColor = useColorModeValue("gray", "gray");
 
-    const sx = {
+    const sxTitle = {
         WebkitTextStroke: `1px ${strokeColor}`,
         textStroke: `1px ${darkColor}`,
-        color: lightColor,
+        color: titleLightColor,
+    };
+
+    const sxSubTitle = {
+        WebkitTextStroke: `1px ${strokeColor}`,
+        textStroke: `1px ${darkColor}`,
+        color: subTitleLightColor,
     };
 
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(0);
@@ -106,7 +113,6 @@ const TeamGridDesign2: React.FC = () => {
                                             gap={4}
                                         >
                                             <Text
-                                                color="white"
                                                 fontSize="3rem"
                                                 fontWeight="bold"
                                                 fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Acme', sans-serif"}
@@ -116,14 +122,13 @@ const TeamGridDesign2: React.FC = () => {
                                                 pointerEvents="none"
                                                 maxWidth="25rem"
                                                 align="center"
-                                                sx={sx}
+                                                sx={sxTitle}
                                             >
                                                 {slide.fullName}
                                             </Text>
                                             <Text
-                                                color="white"
                                                 fontSize="2.3rem"
-                                                // fontWeight="bold"
+                                                fontWeight="bold"
                                                 fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Acme', sans-serif"}
                                                 dir={i18n.language === "fa" ? "rtl" : "ltr"}
                                                 opacity={hoveredIndex === index ? 1 : 0}
@@ -131,7 +136,7 @@ const TeamGridDesign2: React.FC = () => {
                                                 pointerEvents="none"
                                                 maxWidth="25rem"
                                                 align="center"
-                                                sx={sx}
+                                                sx={sxSubTitle}
                                             >
                                                 {slide.role}
                                             </Text>
@@ -223,6 +228,7 @@ const TeamGridDesign2: React.FC = () => {
                                         position="absolute"
                                         bottom="10%"
                                         gap={4}
+                                        maxWidth="80%"
                                     >
                                         {/* <Link
                                             as={RouterLink}
@@ -239,7 +245,7 @@ const TeamGridDesign2: React.FC = () => {
                                             transition={`opacity ${hoveredIndex === index ? '1s' : '0.3s'} ease-in-out`}
                                             pointerEvents="none"
                                             align="center"
-                                            sx={sx}
+                                            sx={sxTitle}
                                         >
                                             {slide.fullName}
                                         </Text>
@@ -255,7 +261,7 @@ const TeamGridDesign2: React.FC = () => {
                                             pointerEvents="none"
                                             maxWidth="25rem"
                                             align="center"
-                                            sx={sx}
+                                            sx={sxSubTitle}
                                         >
                                             {slide.role}
                                         </Text>

@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 export const SubLinksBox = (props: SubLinksBoxProps) => {
   const { subLinks, extraLinks } = props;
 
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const navigate = useNavigate();
 
@@ -46,6 +46,8 @@ export const SubLinksBox = (props: SubLinksBoxProps) => {
           // "linear-gradient(to right top, #FF00CC, #333399)",
         )}
         borderRadius="7px"
+        fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+        dir={i18n.language === "fa" ? "rtl" : "ltr"}
       >
         {subLinks.map((subLink) => (
           <ListItem

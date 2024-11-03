@@ -1,0 +1,47 @@
+.frame {
+    position: relative;
+}
+
+.frame::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+
+.frame:hover::after {
+    background: rgba(0, 0, 0, 0);
+}
+
+.video-marker {
+    position: absolute;
+    bottom: 0.75em;
+    left: 0;
+    width: 2px;
+    height: 150px;
+    background: red;
+    transition: left 0.5s linear;
+    z-index: 2;
+}
+
+.video-marker::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: red;
+}
+
+@media (max-width: 900px) {
+    .video-marker {
+        height: 100px;
+    }
+}

@@ -91,7 +91,7 @@ export const BlockTeamProfiles: React.FC<BlockTeamProfilesProps> = ({
 }) => {
   const [isPageLoaded, setIsPageLoaded] = useState(false);
 
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const { colorMode } = useColorMode();
   const isDarkMode = colorMode === "dark";
@@ -179,6 +179,8 @@ export const BlockTeamProfiles: React.FC<BlockTeamProfilesProps> = ({
             flexDirection="column"
             justifyContent="center"
             alignItems="center"
+            fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+            dir={i18n.language === "fa" ? "rtl" : "ltr"}
           >
             {/* <motion.div
               variants={textVariants}
@@ -189,7 +191,7 @@ export const BlockTeamProfiles: React.FC<BlockTeamProfilesProps> = ({
               as="h2"
               fontSize={{ base: "2.5rem", lg: "3rem" }}
               color={useColorModeValue("#fff", "#16F8B6")}
-              letterSpacing="3px"
+              letterSpacing={i18n.language === "fa" ? "" : "3px"}
               textAlign={{ base: "center", lg: "center" }}
               margin={0}
               padding="1rem 0"

@@ -27,7 +27,7 @@ const LowercaseSpan = chakra("span", {
 });
 
 export const BlockHero2024: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const [imageLoaded, setImageLoaded] = useState(false);
   const [boxLoaded, setBoxLoaded] = useState(false);
@@ -116,7 +116,7 @@ export const BlockHero2024: React.FC = () => {
               backgroundPosition="center"
               backgroundRepeat="no-repeat"
               filter="blur(5px)"
-            opacity={0.8}
+              opacity={0.8}
             // zIndex="-1"
             />
 
@@ -148,12 +148,14 @@ export const BlockHero2024: React.FC = () => {
                 <HStack
                   marginBottom={{ base: "1rem", lg: "3rem" }}
                   justifyContent="center"
+
                 >
                   <Text
                     className="headingTitle"
                     fontSize={{ base: "2.8rem", lg: "4rem" }}
                     fontWeight="bold"
-                    fontFamily="'Acme', sans-serif"
+                    fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+                    dir={i18n.language === "fa" ? "rtl" : "ltr"}
                     lineHeight={{ base: "1.4", lg: "1.1" }}
                     color={useColorModeValue("#fff", "#fff")}
                     letterSpacing={2}
@@ -167,7 +169,8 @@ export const BlockHero2024: React.FC = () => {
                   className="headingSubTitle"
                   fontSize={{ base: "1.5rem", lg: "2.5rem" }}
                   fontWeight="bold"
-                  // fontFamily="'Acme', sans-serif"
+                  fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+                  dir={i18n.language === "fa" ? "rtl" : "ltr"}
                   lineHeight={{ base: "1.4", lg: "1.5" }}
                   color={useColorModeValue("gray.700", "gray.100")}
                   letterSpacing={2}

@@ -9,6 +9,7 @@ import {
     useColorModeValue,
 } from "@chakra-ui/react";
 import { BsChatRightQuoteFill } from "react-icons/bs";
+import { useTranslation } from "react-i18next";
 
 interface SpeakerProfileCardProps {
     name?: string;
@@ -23,7 +24,10 @@ export const SpeakerProfileCard: React.FC<SpeakerProfileCardProps> = ({
     biography,
     imageSrc,
 }) => {
+
+    const { t, i18n } = useTranslation();
     const iconSize = useBreakpointValue({ base: "25px", lg: "55px" });
+
     return (
         <Flex
             position="relative"
@@ -112,8 +116,9 @@ export const SpeakerProfileCard: React.FC<SpeakerProfileCardProps> = ({
                             fontSize={{ base: "1.5rem", lg: "1.8rem" }}
                             lineHeight={{ base: "initial", lg: "32px" }}
                             color={useColorModeValue("black", "gray.300")}
-                            letterSpacing={{ base: "initial", lg: "2px" }}
-                            fontFamily="'Literata', serif"
+                            letterSpacing={{ base: "initial", lg: i18n.language === "fa" ? "" : "2px" }}
+                            fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Literata', serif"}
+                            dir={i18n.language === "fa" ? "rtl" : "ltr"}
                         // textAlign="center"
                         >
                             <Box as="span" display="inline-block">

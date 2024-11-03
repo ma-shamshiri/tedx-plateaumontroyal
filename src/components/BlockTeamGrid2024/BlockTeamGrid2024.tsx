@@ -71,8 +71,8 @@ const BlockTeamGrid2024 = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <Flex key={item.firstName} direction="row" alignItems="stretch" flex="1">
-                                    <Box flex="1" position="relative" overflow="hidden">
+                                <Flex key={item.firstName} direction="row" alignItems="stretch" flex="1" height="100%">
+                                    <Box flex="1" position="relative" height="100%" overflow="hidden">
                                         <Box
                                             className="item-wrapper"
                                             position="relative"
@@ -127,11 +127,11 @@ const BlockTeamGrid2024 = () => {
                                                 transition="0.3s cubic-bezier(0.075, 0.82, 0.165, 1)"
                                                 zIndex="2"
                                             >
-                                                <Text fontSize="3.2rem">
+                                                <Text fontSize="3.2rem" fontWeight="bold">
                                                     {item.fullName}
                                                 </Text>
                                                 <Text
-                                                    fontSize="3.2rem"
+                                                    fontSize="2.7rem"
                                                 >
                                                     {item.role}
                                                 </Text>
@@ -223,10 +223,10 @@ const BlockTeamGrid2024 = () => {
                                         justifyContent="space-between"
                                         fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Acme', sans-serif"}
                                     >
-                                        <Text fontSize="3rem">
+                                        <Text fontSize="3rem" fontWeight="bold">
                                             {item.fullName}
                                         </Text>
-                                        <Text fontSize="2.8rem">
+                                        <Text fontSize="2.5rem">
                                             {item.role}
                                         </Text>
                                     </Flex>

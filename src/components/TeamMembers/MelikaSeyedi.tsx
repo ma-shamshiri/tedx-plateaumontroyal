@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import { FcElectronics } from "react-icons/fc";
-// import BlockTeamProfiles from "../BlockTeamProfiles";
 import { BlockFooter } from "../BlockFooter";
 import { BlockTeamProfiles } from "../BlockTeamProfiles";
 import { GiLaptop } from "react-icons/gi";
@@ -44,11 +42,11 @@ const MelikaSeyedi: React.FC = () => {
           quoteText={t("melikaQuote")}
         /> */}
         <BlockTeamProfiles
-          firstName="Melika"
-          lastName="Seyedi"
-          fullName="Melika Seyedi"
+          firstName={t("melika")}
+          lastName={t("seyedi")}
+          fullName={t("melikaSeyedi")}
           title="Ph.D. Student in Computer Engineering | Concordia"
-          role="Sponsorship"
+          role={t("sponsorship")}
           imageSrc={melika}
           badgeSrc={melikaBadge}
           linkedinHref="https://ca.linkedin.com/in/melika-seyedi-048416140"

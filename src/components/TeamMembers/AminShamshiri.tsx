@@ -45,11 +45,11 @@ const AminShamshiri: React.FC = () => {
         /> */}
 
         <BlockTeamProfiles
-          firstName="Mohammad Amin"
-          lastName="Shamshiri"
-          fullName="Mohammad Amin Shamshiri"
+          firstName={t("mohammadAmin")}
+          lastName={t("shamshiri")}
+          fullName={t("mohammadAminShamshiri")}
           title="Software Engineer | EnerZam Inc."
-          role="Webmaster"
+          role={t("webmaster")}
           imageSrc={amin}
           badgeSrc={aminBadge}
           linkedinHref="https://ca.linkedin.com/in/ma-shamshiri"

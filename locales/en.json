@@ -280,8 +280,15 @@
     "curation": "Curation",
     "marketing": "Marketing",
     "sponsorship": "Sponsorship",
-    "contentCreator": "Marketing",
+    "contentCreation": "Content Creation",
     "webmaster": "Webmaster",
+    "eventDirector":"Event Director",
+    "techSpecialist":"Tech Specialist",
+    "headOfOperation":"Head of Operation",
+    "headOfCreativity":"Head of Creativity",
+    "headOfCuration":"Head of Curation",
+    "headOfSponsorship":"Head of Sponsorship",
+    "headOfContentCreation":"Head of ContentCreation",
     "mcgillUniversity": "McGill University",
     "yourTicketAwaits": "Your Ticket Awaits",
     "chancellorDayHall": "Chancellor Day Hall",
@@ -290,5 +297,6 @@
     "16": "16",
     "premiumSupporter": "PREMIUM SUPPORTER",
     "speakerPage2024Title": "Meet the Changemakers",
-    "speakerPage2024SubTitle": "Get to Know the Inspiring TEDxPlateauMontRoyal Speakers"
+    "speakerPage2024SubTitle": "Get to Know the Inspiring TEDxPlateauMontRoyal Speakers",
+    "groupMeetingTitle":"The Art of Shaping Ideas"
 }

@@ -9,6 +9,7 @@ import {
   ResponsiveValue,
 } from "@chakra-ui/react";
 import Typed from "react-typed";
+import { useTranslation } from "react-i18next";
 
 interface HeroEventCardProps {
   isHovered: boolean;
@@ -63,6 +64,8 @@ const HeroEventCard: React.FC<HeroEventCardProps> = ({
   leftBorderHeight,
   marginRight,
 }) => {
+  const { i18n } = useTranslation();
+
   return (
     <>
       <Link
@@ -185,7 +188,7 @@ const HeroEventCard: React.FC<HeroEventCardProps> = ({
           <Image
             src={eventImageHref}
             width="100%"
-            height={{ base:"60%", md: "60%", lg: "62%", xl: "57%" }}
+            height={{ base: "60%", md: "60%", lg: "62%", xl: "57%" }}
             //   objectFit="inherit"
             //   borderTopRadius="7px"
             paddingTop={"1rem"}
@@ -224,6 +227,8 @@ const HeroEventCard: React.FC<HeroEventCardProps> = ({
               }}
               fontWeight="bold"
               textAlign="center"
+              fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+              dir={i18n.language === "fa" ? "rtl" : "ltr"}
             >
               {titleText}
             </Text>

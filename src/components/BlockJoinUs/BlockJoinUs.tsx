@@ -14,7 +14,7 @@ import { speaker, sponsor, starsImage, teamMember, tickImage } from "../../asset
 import { useTranslation } from "react-i18next";
 
 export const BlockJoinUs: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     window.onload = () => {
@@ -63,6 +63,8 @@ export const BlockJoinUs: React.FC = () => {
               fontSize={{ base: "2.8rem", lg: "4rem" }}
               fontWeight="bold"
               lineHeight="1.1"
+              fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+              dir={i18n.language === "fa" ? "rtl" : "ltr"}
             >
               {t("joinUsPageTitle")}
             </Text>
@@ -73,6 +75,8 @@ export const BlockJoinUs: React.FC = () => {
               marginTop="0"
               fontSize={{ base: "1.5rem", lg: "2.1rem" }}
               lineHeight="1.5"
+              fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+              dir={i18n.language === "fa" ? "rtl" : "ltr"}
             >
               {t("joinUsPageSubTitle")}
             </Text>
@@ -124,6 +128,8 @@ export const BlockJoinUs: React.FC = () => {
                       margin="0"
                       fontSize={{ base: "4rem", lg: "2.5rem" }}
                       fontWeight="bold"
+                      fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+                      dir={i18n.language === "fa" ? "rtl" : "ltr"}
                     >
                       {t("speaker")}
                     </Text>
@@ -138,7 +144,11 @@ export const BlockJoinUs: React.FC = () => {
                         listStyleImage: `url(${tickImage})`,
                       }}
                     >
-                      <Text fontSize={{ base: "2rem", lg: "1.6rem" }}>
+                      <Text
+                        fontSize={{ base: "2rem", lg: "1.6rem" }}
+                        fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+                        dir={i18n.language === "fa" ? "rtl" : "ltr"}
+                      >
                         {t("joinUsSpeakerDescription")}
                       </Text>
 
@@ -152,6 +162,8 @@ export const BlockJoinUs: React.FC = () => {
                         cursor="pointer"
                         fontSize={{ base: "1.8rem", lg: "1.5rem" }}
                         fontWeight="600"
+                        fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+                        dir={i18n.language === "fa" ? "rtl" : "ltr"}
                         margin="1rem 0"
                         outline="0"
                         padding="2rem 0vw"
@@ -217,6 +229,8 @@ export const BlockJoinUs: React.FC = () => {
                       margin="0"
                       fontSize={{ base: "4rem", lg: "2.5rem" }}
                       fontWeight="bold"
+                      fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+                      dir={i18n.language === "fa" ? "rtl" : "ltr"}
                     >
                       {t("teamMember")}
                     </Text>
@@ -231,7 +245,11 @@ export const BlockJoinUs: React.FC = () => {
                         listStyleImage: `url(${tickImage})`,
                       }}
                     >
-                      <Text fontSize={{ base: "r2em", lg: "1.6rem" }}>
+                      <Text
+                        fontSize={{ base: "r2em", lg: "1.6rem" }}
+                        fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+                        dir={i18n.language === "fa" ? "rtl" : "ltr"}
+                      >
                         {t("joinUsTeamMemberDescription")}
                       </Text>
 
@@ -245,6 +263,8 @@ export const BlockJoinUs: React.FC = () => {
                         cursor="pointer"
                         fontSize={{ base: "1.8rem", lg: "1.5rem" }}
                         fontWeight="600"
+                        fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+                        dir={i18n.language === "fa" ? "rtl" : "ltr"}
                         margin="1rem 0"
                         outline="0"
                         padding="2rem 0vw"
@@ -310,6 +330,8 @@ export const BlockJoinUs: React.FC = () => {
                       margin="0"
                       fontSize={{ base: "4rem", lg: "2.5rem" }}
                       fontWeight="bold"
+                      fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+                      dir={i18n.language === "fa" ? "rtl" : "ltr"}
                     >
                       {t("sponsor")}
                     </Text>
@@ -324,7 +346,11 @@ export const BlockJoinUs: React.FC = () => {
                         listStyleImage: `url(${tickImage})`,
                       }}
                     >
-                      <Text fontSize={{ base: "2rem", lg: "1.6rem" }}>
+                      <Text
+                        fontSize={{ base: "2rem", lg: "1.6rem" }}
+                        fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+                        dir={i18n.language === "fa" ? "rtl" : "ltr"}
+                      >
                         {t("joinUsSponsorDescription")}
                       </Text>
 
@@ -338,6 +364,8 @@ export const BlockJoinUs: React.FC = () => {
                         cursor="pointer"
                         fontSize={{ base: "1.8rem", lg: "1.5rem" }}
                         fontWeight="600"
+                        fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+                        dir={i18n.language === "fa" ? "rtl" : "ltr"}
                         margin="1rem 0"
                         outline="0"
                         padding="2rem 0vw"

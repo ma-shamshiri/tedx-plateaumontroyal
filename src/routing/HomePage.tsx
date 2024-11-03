@@ -12,6 +12,8 @@ import BlockHeroHomeFinal from "../components/BlockHeroHomeFinal";
 import BlockDivider from "../components/BlockDivider";
 import MarqueeComponent from "../components/MarqueeComponent";
 import TeamGridDesign2 from "../components/TeamGridDesign2";
+import CGVideoPlayer from "../components/CGVideoPlayer";
+import BlockGroupMeeting from "../components/BlockGroupMeeting/BlockGroupMeeting";
 // import { PageTransition } from "../components/PageTransition";
 // import { PageTransition2 } from "../components/PageTransition2";
 
@@ -49,6 +51,8 @@ const HomePage: React.FC = () => {
         <BlockHeroHomeFinal />
         <BlockDivider />
         <TeamGridDesign2 />
+        <BlockGroupMeeting />
+        <CGVideoPlayer />
         <BlockHeroHome />
         <TicketCard />
         <MarqueeComponent />

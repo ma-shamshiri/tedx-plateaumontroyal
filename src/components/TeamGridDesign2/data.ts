@@ -60,7 +60,7 @@ export const slides: Slide[] = [
         firstName: "mohammaderfan",
         lastName: "mohit",
         fullName: "mohammadErfanMohit",
-        role: "Event Director"
+        role: "eventDirector"
     },
 
     // ======================== Mohammad Amin Shamshiri ========================
@@ -71,7 +71,7 @@ export const slides: Slide[] = [
         firstName: "mohammadAmin",
         lastName: "shamshiri",
         fullName: "mohammadAminShamshiri",
-        role: "Tech Specialist"
+        role: "techSpecialist"
     },
 
     // ======================== Pegah Einakchi ========================
@@ -82,7 +82,7 @@ export const slides: Slide[] = [
         firstName: "pegah",
         lastName: "einakchi",
         fullName: "pegahEinakchi",
-        role: "Head of Operation"
+        role: "headOfOperation"
     },
 
     // ======================== Reihaneh Ghoroghchian ========================
@@ -93,7 +93,7 @@ export const slides: Slide[] = [
         firstName: "reihaneh",
         lastName: "ghoroghchian",
         fullName: "reihanehGhoroghchian",
-        role: "Head of Creativity"
+        role: "headOfCreativity"
     },
 
     // ======================== Motahareh Pourrahimi ========================
@@ -104,7 +104,7 @@ export const slides: Slide[] = [
         firstName: "motahareh",
         lastName: "pourrahimi",
         fullName: "motaharehPourrahimi",
-        role: "Head of Curation"
+        role: "headOfCuration"
     },
 
     // ======================== Melika Seyedi ========================
@@ -115,7 +115,7 @@ export const slides: Slide[] = [
         firstName: "melika",
         lastName: "seyedi",
         fullName: "melikaSeyedi",
-        role: "Head of Sponsorship"
+        role: "headOfSponsorship"
     },
 
 
@@ -128,7 +128,7 @@ export const slides: Slide[] = [
         firstName: "baharan",
         lastName: "nouriinanloo",
         fullName: "baharanNouriinanloo",
-        role: "Head of Content Creation"
+        role: "headOfContentCreation"
     },
 
     // ======================== Mohammad Hassan Azad ========================
@@ -139,7 +139,7 @@ export const slides: Slide[] = [
         firstName: "mohammadHasan",
         lastName: "azad",
         fullName: "mohammadHasanAzad",
-        role: "Operation"
+        role: "operation"
     },
 
     // ======================== Mina Taraghi ========================
@@ -183,7 +183,7 @@ export const slides: Slide[] = [
         firstName: "ehsan",
         lastName: "mortazavi",
         fullName: "ehsanMortazavi",
-        role: "Content Creation"
+        role: "contentCreation"
     },
 
     // ======================== Iran Zare ========================
@@ -194,7 +194,7 @@ export const slides: Slide[] = [
         firstName: "iran",
         lastName: "zare",
         fullName: "iranZare",
-        role: "Content Creation"
+        role: "contentCreation"
     },
 
     // ======================== Amin Ghasemi ========================

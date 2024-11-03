@@ -19,7 +19,7 @@ export const BlockJoinusTeam: React.FC = () => {
   // const { colorMode } = useColorMode();
   // const displayValue = useBreakpointValue({ base: "none", xl: "block" });
 
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <>
@@ -36,6 +36,7 @@ export const BlockJoinusTeam: React.FC = () => {
             "#1A202C"
           )}
           overflow={"hidden"}
+          fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
         >
           <SimpleGrid row={2}>
             <Box
@@ -45,6 +46,7 @@ export const BlockJoinusTeam: React.FC = () => {
               data-aos="fade-up"
               data-aos-duration="500"
               // marginBottom="10rem"
+              dir={i18n.language === "fa" ? "rtl" : "ltr"}
             >
               <Flex>
                 <Container
@@ -67,6 +69,7 @@ export const BlockJoinusTeam: React.FC = () => {
                         md: "5xl",
                         lg: "3.2rem",
                       }}
+                      fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
                     >
                       {t("joinUs")}{" "}
                       <Text
@@ -85,7 +88,10 @@ export const BlockJoinusTeam: React.FC = () => {
                 </Container>
               </Flex>
             </Box>
-            <Flex justifyContent={{ base: "center", lg: "center" }}>
+            <Flex
+              justifyContent={{ base: "center", lg: "center" }}
+              dir={i18n.language === "fa" ? "rtl" : "ltr"}
+            >
               <TeamForm />
             </Flex>
           </SimpleGrid>
@@ -96,9 +102,9 @@ export const BlockJoinusTeam: React.FC = () => {
           top={30}
           left={-10}
           filter="blur(70px)"
-          // display={colorMode !== "dark" ? "none" : displayValue}
-          // opacity={colorMode !== "dark" ? 0 : 1}
-          // transition={{ opacity: "0.3s" }}
+        // display={colorMode !== "dark" ? "none" : displayValue}
+        // opacity={colorMode !== "dark" ? 0 : 1}
+        // transition={{ opacity: "0.3s" }}
         />
       </Box>
     </>

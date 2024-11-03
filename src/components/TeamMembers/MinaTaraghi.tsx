@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import BlockTeamProfiles from "../BlockTeamProfiles";
 import { BlockFooter } from "../BlockFooter";
 import { BlockTeamProfiles } from "../BlockTeamProfiles";
 import { GiLaptop } from "react-icons/gi";
@@ -43,11 +42,11 @@ const MinaTaraghi: React.FC = () => {
           quoteText={t("minaQuote")}
         /> */}
         <BlockTeamProfiles
-          firstName="Mina"
-          lastName="Taraghi"
-          fullName="Mina Taraghi"
+          firstName={t("mina")}
+          lastName={t("taraghi")}
+          fullName={t("minaTaraghi")}
           title="Ph.D. Student in Computer Engineering | Polytechnique Montreal"
-          role="Content Creator"
+          role={t("contentCreation")}
           imageSrc={mina}
           badgeSrc={minaBadge}
           linkedinHref="https://ca.linkedin.com/in/minataraghi?trk=people-guest_people_search-card"

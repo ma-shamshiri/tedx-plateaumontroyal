@@ -273,8 +273,28 @@ import shaun from "./assets/images/shaun.png"
 import sylvain from "./assets/images/sylvain.jpg"
 import radaii from "./assets/images/radaii.jpg"
 import shakour from "./assets/images/shakour.jpg"
+import snapshot1 from "./assets/images/videoSnapshot1.webp";
+import snapshot2 from "./assets/images/videoSnapshot2.webp";
+import snapshot3 from "./assets/images/videoSnapshot3.webp";
+import snapshot4 from "./assets/images/videoSnapshot4.webp";
+import snapshot5 from "./assets/images/videoSnapshot5.webp";
+import snapshot6 from "./assets/images/videoSnapshot6.webp";
+import snapshot7 from "./assets/images/videoSnapshot7.webp";
+import snapshot8 from "./assets/images/videoSnapshot8.webp";
+import snapshot9 from "./assets/images/videoSnapshot9.webp";
+import groupMeeting1 from "./assets/images/groupMeeting1.mp4";
 
 export {
+    groupMeeting1,
+    snapshot1,
+    snapshot2,
+    snapshot3,
+    snapshot4,
+    snapshot5,
+    snapshot6,
+    snapshot7,
+    snapshot8,
+    snapshot9,
     radaii,
     shakour,
     brian,

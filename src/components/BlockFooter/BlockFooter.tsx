@@ -17,9 +17,10 @@ import { IconButton, Stack, useColorModeValue } from "@chakra-ui/react";
 import { BsInstagram, BsLinkedin, BsTwitter, BsFacebook } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
 import { tedxWhite, tedxBlack } from "../../assets";
+import { FaXTwitter } from "react-icons/fa6";
 
 export const BlockFooter = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const { colorMode } = useColorMode();
 
@@ -112,6 +113,8 @@ export const BlockFooter = () => {
                 lg: "0",
               }}
               marginLeft={{ lg: "6rem" }}
+              fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+              dir={i18n.language === "fa" ? "rtl" : "ltr"}
             >
               <Text
                 className="h2 collapsible__heading footer__heading"
@@ -130,6 +133,8 @@ export const BlockFooter = () => {
                   className="list"
                   color="var(--color-headings)"
                   paddingLeft="0"
+                  fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+                  dir={i18n.language === "fa" ? "rtl" : "ltr"}
                 >
                   <ListItem className="list__item" paddingBottom="0.5rem">
                     <Link
@@ -144,7 +149,7 @@ export const BlockFooter = () => {
                       // textTransform="uppercase"
                       _hover={{ color: "#fff" }}
                     >
-                      TED
+                      {t("ted")}
                     </Link>
                   </ListItem>
                   <ListItem className="list__item" paddingBottom="0.5rem">
@@ -160,7 +165,7 @@ export const BlockFooter = () => {
                       // textTransform="uppercase"
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
                     >
-                      TEDx
+                      {t("tedx")}
                     </Link>
                   </ListItem>
                   <ListItem className="list__item" paddingBottom="0.5rem">
@@ -176,7 +181,7 @@ export const BlockFooter = () => {
                       // textTransform="uppercase"
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
                     >
-                      TEDxPlateauMontRoyal
+                      {t("tedxplateaumontroyal")}
                     </Link>
                   </ListItem>
                 </List>
@@ -197,6 +202,8 @@ export const BlockFooter = () => {
                 display="flex"
                 justifyContent="space-between"
                 onClick={handleColumn1Toggle}
+                dir={i18n.language === "fa" ? "rtl" : "ltr"}
+                fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
               >
                 <Text
                   className="h2 collapsible__heading footer__heading"
@@ -236,6 +243,8 @@ export const BlockFooter = () => {
                   className="list"
                   color="var(--color-headings)"
                   paddingLeft="0"
+                  fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+                  dir={i18n.language === "fa" ? "rtl" : "ltr"}
                 >
                   <ListItem className="list__item" paddingBottom="1rem">
                     <Link
@@ -250,7 +259,7 @@ export const BlockFooter = () => {
                       color={useColorModeValue("gray.800", "#777")}
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
                     >
-                      TED
+                      {t("ted")}
                     </Link>
                   </ListItem>
                   <ListItem className="list__item" paddingBottom="1rem">
@@ -266,7 +275,7 @@ export const BlockFooter = () => {
                       color={useColorModeValue("gray.800", "#777")}
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
                     >
-                      TEDx
+                      {t("tedx")}
                     </Link>
                   </ListItem>
                   <ListItem className="list__item">
@@ -282,7 +291,7 @@ export const BlockFooter = () => {
                       color={useColorModeValue("gray.800", "#777")}
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
                     >
-                      TEDxPlateauMontRoyal
+                      {t("tedxplateaumontroyal")}
                     </Link>
                   </ListItem>
                 </List>
@@ -308,14 +317,18 @@ export const BlockFooter = () => {
                 lineHeight="1.1"
                 marginTop="0"
                 textTransform="uppercase"
+                fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+                dir={i18n.language === "fa" ? "rtl" : "ltr"}
               >
-                SECTION
+                {t("section")}
               </Text>
               <Box className="collapsible__content">
                 <List
                   className="list"
                   color="var(--color-headings)"
                   paddingLeft="0"
+                  fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+                  dir={i18n.language === "fa" ? "rtl" : "ltr"}
                 >
                   <ListItem className="list__item" paddingBottom="0.5rem">
                     <Link
@@ -399,6 +412,7 @@ export const BlockFooter = () => {
                 display="flex"
                 justifyContent="space-between"
                 onClick={handleColumn2Toggle}
+                dir={i18n.language === "fa" ? "rtl" : "ltr"}
               >
                 <Text
                   className="h2 collapsible__heading footer__heading"
@@ -409,8 +423,9 @@ export const BlockFooter = () => {
                   lineHeight="1.1"
                   marginTop="0"
                   textTransform="uppercase"
+                  fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
                 >
-                  SECTION
+                  {t("section")}
                 </Text>
                 <Icon
                   className={`icon icon--white collapsible__chevron ${column2Expanded ? "collapsible--expanded" : ""
@@ -438,6 +453,8 @@ export const BlockFooter = () => {
                   className="list"
                   color="var(--color-headings)"
                   paddingLeft="0"
+                  fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+                  dir={i18n.language === "fa" ? "rtl" : "ltr"}
                 >
                   <ListItem className="list__item" paddingBottom="1rem">
                     <Link
@@ -511,6 +528,8 @@ export const BlockFooter = () => {
                 lineHeight="1.1"
                 marginTop="0"
                 textTransform="uppercase"
+                fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+                dir={i18n.language === "fa" ? "rtl" : "ltr"}
               >
                 {t("ourCommunity")}
               </Text>
@@ -519,6 +538,8 @@ export const BlockFooter = () => {
                   className="list"
                   color="var(--color-headings)"
                   paddingLeft="0"
+                  fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+                  dir={i18n.language === "fa" ? "rtl" : "ltr"}
                 >
                   <ListItem className="list__item" paddingBottom="0.5rem">
                     <Link
@@ -586,6 +607,8 @@ export const BlockFooter = () => {
                 display="flex"
                 justifyContent="space-between"
                 onClick={handleColumn3Toggle}
+                fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+                dir={i18n.language === "fa" ? "rtl" : "ltr"}
               >
                 <Text
                   className="h2 collapsible__heading footer__heading"
@@ -625,6 +648,8 @@ export const BlockFooter = () => {
                   className="list"
                   color="var(--color-headings)"
                   paddingLeft="0"
+                  fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+                  dir={i18n.language === "fa" ? "rtl" : "ltr"}
                 >
                   <ListItem className="list__item" paddingBottom="1rem">
                     <Link
@@ -687,6 +712,8 @@ export const BlockFooter = () => {
                 lg: "0",
               }}
               marginLeft={{ lg: "4rem" }}
+              fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+              dir={i18n.language === "fa" ? "rtl" : "ltr"}
             >
               <Text
                 className="h2 collapsible__heading footer__heading"
@@ -721,7 +748,7 @@ export const BlockFooter = () => {
                       // textTransform="uppercase"
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
                     >
-                      LinkedIn
+                      {t("linkedin")}
                     </Link>
                   </ListItem>
                   <ListItem className="list__item" paddingBottom="0.5rem">
@@ -739,7 +766,7 @@ export const BlockFooter = () => {
                       // textTransform="uppercase"
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
                     >
-                      Instagram
+                      {t("instagram")}
                     </Link>
                   </ListItem>
                   <ListItem className="list__item" paddingBottom="0.5rem">
@@ -757,7 +784,7 @@ export const BlockFooter = () => {
                       // textTransform="uppercase"
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
                     >
-                      Twitter
+                      {t("twitter")}
                     </Link>
                   </ListItem>
                   <ListItem className="list__item" paddingBottom="0.5rem">
@@ -773,7 +800,7 @@ export const BlockFooter = () => {
                       // textTransform="uppercase"
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
                     >
-                      Facebook
+                      {t("facebook")}
                     </Link>
                   </ListItem>
                 </List>
@@ -794,6 +821,8 @@ export const BlockFooter = () => {
                 display="flex"
                 justifyContent="space-between"
                 onClick={handleColumn4Toggle}
+                fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+                dir={i18n.language === "fa" ? "rtl" : "ltr"}
               >
                 <Text
                   className="h2 collapsible__heading footer__heading"
@@ -833,6 +862,8 @@ export const BlockFooter = () => {
                   className="list"
                   color="var(--color-headings)"
                   paddingLeft="0"
+                  fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+                  dir={i18n.language === "fa" ? "rtl" : "ltr"}
                 >
                   <ListItem className="list__item" paddingBottom="1rem">
                     <Link
@@ -850,7 +881,7 @@ export const BlockFooter = () => {
                       // textTransform="uppercase"
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
                     >
-                      LinkedIn
+                      {t("linkedin")}
                     </Link>
                   </ListItem>
                   <ListItem className="list__item" paddingBottom="1rem">
@@ -868,7 +899,7 @@ export const BlockFooter = () => {
                       // textTransform="uppercase"
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
                     >
-                      Instagram
+                      {t("instagram")}
                     </Link>
                   </ListItem>
                   <ListItem className="list__item" paddingBottom="1rem">
@@ -886,7 +917,7 @@ export const BlockFooter = () => {
                       // textTransform="uppercase"
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
                     >
-                      Twitter
+                      {t("twitter")}
                     </Link>
                   </ListItem>
                   <ListItem className="list__item" paddingBottom="1rem">
@@ -902,7 +933,7 @@ export const BlockFooter = () => {
                       // textTransform="uppercase"
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
                     >
-                      Facebook
+                      {t("facebook")}
                     </Link>
                   </ListItem>
                 </List>
@@ -931,6 +962,7 @@ export const BlockFooter = () => {
                 /> */}
               <Image
                 className="hero__image"
+                alt="Hero Image"
                 src={tedxImg}
                 width={{ lg: "50rem" }}
                 marginBottom="1rem"
@@ -985,7 +1017,7 @@ export const BlockFooter = () => {
             aria-label="twitter"
             variant="ghost"
             size="xl"
-            icon={<BsTwitter size="20px" />}
+            icon={<FaXTwitter size="20px" />}
             _hover={{
               bg: useColorModeValue("gray.700", "gray.200"),
               color: useColorModeValue("gray.200", "gray.700"),

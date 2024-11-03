@@ -222,7 +222,7 @@ const TicketCard = () => {
                     paddingTop={{ base: "8rem", lg: "13rem" }}
                     fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Acme', sans-serif"}
                     dir={i18n.language === "fa" ? "rtl" : "ltr"}
-                    letterSpacing={1.5}
+                    letterSpacing={i18n.language === "fa" ? "initial" : 1.5}
                 >
                     <Text
                         color={useColorModeValue("white", "gray.100")}

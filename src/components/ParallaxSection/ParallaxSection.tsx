@@ -4,7 +4,7 @@ import { event2023 } from "../../assets";
 import { useTranslation } from 'react-i18next';
 
 export const ParallaxSection: React.FC = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     return (
         <Box
@@ -40,29 +40,32 @@ export const ParallaxSection: React.FC = () => {
                 width="100%"
                 height="100%"
                 zIndex="1"
+
             >
                 <Text
                     fontSize={{ base: "2.5rem", lg: "6rem" }}
                     fontWeight="bold"
-                    fontFamily="'Acme', sans-serif"
+                    fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Acme', sans-serif"}
+                    dir={i18n.language === "fa" ? "rtl" : "ltr"}
                 >
                     {t("parallaxSectionTitle")}
                 </Text>
                 <Text
                     fontSize={{ base: "2.5rem", lg: "4rem" }}
                     fontWeight="bold"
-                    fontFamily="'Acme', sans-serif"
+                    fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Acme', sans-serif"}
+                    dir={i18n.language === "fa" ? "rtl" : "ltr"}
                 >
                     {t("fromOurPreviousEvent")}
                 </Text>
                 <Text
                     fontSize={{ base: "1.5rem", lg: "2.5rem" }}
-                    // fontWeight="bold"
-                    fontFamily="'Acme', sans-serif"
                     letterSpacing="1.2px"
                     marginTop="2rem"
                     textAlign="center"
                     maxW={{ base: "400px", lg: "initial" }}
+                    fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Acme', sans-serif"}
+                    dir={i18n.language === "fa" ? "rtl" : "ltr"}
                 >
                     {t("parallaxSectionSubTitle")}
                 </Text>

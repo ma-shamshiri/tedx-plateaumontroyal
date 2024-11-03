@@ -131,7 +131,7 @@ const SpeakerForm = () => {
         <VStack className="form_header" align="center">
           <Text
             className="form_title"
-            fontSize={{ base: "3.2rem", lg: "6rem" }}
+            fontSize={{ base: "2.8rem", lg: "4rem" }}
             textAlign="center"
             color={useColorModeValue("gray.700", "gray.50")}
           >

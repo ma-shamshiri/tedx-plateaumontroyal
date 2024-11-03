@@ -43,11 +43,11 @@ const BaharanNouriinanloo: React.FC = () => {
           quoteText={t("baharanQuote")}
         /> */}
         <BlockTeamProfiles
-          firstName="Baharan"
-          lastName="Nouriinanloo"
-          fullName="Baharan Nouriinanloo"
+          firstName={t("baharan")}
+          lastName={t("nouriinanloo")}
+          fullName={t("baharanNouriinanloo")}
           title="M.Sc. Student in Computer Engineering | Polytechnique Montreal"
-          role="Marketing"
+          role={t("marketing")}
           imageSrc={baharan}
           badgeSrc={baharanBadge}
           linkedinHref="https://ca.linkedin.com/in/baharan-nouriv"

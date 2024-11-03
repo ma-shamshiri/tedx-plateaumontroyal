@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import { GiMining } from "react-icons/gi";
-// import BlockTeamProfiles from "../BlockTeamProfiles";
 import { BlockFooter } from "../BlockFooter";
 import { BlockTeamProfiles } from "../BlockTeamProfiles";
 import { GiGraduateCap } from "react-icons/gi";
@@ -44,11 +42,11 @@ const MohammadZaid: React.FC = () => {
           quoteText={t("mohammadQuote")}
         /> */}
         <BlockTeamProfiles
-          firstName="Mohammad"
-          lastName="Zaid"
-          fullName="Mohammad Zaid"
+          firstName={t("mohammad")}
+          lastName={t("zaid")}
+          fullName={("mohammadZaid")}
           title="Graduate Research Assistant | McGill"
-          role="Content Creator"
+          role={t("contentCreation")}
           imageSrc={mohammad}
           badgeSrc={mohammadBadge}
           linkedinHref="https://ca.linkedin.com/in/mohammad-zaid-34b381187"

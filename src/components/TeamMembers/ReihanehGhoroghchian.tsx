@@ -43,11 +43,11 @@ const ReihanehGhoroghchian: React.FC = () => {
           quoteText={t("reihanehQuote")}
         /> */}
         <BlockTeamProfiles
-          firstName="Reihaneh"
-          lastName="Ghoroghchian"
-          fullName="Reihaneh Ghoroghchian"
+          firstName={t("reihaneh")}
+          lastName={t("ghoroghchian")}
+          fullName={t("reihanehGhoroghchian")}
           title="M.Sc. Student in Electrical Engineering | McGill"
-          role="Creativity"
+          role={t("creativity")}
           // imageSrc={unknownGirlProfile}
           badgeSrc={reihanehBadge}
           linkedinHref="https://ca.linkedin.com/in/reihaneh-ghoroghchian-636661182"

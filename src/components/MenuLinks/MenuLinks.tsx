@@ -4,7 +4,7 @@ import { SubLinksBox } from "./LinkSubItems";
 import { useTranslation } from "react-i18next";
 
 export const MenuLinks = ({ menuLinks }: MenuLinksProps) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <ul className="flex px-1 lg:px-4">
@@ -15,6 +15,8 @@ export const MenuLinks = ({ menuLinks }: MenuLinksProps) => {
             paddingX={{ lg:"1rem", xl:"2.2rem" }}
             borderRadius="lg"
             cursor="pointer"
+            fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+            dir={i18n.language === "fa" ? "rtl" : "ltr"}
           >
             <Text
               color={useColorModeValue("gray.800", "gray.200")}

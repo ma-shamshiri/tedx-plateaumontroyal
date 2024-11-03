@@ -43,11 +43,11 @@ const FatemehTavanaei: React.FC = () => {
           quoteText={t("fatemehQuote")}
         /> */}
         <BlockTeamProfiles
-          firstName="Fatemeh"
-          lastName="Tavanaei"
-          fullName="Fatemeh Tavanaei"
+          firstName={t("fatemeh")}
+          lastName={t("tavanaei")}
+          fullName={t("fatemehTavanaei")}
           title="Ph.D. Student in Mining Engineering | McGill"
-          role="Co-organizer"
+          role={t("coOrganizer")}
           imageSrc={fatemeh}
           badgeSrc={fatemehBadge}
           linkedinHref="https://ca.linkedin.com/in/fatemeh-tavanaei-sereshgi-394a7957"

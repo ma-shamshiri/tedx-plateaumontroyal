@@ -4,6 +4,7 @@ import { initReactI18next } from "react-i18next";
 
 import enTranslation from "./locales/en.json";
 import frTranslation from "./locales/fr.json";
+import faTranslation from "./locales/fa.json";
 
 // the translations
 const resources = {
@@ -13,13 +14,19 @@ const resources = {
   fr: {
     translation: frTranslation,
   },
+  fa: {
+    translation: faTranslation
+  }
 };
+
+// Fetch language from localStorage or default to 'en'
+const storedLanguage = localStorage.getItem("selectedLanguage") || "en";
 
 i18n.use(initReactI18next).init({
   resources,
-  lng: "en", // default language
+  lng: storedLanguage, // set the initial language from localStorage
   interpolation: {
-    escapeValue: false, // react already safes from xss
+      escapeValue: false, // react already safes from xss
   },
 });
 
