@@ -232,6 +232,7 @@ import tedxBlack from "./assets/images/tedxBlack.png";
 import tedxWhite from "./assets/images/tedxWhite.png";
 import tickImage from "./assets/images/tick.svg";
 import unknownGirlProfile from "./assets/images/unknownGirlProfile.jpg";
+import unknownBoyProfile from "./assets/images/unknownBoyProfile.jpg";
 import unknownProfile from "./assets/images/unknown.webp";
 import unkown from "./assets/images/unknownGirlProfile.jpg";
 import usaFlag from "./assets/images/usa.webp"
@@ -283,8 +284,10 @@ import snapshot7 from "./assets/images/videoSnapshot7.webp";
 import snapshot8 from "./assets/images/videoSnapshot8.webp";
 import snapshot9 from "./assets/images/videoSnapshot9.webp";
 import groupMeeting1 from "./assets/images/groupMeeting1.mp4";
+import Amin2 from "./assets/images/Amin2.jpg";
 
 export {
+    Amin2,
     groupMeeting1,
     snapshot1,
     snapshot2,
@@ -560,6 +563,7 @@ export {
     tedxWhite,
     tickImage,
     unknownGirlProfile,
+    unknownBoyProfile,
     unknownProfile,
     unkown,
     usaFlag,

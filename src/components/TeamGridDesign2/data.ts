@@ -1,7 +1,9 @@
 import {
+    Amin2,
     aminBG,
     aminBGNew,
     baharanBG,
+    edwinBG,
     ehsanBGNew,
     erfanBGNew,
     fatemehBGNew,
@@ -16,6 +18,8 @@ import {
     rooyanBGNew,
     saminBG,
     teamGroupPic3,
+    unknownBoyProfile,
+    unknownProfile,
     zahraBGNew,
 } from "../../assets";
 
@@ -65,7 +69,7 @@ export const slides: Slide[] = [
 
     // ======================== Mohammad Amin Shamshiri ========================
     {
-        id: 17,
+        id: 4,
         imageSrc: aminBG,
         profileSrc: "/amin-shamshiri",
         firstName: "mohammadAmin",
@@ -122,7 +126,7 @@ export const slides: Slide[] = [
 
     // ======================== Baharan Nouriinanloo ========================
     {
-        id: 10,
+        id: 9,
         imageSrc: baharanBG,
         profileSrc: "/baharan-nouriinanloo",
         firstName: "baharan",
@@ -133,7 +137,7 @@ export const slides: Slide[] = [
 
     // ======================== Mohammad Hassan Azad ========================
     {
-        id: 14,
+        id: 10,
         imageSrc: mohammadHasanBGNew,
         profileSrc: "/mohammadhasan-azad",
         firstName: "mohammadHasan",
@@ -144,7 +148,7 @@ export const slides: Slide[] = [
 
     // ======================== Mina Taraghi ========================
     {
-        id: 9,
+        id: 11,
         imageSrc: minaBGNew,
         profileSrc: "/mina-taraghi",
         firstName: "mina",
@@ -177,7 +181,7 @@ export const slides: Slide[] = [
 
     // ======================== Ehsan Mortazavi ========================
     {
-        id: 11,
+        id: 14,
         imageSrc: ehsanBGNew,
         profileSrc: "/ehsan-mortazavi",
         firstName: "ehsan",
@@ -197,15 +201,36 @@ export const slides: Slide[] = [
         role: "contentCreation"
     },
 
-    // ======================== Amin Ghasemi ========================
+    // ======================== Edwin Meriaux ========================
     {
         id: 16,
-        imageSrc: aminBGNew,
-        profileSrc: "/amin-ghasemi",
-        firstName: "amin",
-        lastName: "ghasemi",
-        fullName: "aminGhasemi",
-        role: "creativity"
+        imageSrc: edwinBG,
+        profileSrc: "/edwin-meriaux",
+        firstName: "edwin",
+        lastName: "meriaux",
+        fullName: "edwinMeriaux",
+        role: "..."
     },
 
+    // ======================== Arash Aghazade ========================
+    {
+        id: 17,
+        imageSrc: unknownBoyProfile,
+        profileSrc: "/arash-aghazade",
+        firstName: "arash",
+        lastName: "aghazade",
+        fullName: "arashAghazade",
+        role: "..."
+    },
+
+    // ======================== Mohammad Bigdeli ========================
+    {
+        id: 18,
+        imageSrc: unknownBoyProfile,
+        profileSrc: "/mohammad-bigdeli",
+        firstName: "mohammad",
+        lastName: "bigdeli",
+        fullName: "mohammadBigdeli",
+        role: "..."
+    },
 ];

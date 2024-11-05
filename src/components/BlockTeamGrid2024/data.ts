@@ -2,6 +2,7 @@ import {
     aminBG,
     aminBGNew,
     baharanBG,
+    edwinBG,
     ehsanBGNew,
     erfanBGNew,
     fatemehBGNew,
@@ -15,6 +16,8 @@ import {
     reihanehBGNew,
     rooyanBGNew,
     saminBG,
+    unknownBoyProfile,
+    unknownProfile,
     zahraBGNew,
 } from "../../assets";
 
@@ -194,24 +197,36 @@ export const items: Item[] = [
         role: "contentCreation"
     },
 
-    // ======================== Amin Ghasemi ========================
+    // ======================== Edwin Meriaux ========================
     {
         id: 16,
-        imageSrc: aminBGNew,
-        profileSrc: "#",
-        firstName: "amin",
-        lastName: "ghasemi",
-        fullName: "aminGhasemi",
-        role: "creativity"
+        imageSrc: edwinBG,
+        profileSrc: "/edwin-meriaux",
+        firstName: "edwin",
+        lastName: "meriaux",
+        fullName: "edwinMeriaux",
+        role: "..."
     },
 
-    // {
-    //     id: 17,
-    //     imageSrc: "",
-    //     profileSrc: "",
-    //     firstName: "",
-    //     lastName: "",
-    //     fullName: "",
-    //     role: ""
-    // },
+    // ======================== Arash Aghazade ========================
+    {
+        id: 17,
+        imageSrc: unknownBoyProfile,
+        profileSrc: "/#",
+        firstName: "arash",
+        lastName: "aghazade",
+        fullName: "arashAghazade",
+        role: "..."
+    },
+
+    // ======================== Mohammad Bigdeli ========================
+    {
+        id: 18,
+        imageSrc: unknownBoyProfile,
+        profileSrc: "/mohammad-bigdeli",
+        firstName: "mohammad",
+        lastName: "bigdeli",
+        fullName: "mohammadBigdeli",
+        role: "..."
+    },
 ];
