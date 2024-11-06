@@ -203,7 +203,7 @@ export const slides: Slide[] = [
         firstName: "edwin",
         lastName: "meriaux",
         fullName: "edwinMeriaux",
-        role: "..."
+        role: "curation"
     },
 
     // ======================== Arash Aghazade ========================
@@ -214,7 +214,7 @@ export const slides: Slide[] = [
         firstName: "arash",
         lastName: "aghazade",
         fullName: "arashAghazade",
-        role: "..."
+        role: "sponsorship"
     },
 
     // ======================== Mohammad Bigdeli ========================
@@ -225,6 +225,6 @@ export const slides: Slide[] = [
         firstName: "mohammad",
         lastName: "bigdeli",
         fullName: "mohammadBigdeli",
-        role: "..."
+        role: "sponsorship"
     },
 ];
