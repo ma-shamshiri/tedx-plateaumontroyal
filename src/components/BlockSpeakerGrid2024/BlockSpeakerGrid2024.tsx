@@ -13,7 +13,8 @@ import {
     sami,
     shaun,
     sylvain,
-    unknownGirlProfile
+    unknownGirlProfile,
+    valerie
 } from '../../assets';
 
 const BlockSpeakerGrid2024: React.FC = () => {
@@ -145,7 +146,7 @@ const BlockSpeakerGrid2024: React.FC = () => {
                                             fontWeight="bold"
                                             fontFamily="'Big Shoulders Display', serif"
                                         >
-                                            Mitzberg
+                                            Mintzberg
                                         </Text>
                                     </Box>
                                 </Box>
@@ -526,7 +527,7 @@ const BlockSpeakerGrid2024: React.FC = () => {
                 >
                     <Box className="item" id="item-1">
                         <Box className="item-img">
-                            <img src={unknownGirlProfile} alt="Item 1" />
+                            <img src={valerie} alt="Item 1" />
                         </Box>
                         <Box className="item-copy">
                             <Box className="item-copy-1">
@@ -548,7 +549,7 @@ const BlockSpeakerGrid2024: React.FC = () => {
                                             fontWeight="bold"
                                             fontFamily="'Big Shoulders Display', serif"
                                         >
-                                            Valerie
+                                            Valérie
                                         </Text>
                                     </Box>
                                 </Box>

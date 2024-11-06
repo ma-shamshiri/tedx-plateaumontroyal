@@ -263,7 +263,7 @@ import mohammadHasanBGNew from "./assets/images/mohammadHassanBGNew.jpg"
 import aminBGNew from "./assets/images/aminBGNew.jpg"
 import rooyanBGNew from "./assets/images/rooyanBGNew.jpg"
 import iranBGNew from "./assets/images/iranBGNew.jpg"
-import brian from "./assets/images/brian.jpg"
+import brian from "./assets/images/brian.png"
 import buddle from "./assets/images/buddle.jpg"
 import charles from "./assets/images/charles.webp"
 import charles2 from "./assets/images/charles.jpg"
@@ -271,7 +271,7 @@ import ehson from "./assets/images/ehson.jpg"
 import henry from "./assets/images/henry.png"
 import sami from "./assets/images/sami.jpg"
 import shaun from "./assets/images/shaun.png"
-import sylvain from "./assets/images/sylvain.jpg"
+import sylvain from "./assets/images/sylvain.png"
 import radaii from "./assets/images/radaii.jpg"
 import shakour from "./assets/images/shakour.jpg"
 import snapshot1 from "./assets/images/videoSnapshot1.webp";
@@ -284,10 +284,46 @@ import snapshot7 from "./assets/images/videoSnapshot7.webp";
 import snapshot8 from "./assets/images/videoSnapshot8.webp";
 import snapshot9 from "./assets/images/videoSnapshot9.webp";
 import groupMeeting1 from "./assets/images/groupMeeting1.mp4";
-import Amin2 from "./assets/images/Amin2.jpg";
+import aminBG2024 from "./assets/images/aminBG2024.jpg";
+import arashBG2024 from "./assets/images/arashBG2024.jpeg";
+import ehsanBG2024 from "./assets/images/ehsanBG2024.jpeg";
+import minaBG2024 from "./assets/images/minaBG2024.jpeg";
+import saminBG2024 from "./assets/images/saminBG2024.jpeg";
+import fatemehBG2024 from "./assets/images/fatemehBG2024.jpeg";
+import mohammaderfanBG2024 from "./assets/images/mohammaderfanBG2024.jpeg";
+import reihanehBG2024 from "./assets/images/reihanehBG2024.jpeg";
+import mohammadhasanBG2024 from "./assets/images/mohammadhasanBG2024.jpeg";
+import melikaBG2024 from "./assets/images/melikaBG2024.jpeg";
+import baharanBG2024 from "./assets/images/baharanBG2024.jpeg";
+import hamidrezaBG2024 from "./assets/images/hamidrezaBG2024.jpeg";
+import iranBG2024 from "./assets/images/iranBG2024.jpeg";
+import pegahBG2024 from "./assets/images/pegahBG2024.jpeg";
+import motaharehBG2024 from "./assets/images/motaharehBG2024.jpeg";
+import royanBG2024 from "./assets/images/royanBG2024.jpeg";
+import mohammadBG2024 from "./assets/images/mohammadBG2024.jpeg";
+import edwinBG2024 from "./assets/images/edwinBG2024.jpeg";
+import valerie from "./assets/images/valerie.jpg";
 
 export {
-    Amin2,
+    valerie,
+    aminBG2024,
+    arashBG2024,
+    ehsanBG2024,
+    minaBG2024,
+    saminBG2024,
+    fatemehBG2024,
+    mohammaderfanBG2024,
+    reihanehBG2024,
+    mohammadhasanBG2024,
+    melikaBG2024,
+    baharanBG2024,
+    hamidrezaBG2024,
+    iranBG2024,
+    pegahBG2024,
+    motaharehBG2024,
+    royanBG2024,
+    mohammadBG2024,
+    edwinBG2024,
     groupMeeting1,
     snapshot1,
     snapshot2,

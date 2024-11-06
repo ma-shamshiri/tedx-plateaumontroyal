@@ -1,24 +1,22 @@
 import {
-    aminBG,
-    aminBGNew,
-    baharanBG,
-    edwinBG,
-    ehsanBGNew,
-    erfanBGNew,
-    fatemehBGNew,
-    hamidrezaBG,
-    iranBGNew,
-    melikaBG,
-    minaBGNew,
-    mohammadHasanBGNew,
-    motaharehBG,
-    pegahBG,
-    reihanehBGNew,
-    rooyanBGNew,
-    saminBG,
-    unknownBoyProfile,
-    unknownProfile,
-    zahraBGNew,
+    aminBG2024,
+    saminBG2024,
+    fatemehBG2024,
+    mohammaderfanBG2024,
+    pegahBG2024,
+    reihanehBG2024,
+    motaharehBG2024,
+    melikaBG2024,
+    baharanBG2024,
+    mohammadhasanBG2024,
+    minaBG2024,
+    hamidrezaBG2024,
+    royanBG2024,
+    ehsanBG2024,
+    iranBG2024,
+    edwinBG2024,
+    arashBG2024,
+    mohammadBG2024,
 } from "../../assets";
 
 export interface Item {
@@ -35,7 +33,7 @@ export const items: Item[] = [
     // ======================== Samin Majidi ========================
     {
         id: 1,
-        imageSrc: saminBG,
+        imageSrc: saminBG2024,
         profileSrc: "https://ca.linkedin.com/in/samin-majidi-05b77a250",
         firstName: "samin",
         lastName: "majidi",
@@ -46,7 +44,7 @@ export const items: Item[] = [
     // ======================== Fatemeh Tavanaei ========================
     {
         id: 2,
-        imageSrc: fatemehBGNew,
+        imageSrc: fatemehBG2024,
         profileSrc: "https://ca.linkedin.com/in/fatemeh-tavanaei-sereshgi-394a7957",
         firstName: "fatemeh",
         lastName: "tavanaei",
@@ -57,7 +55,7 @@ export const items: Item[] = [
     // ======================== Mohammaderfan Mohit ========================
     {
         id: 3,
-        imageSrc: erfanBGNew,
+        imageSrc: mohammaderfanBG2024,
         profileSrc: "#",
         firstName: "mohammaderfan",
         lastName: "mohit",
@@ -68,7 +66,7 @@ export const items: Item[] = [
     // ======================== Mohammad Amin Shamshiri ========================
     {
         id: 4,
-        imageSrc: aminBG,
+        imageSrc: aminBG2024,
         profileSrc: "https://ca.linkedin.com/in/ma-shamshiri",
         firstName: "mohammadAmin",
         lastName: "shamshiri",
@@ -79,7 +77,7 @@ export const items: Item[] = [
     // ======================== Pegah Einakchi ========================
     {
         id: 5,
-        imageSrc: pegahBG,
+        imageSrc: pegahBG2024,
         profileSrc: "#",
         firstName: "pegah",
         lastName: "einakchi",
@@ -90,7 +88,7 @@ export const items: Item[] = [
     // ======================== Reihaneh Ghoroghchian ========================
     {
         id: 6,
-        imageSrc: reihanehBGNew,
+        imageSrc: reihanehBG2024,
         profileSrc: "https://ca.linkedin.com/in/reihaneh-ghoroghchian-636661182",
         firstName: "reihaneh",
         lastName: "ghoroghchian",
@@ -101,7 +99,7 @@ export const items: Item[] = [
     // ======================== Motahareh Pourrahimi ========================
     {
         id: 7,
-        imageSrc: motaharehBG,
+        imageSrc: motaharehBG2024,
         profileSrc: "https://ca.linkedin.com/in/motahareh-pour-ahimi-43550417b",
         firstName: "motahareh",
         lastName: "pourrahimi",
@@ -112,7 +110,7 @@ export const items: Item[] = [
     // ======================== Melika Seyedi ========================
     {
         id: 8,
-        imageSrc: melikaBG,
+        imageSrc: melikaBG2024,
         profileSrc: "https://ca.linkedin.com/in/melika-seyedi-048416140",
         firstName: "melika",
         lastName: "seyedi",
@@ -123,7 +121,7 @@ export const items: Item[] = [
     // ======================== Baharan Nouriinanloo ========================
     {
         id: 9,
-        imageSrc: baharanBG,
+        imageSrc: baharanBG2024,
         profileSrc: "https://ca.linkedin.com/in/baharan-nouriv",
         firstName: "baharan",
         lastName: "nouriinanloo",
@@ -134,7 +132,7 @@ export const items: Item[] = [
     // ======================== Mohammad Hassan Azad ========================
     {
         id: 10,
-        imageSrc: mohammadHasanBGNew,
+        imageSrc: mohammadhasanBG2024,
         profileSrc: "#",
         firstName: "mohammadHasan",
         lastName: "azad",
@@ -145,7 +143,7 @@ export const items: Item[] = [
     // ======================== Mina Taraghi ========================
     {
         id: 11,
-        imageSrc: minaBGNew,
+        imageSrc: minaBG2024,
         profileSrc: "https://ca.linkedin.com/in/minataraghi?trk=people-guest_people_search-card",
         firstName: "mina",
         lastName: "taraghi",
@@ -156,7 +154,7 @@ export const items: Item[] = [
     // ======================== Hamidreza Ermagan ========================
     {
         id: 12,
-        imageSrc: hamidrezaBG,
+        imageSrc: hamidrezaBG2024,
         profileSrc: "https://ca.linkedin.com/in/hrermagan",
         firstName: "hamidreza",
         lastName: "ermagan",
@@ -167,7 +165,7 @@ export const items: Item[] = [
     // ======================== Royan Jafari ========================
     {
         id: 13,
-        imageSrc: rooyanBGNew,
+        imageSrc: royanBG2024,
         profileSrc: "https://ca.linkedin.com/in/royan-jafari",
         firstName: "royan",
         lastName: "jafari",
@@ -178,7 +176,7 @@ export const items: Item[] = [
     // ======================== Ehsan Mortazavi ========================
     {
         id: 14,
-        imageSrc: ehsanBGNew,
+        imageSrc: ehsanBG2024,
         profileSrc: "#",
         firstName: "ehsan",
         lastName: "mortazavi",
@@ -189,7 +187,7 @@ export const items: Item[] = [
     // ======================== Iran Zare ========================
     {
         id: 15,
-        imageSrc: iranBGNew,
+        imageSrc: iranBG2024,
         profileSrc: "#",
         firstName: "iran",
         lastName: "zare",
@@ -200,7 +198,7 @@ export const items: Item[] = [
     // ======================== Edwin Meriaux ========================
     {
         id: 16,
-        imageSrc: edwinBG,
+        imageSrc: edwinBG2024,
         profileSrc: "/edwin-meriaux",
         firstName: "edwin",
         lastName: "meriaux",
@@ -211,7 +209,7 @@ export const items: Item[] = [
     // ======================== Arash Aghazade ========================
     {
         id: 17,
-        imageSrc: unknownBoyProfile,
+        imageSrc: arashBG2024,
         profileSrc: "/#",
         firstName: "arash",
         lastName: "aghazade",
@@ -222,7 +220,7 @@ export const items: Item[] = [
     // ======================== Mohammad Bigdeli ========================
     {
         id: 18,
-        imageSrc: unknownBoyProfile,
+        imageSrc: mohammadBG2024,
         profileSrc: "/mohammad-bigdeli",
         firstName: "mohammad",
         lastName: "bigdeli",

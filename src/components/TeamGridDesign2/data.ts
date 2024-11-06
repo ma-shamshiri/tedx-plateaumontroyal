@@ -1,26 +1,22 @@
 import {
-    Amin2,
-    aminBG,
-    aminBGNew,
-    baharanBG,
-    edwinBG,
-    ehsanBGNew,
-    erfanBGNew,
-    fatemehBGNew,
-    hamidrezaBG,
-    iranBGNew,
-    melikaBG,
-    minaBGNew,
-    mohammadHasanBGNew,
-    motaharehBG,
-    pegahBG,
-    reihanehBGNew,
-    rooyanBGNew,
-    saminBG,
-    teamGroupPic3,
-    unknownBoyProfile,
-    unknownProfile,
-    zahraBGNew,
+    aminBG2024,
+    saminBG2024,
+    fatemehBG2024,
+    mohammaderfanBG2024,
+    pegahBG2024,
+    reihanehBG2024,
+    motaharehBG2024,
+    melikaBG2024,
+    baharanBG2024,
+    mohammadhasanBG2024,
+    minaBG2024,
+    hamidrezaBG2024,
+    royanBG2024,
+    ehsanBG2024,
+    iranBG2024,
+    edwinBG2024,
+    arashBG2024,
+    mohammadBG2024,
 } from "../../assets";
 
 export interface Slide {
@@ -37,7 +33,7 @@ export const slides: Slide[] = [
     // ======================== Samin Majidi ========================
     {
         id: 1,
-        imageSrc: saminBG,
+        imageSrc: saminBG2024,
         profileSrc: "/samin-majidi",
         firstName: "samin",
         lastName: "majidi",
@@ -48,7 +44,7 @@ export const slides: Slide[] = [
     // ======================== Fatemeh Tavanaei ========================
     {
         id: 2,
-        imageSrc: fatemehBGNew,
+        imageSrc: fatemehBG2024,
         profileSrc: "/fatemeh-tavanaei",
         firstName: "fatemeh",
         lastName: "tavanaei",
@@ -59,7 +55,7 @@ export const slides: Slide[] = [
     // ======================== Mohammaderfan Mohit ========================
     {
         id: 3,
-        imageSrc: erfanBGNew,
+        imageSrc: mohammaderfanBG2024,
         profileSrc: "/mohammaderfan-mohit",
         firstName: "mohammaderfan",
         lastName: "mohit",
@@ -70,7 +66,7 @@ export const slides: Slide[] = [
     // ======================== Mohammad Amin Shamshiri ========================
     {
         id: 4,
-        imageSrc: aminBG,
+        imageSrc: aminBG2024,
         profileSrc: "/amin-shamshiri",
         firstName: "mohammadAmin",
         lastName: "shamshiri",
@@ -81,7 +77,7 @@ export const slides: Slide[] = [
     // ======================== Pegah Einakchi ========================
     {
         id: 5,
-        imageSrc: pegahBG,
+        imageSrc: pegahBG2024,
         profileSrc: "/pegah-einakchi",
         firstName: "pegah",
         lastName: "einakchi",
@@ -92,7 +88,7 @@ export const slides: Slide[] = [
     // ======================== Reihaneh Ghoroghchian ========================
     {
         id: 6,
-        imageSrc: reihanehBGNew,
+        imageSrc: reihanehBG2024,
         profileSrc: "/reihaneh-ghoroghchian",
         firstName: "reihaneh",
         lastName: "ghoroghchian",
@@ -103,7 +99,7 @@ export const slides: Slide[] = [
     // ======================== Motahareh Pourrahimi ========================
     {
         id: 7,
-        imageSrc: motaharehBG,
+        imageSrc: motaharehBG2024,
         profileSrc: "/motahareh-pourrahimi",
         firstName: "motahareh",
         lastName: "pourrahimi",
@@ -114,7 +110,7 @@ export const slides: Slide[] = [
     // ======================== Melika Seyedi ========================
     {
         id: 8,
-        imageSrc: melikaBG,
+        imageSrc: melikaBG2024,
         profileSrc: "/melika-seyedi",
         firstName: "melika",
         lastName: "seyedi",
@@ -122,12 +118,10 @@ export const slides: Slide[] = [
         role: "headOfSponsorship"
     },
 
-
-
     // ======================== Baharan Nouriinanloo ========================
     {
         id: 9,
-        imageSrc: baharanBG,
+        imageSrc: baharanBG2024,
         profileSrc: "/baharan-nouriinanloo",
         firstName: "baharan",
         lastName: "nouriinanloo",
@@ -138,7 +132,7 @@ export const slides: Slide[] = [
     // ======================== Mohammad Hassan Azad ========================
     {
         id: 10,
-        imageSrc: mohammadHasanBGNew,
+        imageSrc: mohammadhasanBG2024,
         profileSrc: "/mohammadhasan-azad",
         firstName: "mohammadHasan",
         lastName: "azad",
@@ -149,7 +143,7 @@ export const slides: Slide[] = [
     // ======================== Mina Taraghi ========================
     {
         id: 11,
-        imageSrc: minaBGNew,
+        imageSrc: minaBG2024,
         profileSrc: "/mina-taraghi",
         firstName: "mina",
         lastName: "taraghi",
@@ -160,7 +154,7 @@ export const slides: Slide[] = [
     // ======================== Hamidreza Ermagan ========================
     {
         id: 12,
-        imageSrc: hamidrezaBG,
+        imageSrc: hamidrezaBG2024,
         profileSrc: "/hamidreza-ermagan",
         firstName: "hamidreza",
         lastName: "ermagan",
@@ -171,7 +165,7 @@ export const slides: Slide[] = [
     // ======================== Royan Jafari ========================
     {
         id: 13,
-        imageSrc: rooyanBGNew,
+        imageSrc: royanBG2024,
         profileSrc: "/royan-jafari",
         firstName: "royan",
         lastName: "jafari",
@@ -182,7 +176,7 @@ export const slides: Slide[] = [
     // ======================== Ehsan Mortazavi ========================
     {
         id: 14,
-        imageSrc: ehsanBGNew,
+        imageSrc: ehsanBG2024,
         profileSrc: "/ehsan-mortazavi",
         firstName: "ehsan",
         lastName: "mortazavi",
@@ -193,7 +187,7 @@ export const slides: Slide[] = [
     // ======================== Iran Zare ========================
     {
         id: 15,
-        imageSrc: iranBGNew,
+        imageSrc: iranBG2024,
         profileSrc: "/iran-zare",
         firstName: "iran",
         lastName: "zare",
@@ -204,7 +198,7 @@ export const slides: Slide[] = [
     // ======================== Edwin Meriaux ========================
     {
         id: 16,
-        imageSrc: edwinBG,
+        imageSrc: edwinBG2024,
         profileSrc: "/edwin-meriaux",
         firstName: "edwin",
         lastName: "meriaux",
@@ -215,7 +209,7 @@ export const slides: Slide[] = [
     // ======================== Arash Aghazade ========================
     {
         id: 17,
-        imageSrc: unknownBoyProfile,
+        imageSrc: arashBG2024,
         profileSrc: "/arash-aghazade",
         firstName: "arash",
         lastName: "aghazade",
@@ -226,7 +220,7 @@ export const slides: Slide[] = [
     // ======================== Mohammad Bigdeli ========================
     {
         id: 18,
-        imageSrc: unknownBoyProfile,
+        imageSrc: mohammadBG2024,
         profileSrc: "/mohammad-bigdeli",
         firstName: "mohammad",
         lastName: "bigdeli",
