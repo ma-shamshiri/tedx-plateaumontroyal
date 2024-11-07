@@ -14,8 +14,8 @@ const BlockTeamGrid2024 = () => {
 
     const items = originalItems.map(item => ({
         ...item,
-        firstName: t(item.fullName ?? "First Name"),
-        lastName: t(item.fullName ?? "Last Name"),
+        firstName: t(item.firstName ?? "First Name"),
+        lastName: t(item.lastName ?? "Last Name"),
         fullName: t(item.fullName ?? "Full Name"),
         role: t(item.role ?? "Role"),
     }));
@@ -122,16 +122,22 @@ const BlockTeamGrid2024 = () => {
                                                 alignItems="center"
                                                 textAlign="center"
                                                 padding="8em 2em"
-                                                fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Acme', sans-serif"}
+                                                // fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Acme', sans-serif"}
                                                 color={useColorModeValue("black", "white")}
                                                 transition="0.3s cubic-bezier(0.075, 0.82, 0.165, 1)"
                                                 zIndex="2"
                                             >
-                                                <Text fontSize="3.2rem" fontWeight="bold">
-                                                    {item.fullName}
+                                                <Text
+                                                    fontSize="4rem"
+                                                    fontWeight="bold"
+                                                    fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Acme', sans-serif"}
+                                                >
+                                                    {item.firstName}
                                                 </Text>
                                                 <Text
-                                                    fontSize="2.7rem"
+                                                    fontSize="3.2rem"
+                                                    fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Big Shoulders Display', sans-serif"}
+                                                    fontWeight="bold"
                                                 >
                                                     {item.role}
                                                 </Text>
@@ -221,12 +227,19 @@ const BlockTeamGrid2024 = () => {
                                         height="100%"
                                         padding="2em 2em"
                                         justifyContent="space-between"
-                                        fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Acme', sans-serif"}
                                     >
-                                        <Text fontSize="3rem" fontWeight="bold">
-                                            {item.fullName}
+                                        <Text
+                                            fontSize="3rem"
+                                            fontWeight="bold"
+                                            fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Acme', sans-serif"}
+                                        >
+                                            {item.firstName}
                                         </Text>
-                                        <Text fontSize="2.5rem">
+                                        <Text
+                                            fontSize="2.5rem"
+                                            fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Big Shoulders Display', sans-serif"}
+                                            fontWeight="bold"
+                                        >
                                             {item.role}
                                         </Text>
                                     </Flex>

@@ -229,6 +229,7 @@
     "samin": "Samin",
     "majidi": "Majidi",
     "mohammadErfan": "Mohammaderfan",
+    "erfan": "Erfan",
     "mohit": "Mohit",
     "fatemeh": "Fatemeh",
     "tavanaei": "Tavanaei",
@@ -286,6 +287,7 @@
     "sponsorship": "Sponsorship",
     "contentCreation": "Content Creation",
     "webmaster": "Webmaster",
+    "webDeveloper": "Web Developer",
     "eventDirector": "Event Director",
     "techSpecialist": "Tech Specialist",
     "headOfOperation": "Head of Operation",
@@ -302,5 +304,16 @@
     "premiumSupporter": "PREMIUM SUPPORTER",
     "speakerPage2024Title": "Meet the Changemakers",
     "speakerPage2024SubTitle": "Get to Know the Inspiring TEDxPlateauMontRoyal Speakers",
-    "groupMeetingTitle": "The Art of Shaping Ideas"
+    "groupMeetingTitle": "The Art of Shaping Ideas",
+    "logisticsCoordinator": "Logistics Coordinator",
+    "visualExperienceDesigner": "Visual Experience Designer",
+    "audienceExperienceDesigner": "Audience Experience Designer",
+    "graphicDesigner": "Graphic Designer",
+    "videographer": "Videographer",
+    "contentWriter": "Content Writer",
+    "speakerCoordinator": "Speaker Coordinator",
+    "speakerCurator": "Speaker Curator",
+    "sponsorshipCoordinator": "Sponsorship Coordinator",
+    "marketingCoordinator": "Marketing Coordinator",
+    "partnershipCoordinator": "Partnership Coordinator"
 }

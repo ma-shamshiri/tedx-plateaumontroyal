@@ -31,10 +31,11 @@ export interface Item {
 
 export const items: Item[] = [
     // ======================== Samin Majidi ========================
+    // ======================== Samin Majidi ========================
     {
         id: 1,
         imageSrc: saminBG2024,
-        profileSrc: "https://ca.linkedin.com/in/samin-majidi-05b77a250",
+        profileSrc: "/samin-majidi",
         firstName: "samin",
         lastName: "majidi",
         fullName: "saminMajidi",
@@ -45,7 +46,7 @@ export const items: Item[] = [
     {
         id: 2,
         imageSrc: fatemehBG2024,
-        profileSrc: "https://ca.linkedin.com/in/fatemeh-tavanaei-sereshgi-394a7957",
+        profileSrc: "/fatemeh-tavanaei",
         firstName: "fatemeh",
         lastName: "tavanaei",
         fullName: "fatemehTavanaei",
@@ -56,8 +57,8 @@ export const items: Item[] = [
     {
         id: 3,
         imageSrc: mohammaderfanBG2024,
-        profileSrc: "#",
-        firstName: "mohammaderfan",
+        profileSrc: "/mohammaderfan-mohit",
+        firstName: "erfan",
         lastName: "mohit",
         fullName: "mohammadErfanMohit",
         role: "eventDirector"
@@ -67,117 +68,51 @@ export const items: Item[] = [
     {
         id: 4,
         imageSrc: aminBG2024,
-        profileSrc: "https://ca.linkedin.com/in/ma-shamshiri",
-        firstName: "mohammadAmin",
+        profileSrc: "/amin-shamshiri",
+        firstName: "amin",
         lastName: "shamshiri",
         fullName: "mohammadAminShamshiri",
-        role: "techSpecialist"
+        role: "webDeveloper"
     },
 
     // ======================== Pegah Einakchi ========================
     {
         id: 5,
         imageSrc: pegahBG2024,
-        profileSrc: "#",
+        profileSrc: "/pegah-einakchi",
         firstName: "pegah",
         lastName: "einakchi",
         fullName: "pegahEinakchi",
-        role: "headOfOperation"
-    },
-
-    // ======================== Reihaneh Ghoroghchian ========================
-    {
-        id: 6,
-        imageSrc: reihanehBG2024,
-        profileSrc: "https://ca.linkedin.com/in/reihaneh-ghoroghchian-636661182",
-        firstName: "reihaneh",
-        lastName: "ghoroghchian",
-        fullName: "reihanehGhoroghchian",
-        role: "headOfCreativity"
-    },
-
-    // ======================== Motahareh Pourrahimi ========================
-    {
-        id: 7,
-        imageSrc: motaharehBG2024,
-        profileSrc: "https://ca.linkedin.com/in/motahareh-pour-ahimi-43550417b",
-        firstName: "motahareh",
-        lastName: "pourrahimi",
-        fullName: "motaharehPourrahimi",
-        role: "headOfCuration"
-    },
-
-    // ======================== Melika Seyedi ========================
-    {
-        id: 8,
-        imageSrc: melikaBG2024,
-        profileSrc: "https://ca.linkedin.com/in/melika-seyedi-048416140",
-        firstName: "melika",
-        lastName: "seyedi",
-        fullName: "melikaSeyedi",
-        role: "headOfSponsorship"
-    },
-
-    // ======================== Baharan Nouriinanloo ========================
-    {
-        id: 9,
-        imageSrc: baharanBG2024,
-        profileSrc: "https://ca.linkedin.com/in/baharan-nouriv",
-        firstName: "baharan",
-        lastName: "nouriinanloo",
-        fullName: "baharanNouriinanloo",
-        role: "headOfContentCreation"
+        role: "logisticsCoordinator"
     },
 
     // ======================== Mohammad Hassan Azad ========================
     {
-        id: 10,
+        id: 6,
         imageSrc: mohammadhasanBG2024,
-        profileSrc: "#",
+        profileSrc: "/mohammadhasan-azad",
         firstName: "mohammadHasan",
         lastName: "azad",
         fullName: "mohammadHasanAzad",
-        role: "operation"
+        role: "visualExperienceDesigner"
     },
 
-    // ======================== Mina Taraghi ========================
+    // ======================== Reihaneh Ghoroghchian ========================
     {
-        id: 11,
-        imageSrc: minaBG2024,
-        profileSrc: "https://ca.linkedin.com/in/minataraghi?trk=people-guest_people_search-card",
-        firstName: "mina",
-        lastName: "taraghi",
-        fullName: "minaTaraghi",
-        role: "curation"
-    },
-
-    // ======================== Hamidreza Ermagan ========================
-    {
-        id: 12,
-        imageSrc: hamidrezaBG2024,
-        profileSrc: "https://ca.linkedin.com/in/hrermagan",
-        firstName: "hamidreza",
-        lastName: "ermagan",
-        fullName: "hamidrezaErmagan",
-        role: "curation"
-    },
-
-    // ======================== Royan Jafari ========================
-    {
-        id: 13,
-        imageSrc: royanBG2024,
-        profileSrc: "https://ca.linkedin.com/in/royan-jafari",
-        firstName: "royan",
-        lastName: "jafari",
-        fullName: "royanJafari",
-        role: "sponsorship"
+        id: 7,
+        imageSrc: reihanehBG2024,
+        profileSrc: "/reihaneh-ghoroghchian",
+        firstName: "reihaneh",
+        lastName: "ghoroghchian",
+        fullName: "reihanehGhoroghchian",
+        role: "audienceExperienceDesigner"
     },
 
     // ======================== Ehsan Mortazavi ========================
     {
-        id: 14,
+        id: 8,
         imageSrc: ehsanBG2024,
-        profileSrc: "#",
+        profileSrc: "/ehsan-mortazavi",
         firstName: "ehsan",
         lastName: "mortazavi",
         fullName: "ehsanMortazavi",
@@ -186,45 +121,111 @@ export const items: Item[] = [
 
     // ======================== Iran Zare ========================
     {
-        id: 15,
+        id: 9,
         imageSrc: iranBG2024,
-        profileSrc: "#",
+        profileSrc: "/iran-zare",
         firstName: "iran",
         lastName: "zare",
         fullName: "iranZare",
-        role: "contentCreation"
+        role: "videographer"
+    },
+
+    // ======================== Baharan Nouriinanloo ========================
+    {
+        id: 10,
+        imageSrc: baharanBG2024,
+        profileSrc: "/baharan-nouriinanloo",
+        firstName: "baharan",
+        lastName: "nouriinanloo",
+        fullName: "baharanNouriinanloo",
+        role: "contentWriter"
+    },
+
+    // ======================== Motahareh Pourrahimi ========================
+    {
+        id: 11,
+        imageSrc: motaharehBG2024,
+        profileSrc: "/motahareh-pourrahimi",
+        firstName: "motahareh",
+        lastName: "pourrahimi",
+        fullName: "motaharehPourrahimi",
+        role: "speakerCoordinator"
+    },
+
+    // ======================== Mina Taraghi ========================
+    {
+        id: 12,
+        imageSrc: minaBG2024,
+        profileSrc: "/mina-taraghi",
+        firstName: "mina",
+        lastName: "taraghi",
+        fullName: "minaTaraghi",
+        role: "speakerCurator"
+    },
+
+    // ======================== Hamidreza Ermagan ========================
+    {
+        id: 13,
+        imageSrc: hamidrezaBG2024,
+        profileSrc: "/hamidreza-ermagan",
+        firstName: "hamidreza",
+        lastName: "ermagan",
+        fullName: "hamidrezaErmagan",
+        role: "speakerCurator"
     },
 
     // ======================== Edwin Meriaux ========================
     {
-        id: 16,
+        id: 14,
         imageSrc: edwinBG2024,
         profileSrc: "/edwin-meriaux",
         firstName: "edwin",
         lastName: "meriaux",
         fullName: "edwinMeriaux",
-        role: "..."
+        role: "speakerCurator"
     },
 
-    // ======================== Arash Aghazade ========================
+    // ======================== Melika Seyedi ========================
     {
-        id: 17,
-        imageSrc: arashBG2024,
-        profileSrc: "/#",
-        firstName: "arash",
-        lastName: "aghazade",
-        fullName: "arashAghazade",
-        role: "..."
+        id: 15,
+        imageSrc: melikaBG2024,
+        profileSrc: "/melika-seyedi",
+        firstName: "melika",
+        lastName: "seyedi",
+        fullName: "melikaSeyedi",
+        role: "sponsorshipCoordinator"
     },
 
     // ======================== Mohammad Bigdeli ========================
     {
-        id: 18,
+        id: 16,
         imageSrc: mohammadBG2024,
         profileSrc: "/mohammad-bigdeli",
         firstName: "mohammad",
         lastName: "bigdeli",
         fullName: "mohammadBigdeli",
-        role: "..."
+        role: "marketingCoordinator"
+    },
+
+    // ======================== Royan Jafari ========================
+    {
+        id: 17,
+        imageSrc: royanBG2024,
+        profileSrc: "/royan-jafari",
+        firstName: "royan",
+        lastName: "jafari",
+        fullName: "royanJafari",
+        role: "partnershipCoordinator"
+    },
+
+    // ======================== Arash Aghazade ========================
+    {
+        id: 18,
+        imageSrc: arashBG2024,
+        profileSrc: "/arash-aghazade",
+        firstName: "arash",
+        lastName: "aghazade",
+        fullName: "arashAghazade",
+        role: "partnershipCoordinator"
     },
 ];

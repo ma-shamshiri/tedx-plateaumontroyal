@@ -9,8 +9,8 @@ const TeamGridDesign2: React.FC = () => {
 
     const slides = originalSlides.map(item => ({
         ...item,
-        firstName: t(item.fullName ?? "First Name"),
-        lastName: t(item.fullName ?? "Last Name"),
+        firstName: t(item.firstName ?? "First Name"),
+        lastName: t(item.lastName ?? "Last Name"),
         fullName: t(item.fullName ?? "Full Name"),
         role: t(item.role ?? "Role"),
     }));
@@ -113,7 +113,7 @@ const TeamGridDesign2: React.FC = () => {
                                             gap={4}
                                         >
                                             <Text
-                                                fontSize="3rem"
+                                                fontSize="3.5rem"
                                                 fontWeight="bold"
                                                 fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Acme', sans-serif"}
                                                 dir={i18n.language === "fa" ? "rtl" : "ltr"}
@@ -124,12 +124,13 @@ const TeamGridDesign2: React.FC = () => {
                                                 align="center"
                                                 sx={sxTitle}
                                             >
-                                                {slide.fullName}
+                                                {slide.firstName}
                                             </Text>
                                             <Text
-                                                fontSize="2.3rem"
+                                                fontSize="2.8rem"
                                                 fontWeight="bold"
-                                                fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Acme', sans-serif"}
+                                                // fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Acme', sans-serif"}
+                                                fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Big Shoulders Display', sans-serif"}
                                                 dir={i18n.language === "fa" ? "rtl" : "ltr"}
                                                 opacity={hoveredIndex === index ? 1 : 0}
                                                 transition={`opacity ${hoveredIndex === index ? '1s' : '0.2s'} ease-in-out`}
@@ -247,14 +248,15 @@ const TeamGridDesign2: React.FC = () => {
                                             align="center"
                                             sx={sxTitle}
                                         >
-                                            {slide.fullName}
+                                            {slide.firstName}
                                         </Text>
 
                                         <Text
                                             color="white"
-                                            fontSize="2.3rem"
+                                            fontSize="3rem"
                                             // fontWeight="bold"
-                                            fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Acme', sans-serif"}
+                                            // fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Acme', sans-serif"}
+                                            fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Big Shoulders Display', sans-serif"}
                                             dir={i18n.language === "fa" ? "rtl" : "ltr"}
                                             opacity={hoveredIndex === index ? 1 : 0}
                                             transition={`opacity ${hoveredIndex === index ? '1s' : '0.2s'} ease-in-out`}
