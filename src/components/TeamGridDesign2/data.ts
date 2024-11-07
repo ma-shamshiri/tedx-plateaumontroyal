@@ -93,7 +93,7 @@ export const slides: Slide[] = [
         firstName: "mohammadHasan",
         lastName: "azad",
         fullName: "mohammadHasanAzad",
-        role: "visualExperienceDesigner"
+        role: "operationalAssociate"
     },
 
     // ======================== Reihaneh Ghoroghchian ========================
@@ -115,7 +115,7 @@ export const slides: Slide[] = [
         firstName: "ehsan",
         lastName: "mortazavi",
         fullName: "ehsanMortazavi",
-        role: "graphicDesigner"
+        role: "visualDesigner"
     },
 
     // ======================== Iran Zare ========================
@@ -126,7 +126,7 @@ export const slides: Slide[] = [
         firstName: "iran",
         lastName: "zare",
         fullName: "iranZare",
-        role: "videographer"
+        role: "videoCreator"
     },
 
     // ======================== Baharan Nouriinanloo ========================
@@ -148,7 +148,7 @@ export const slides: Slide[] = [
         firstName: "motahareh",
         lastName: "pourrahimi",
         fullName: "motaharehPourrahimi",
-        role: "speakerCoordinator"
+        role: "talksCoordinator"
     },
 
     // ======================== Mina Taraghi ========================
@@ -203,7 +203,7 @@ export const slides: Slide[] = [
         firstName: "mohammad",
         lastName: "bigdeli",
         fullName: "mohammadBigdeli",
-        role: "marketingCoordinator"
+        role: "marketingAssistant"
     },
 
     // ======================== Royan Jafari ========================
@@ -214,7 +214,7 @@ export const slides: Slide[] = [
         firstName: "royan",
         lastName: "jafari",
         fullName: "royanJafari",
-        role: "partnershipCoordinator"
+        role: "partnershipLiaison"
     },
 
     // ======================== Arash Aghazade ========================
@@ -225,6 +225,6 @@ export const slides: Slide[] = [
         firstName: "arash",
         lastName: "aghazade",
         fullName: "arashAghazade",
-        role: "partnershipCoordinator"
+        role: "partnershipLiaison"
     },
 ];

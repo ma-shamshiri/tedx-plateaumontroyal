@@ -94,7 +94,7 @@ export const items: Item[] = [
         firstName: "mohammadHasan",
         lastName: "azad",
         fullName: "mohammadHasanAzad",
-        role: "visualExperienceDesigner"
+        role: "operationalAssociate"
     },
 
     // ======================== Reihaneh Ghoroghchian ========================
@@ -116,7 +116,7 @@ export const items: Item[] = [
         firstName: "ehsan",
         lastName: "mortazavi",
         fullName: "ehsanMortazavi",
-        role: "graphicDesigner"
+        role: "visualDesigner"
     },
 
     // ======================== Iran Zare ========================
@@ -127,7 +127,7 @@ export const items: Item[] = [
         firstName: "iran",
         lastName: "zare",
         fullName: "iranZare",
-        role: "videographer"
+        role: "videoCreator"
     },
 
     // ======================== Baharan Nouriinanloo ========================
@@ -149,7 +149,7 @@ export const items: Item[] = [
         firstName: "motahareh",
         lastName: "pourrahimi",
         fullName: "motaharehPourrahimi",
-        role: "speakerCoordinator"
+        role: "talksCoordinator"
     },
 
     // ======================== Mina Taraghi ========================
@@ -204,7 +204,7 @@ export const items: Item[] = [
         firstName: "mohammad",
         lastName: "bigdeli",
         fullName: "mohammadBigdeli",
-        role: "marketingCoordinator"
+        role: "marketingAssistant"
     },
 
     // ======================== Royan Jafari ========================
@@ -215,7 +215,7 @@ export const items: Item[] = [
         firstName: "royan",
         lastName: "jafari",
         fullName: "royanJafari",
-        role: "partnershipCoordinator"
+        role: "partnershipLiaison"
     },
 
     // ======================== Arash Aghazade ========================
@@ -226,6 +226,6 @@ export const items: Item[] = [
         firstName: "arash",
         lastName: "aghazade",
         fullName: "arashAghazade",
-        role: "partnershipCoordinator"
+        role: "partnershipLiaison"
     },
 ];

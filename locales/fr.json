@@ -315,5 +315,11 @@
     "speakerCurator": "Conservateur des Orateurs",
     "sponsorshipCoordinator": "Coordinateur des Partenariats",
     "marketingCoordinator": "Coordinateur Marketing",
-    "partnershipCoordinator": "Coordinateur des Partenariats"
+    "partnershipCoordinator": "Coordinateur des Partenariats",
+    "talksCoordinator": "Coordinateur des Conférences",
+    "partnershipLiaison": "Responsable des Relations Partenariales",
+    "marketingAssistant": "Assistant Marketing",
+    "videoCreator": "Créateur Vidéo",
+    "visualDesigner": "Designer Visuel",
+    "operationalAssociate": "Associé Opérationnel"
 }

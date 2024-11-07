@@ -315,5 +315,11 @@
     "speakerCurator": "Speaker Curator",
     "sponsorshipCoordinator": "Sponsorship Coordinator",
     "marketingCoordinator": "Marketing Coordinator",
-    "partnershipCoordinator": "Partnership Coordinator"
+    "partnershipCoordinator": "Partnership Coordinator",
+    "talksCoordinator": "Talks Coordinator",
+    "partnershipLiaison": "Partnership Liaison",
+    "marketingAssistant": "Marketing Assistant",
+    "videoCreator": "Video Creator",
+    "visualDesigner": "Visual Designer",
+    "operationalAssociate": "Operational Associate"
 }
