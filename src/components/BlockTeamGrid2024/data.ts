@@ -116,7 +116,7 @@ export const items: Item[] = [
         firstName: "ehsan",
         lastName: "mortazavi",
         fullName: "ehsanMortazavi",
-        role: "contentCreation"
+        role: "graphicDesigner"
     },
 
     // ======================== Iran Zare ========================
