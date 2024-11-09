@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { items as originalItems } from "./data";
 import { useTranslation } from "react-i18next";
-
+import { Link as RouterLink } from "react-router-dom";
 
 
 const BlockTeamGrid2024 = () => {
@@ -67,9 +67,9 @@ const BlockTeamGrid2024 = () => {
                     <SimpleGrid columns={{ base: 1, md: 3, lg: 4, xl: 4 }} spacing={0}>
                         {items.map((item, index) => (
                             <Link
+                                as={RouterLink}
+                                to={`/team/${item.profileSrc}`}
                                 href={item.profileSrc}
-                                target="_blank"
-                                rel="noopener noreferrer"
                             >
                                 <Flex key={item.firstName} direction="row" alignItems="stretch" flex="1" height="100%">
                                     <Box flex="1" position="relative" height="100%" overflow="hidden">
@@ -118,19 +118,19 @@ const BlockTeamGrid2024 = () => {
                                                 height="100%"
                                                 display="flex"
                                                 flexDirection="column"
-                                                justifyContent="space-between"
+                                                justifyContent="center"
                                                 alignItems="center"
                                                 textAlign="center"
                                                 padding="8em 2em"
-                                                // fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Acme', sans-serif"}
                                                 color={useColorModeValue("black", "white")}
                                                 transition="0.3s cubic-bezier(0.075, 0.82, 0.165, 1)"
                                                 zIndex="2"
+                                                gap={{ base: "0", lg: "4rem" }}
                                             >
                                                 <Text
-                                                    fontSize="4rem"
-                                                    fontWeight="bold"
+                                                    fontSize="5rem"
                                                     fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Acme', sans-serif"}
+                                                    paddingTop={{ base: "initial", lg: "10rem" }}
                                                 >
                                                     {item.firstName}
                                                 </Text>
@@ -138,6 +138,8 @@ const BlockTeamGrid2024 = () => {
                                                     fontSize="3.2rem"
                                                     fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Big Shoulders Display', sans-serif"}
                                                     fontWeight="bold"
+                                                    letterSpacing={"1px"}
+                                                    color="#16F8B6"
                                                 >
                                                     {item.role}
                                                 </Text>
@@ -162,100 +164,102 @@ const BlockTeamGrid2024 = () => {
 
                 <Flex height="100%" width="100%" direction="column">
                     {items.map((item, index) => (
-                        // <Link
-                        //     href={item.profileSrc}
-                        //     target="_blank"
-                        //     rel="noopener noreferrer"
-                        // >
-                        <Box key={item.firstName} position="relative" overflow="hidden" flex="1">
-                            <Box
-                                className="item-wrapper"
-                                position="relative"
-                                height="100%"
-                                _hover={{
-                                    ".img-overlay": {
-                                        left: "100%", // Move overlay from left to right on hover
-                                    },
-                                    img: {
-                                        transform: "scale(1)", // Scale image back to normal size on hover
-                                    },
-                                    ".item-copy": {
-                                        color: "#fff", // Change text color on hover
-                                    },
-                                }}
-                            >
-                                <Image
-                                    src={item.imageSrc}
-                                    alt={item.role}
-                                    width="100%"
-                                    height="100%"
-                                    objectFit="cover"
-                                    transform="scale(1.5)"
-                                    transition="2s cubic-bezier(0.075, 0.82, 0.165, 1)"
-                                />
+                        <Link
+                            as={RouterLink}
+                            to={`/team/${item.profileSrc}`}
+                            href={item.profileSrc}
+                        >
+                            <Box key={item.firstName} position="relative" overflow="hidden" flex="1">
                                 <Box
-                                    className="img-overlay"
-                                    position="absolute"
-                                    bg={useColorModeValue("#dfdbd5", "#232323")}
-                                    opacity="0.92"
-                                    top="0"
-                                    left="0"
-                                    width="100%"
+                                    className="item-wrapper"
+                                    position="relative"
                                     height="100%"
-                                    transition="1s cubic-bezier(0.075, 0.82, 0.165, 1)"
-                                    zIndex="1"
-                                />
-                                <Box
-                                    className="item-copy"
-                                    position="absolute"
-                                    top="0"
-                                    width="100%"
-                                    height="100%"
-                                    display="flex"
-                                    flexDirection="column"
-                                    justifyContent="space-between"
-                                    alignItems="center"
-                                    textAlign="center"
-                                    fontFamily="'Acme', sans-serif"
-                                    color={useColorModeValue("black", "white")}
-                                    transition="0.3s cubic-bezier(0.075, 0.82, 0.165, 1)"
-                                    zIndex="2"
+                                    _hover={{
+                                        ".img-overlay": {
+                                            left: "100%", // Move overlay from left to right on hover
+                                        },
+                                        img: {
+                                            transform: "scale(1)", // Scale image back to normal size on hover
+                                        },
+                                        ".item-copy": {
+                                            color: "#fff", // Change text color on hover
+                                        },
+                                    }}
                                 >
-                                    <Flex
-                                        flexDirection="column"
+                                    <Image
+                                        src={item.imageSrc}
+                                        alt={item.role}
                                         width="100%"
                                         height="100%"
-                                        padding="2em 2em"
+                                        objectFit="cover"
+                                        transform="scale(1.5)"
+                                        transition="2s cubic-bezier(0.075, 0.82, 0.165, 1)"
+                                    />
+                                    <Box
+                                        className="img-overlay"
+                                        position="absolute"
+                                        bg={useColorModeValue("#dfdbd5", "#232323")}
+                                        opacity="0.92"
+                                        top="0"
+                                        left="0"
+                                        width="100%"
+                                        height="100%"
+                                        transition="1s cubic-bezier(0.075, 0.82, 0.165, 1)"
+                                        zIndex="1"
+                                    />
+                                    <Box
+                                        className="item-copy"
+                                        position="absolute"
+                                        top="0"
+                                        width="100%"
+                                        height="100%"
+                                        display="flex"
+                                        flexDirection="column"
                                         justifyContent="space-between"
+                                        alignItems="center"
+                                        textAlign="center"
+                                        fontFamily="'Acme', sans-serif"
+                                        color={useColorModeValue("black", "white")}
+                                        transition="0.3s cubic-bezier(0.075, 0.82, 0.165, 1)"
+                                        zIndex="2"
                                     >
-                                        <Text
-                                            fontSize="3rem"
-                                            fontWeight="bold"
-                                            fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Acme', sans-serif"}
+                                        <Flex
+                                            flexDirection="column"
+                                            width="100%"
+                                            height="100%"
+                                            padding="2em 2em"
+                                            justifyContent="center"
+                                            gap="4rem"
                                         >
-                                            {item.firstName}
-                                        </Text>
-                                        <Text
-                                            fontSize="2.5rem"
-                                            fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Big Shoulders Display', sans-serif"}
-                                            fontWeight="bold"
-                                        >
-                                            {item.role}
-                                        </Text>
-                                    </Flex>
+                                            <Text
+                                                fontSize="4rem"
+                                                fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Acme', sans-serif"}
+                                            >
+                                                {item.firstName}
+                                            </Text>
+                                            <Text
+                                                fontSize="2.5rem"
+                                                fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Big Shoulders Display', sans-serif"}
+                                                fontWeight="bold"
+                                                color="#16F8B6"
+                                                letterSpacing={"1px"}
+                                            >
+                                                {item.role}
+                                            </Text>
+                                        </Flex>
+                                    </Box>
                                 </Box>
-                            </Box>
 
-                            {/* Divider for small screens */}
-                            {index < items.length - 1 && (
-                                <Box
-                                    height="1px"
-                                    width="100%"
-                                    bg={useColorModeValue("#fff", "#fff")}
-                                />
-                            )}
-                        </Box>
-                        // </Link>
+                                {/* Divider for small screens */}
+                                {index < items.length - 1 && (
+                                    <Box
+                                        height="1px"
+                                        width="100%"
+                                        bg={useColorModeValue("#fff", "#fff")}
+                                    />
+                                )}
+                            </Box>
+                        </Link>
                     ))}
                 </Flex>
             )}

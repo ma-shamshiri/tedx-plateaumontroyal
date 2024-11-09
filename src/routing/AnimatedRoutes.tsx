@@ -41,8 +41,34 @@ import TeamPage from "./TeamPage";
 // import TeamPageDesign3 from './TeamPageDesign3';
 import EventPage from "./EventPage";
 import Event2024Page from "./Event2024Page";
-import { BlockVideoGallery } from '../components/BlockVideoGallery';
 import VideoGalleryPage from './VideoGalleryPage';
+import SaminMajidi2024 from '../components/TeamMembers2024/SaminMajidi2024';
+import FatemehTavanaei2024 from '../components/TeamMembers2024/FatemehTavanaei2024';
+import ReihanehGhoroghchian2024 from '../components/TeamMembers2024/ReihanehGhoroghchian2024';
+import MohammaderfanMohit2024 from '../components/TeamMembers2024/MohammaderfanMohit2024';
+import HamidrezaErmagan2024 from '../components/TeamMembers2024/HamidrezaErmagan2024';
+import BaharanNouriinanloo2024 from '../components/TeamMembers2024/BaharanNouriinanloo2024';
+import MelikaSeyedi2024 from '../components/TeamMembers2024/MelikaSeyedi2024';
+import MinaTaraghi2024 from '../components/TeamMembers2024/MinaTaraghi2024';
+import MotaharehPourrahimi2024 from '../components/TeamMembers2024/MotaharehPourrahimi2024';
+import PegahEinakchi2024 from '../components/TeamMembers2024/PegahEinakchi2024';
+import RoyanJafari2024 from '../components/TeamMembers2024/RoyanJafari2024';
+import EdwinMeriaux2024 from '../components/TeamMembers2024/EdwinMeriaux2024';
+import AminShamshiri2024 from '../components/TeamMembers2024/AminShamshiri2024';
+import MohammadHassanAzad2024 from '../components/TeamMembers2024/MohammadHassanAzad2024';
+import MohammadBigdeli2024 from '../components/TeamMembers2024/MohammadBigdeli2024';
+import EhsanMortazavi2024 from '../components/TeamMembers2024/EhsanMortazavi2024';
+import IranZare2024 from '../components/TeamMembers2024/IranZare2024';
+import ArashAghazade2024 from '../components/TeamMembers2024/ArashAghazade2024';
+import BrianRobinson from '../components/Speakers2024/BrianRobinson';
+import CharlesOnu from '../components/Speakers2024/CharlesOnu';
+import ChristopherBuddle from '../components/Speakers2024/ChristopherBuddle';
+import EhsonKazerooni from '../components/Speakers2024/EhsonKazerooni';
+import HenryMintzberg from '../components/Speakers2024/HenryMintzberg';
+import SamiRamirez from '../components/Speakers2024/SamiRamirez';
+import ShaunLovejoy from '../components/Speakers2024/ShaunLovejoy';
+import SylvainAllard from '../components/Speakers2024/SylvainAllard';
+import ValerieDesroches from '../components/Speakers2024/ValerieDesroches';
 
 const AnimatedRoutes: React.FC = () => {
   const location = useLocation();
@@ -60,7 +86,6 @@ const AnimatedRoutes: React.FC = () => {
         <Route path="/joinus/team/" element={<JoinUsTeamPage />} />
         <Route path="/joinus/speaker/" element={<JoinUsSpeakerPage />} />
         <Route path="/joinus/sponsor/" element={<JoinUsSponsorPage />} />
-        <Route path="/speakers/" element={<SpeakersPage />} />
         <Route path="/tedx-2023/myra-virgil/" element={<MyraVirgil />} />
         <Route path="/tedx-2023/kira-dolhan/" element={<KiraDolhan />} />
         <Route path="/tedx-2023/flore-deshayes/" element={<FloreDeshayes />} />
@@ -69,7 +94,6 @@ const AnimatedRoutes: React.FC = () => {
         <Route path="/tedx-2023/peggy-bell/" element={<PeggyBell />} />
         <Route path="/tedx-2023/alina-gutierrez-mejia/" element={<AlinaGutierrezMejia />} />
         <Route path="/tedx-2023/andrew-churchil/" element={<AndrewChurchil />} />
-        <Route path="/team/" element={<TeamPage />} />
         {/* <Route path="/team-design1/" element={<TeamPageDesign1 />} /> */}
         {/* <Route path="/team-design2/" element={<TeamPageDesign2 />} /> */}
         {/* <Route path="/team-design3/" element={<TeamPageDesign3 />} /> */}
@@ -91,6 +115,37 @@ const AnimatedRoutes: React.FC = () => {
         <Route path="/tedx-2023/edwin-meriaux/" element={<EdwinMeriaux />} />
         <Route path="/tedx-2023/gezal-najafi/" element={<GezalNajafi />} />
         <Route path="/tedx-2023/amin-shamshiri/" element={<AminShamshiri />} />
+
+        <Route path="/team/" element={<TeamPage />} />
+        <Route path="/team/samin-majidi/" element={<SaminMajidi2024 />} />
+        <Route path="/team/fatemeh-tavanaei/" element={<FatemehTavanaei2024 />} />
+        <Route path="/team/reihaneh-ghoroghchian/" element={<ReihanehGhoroghchian2024 />} />
+        <Route path="/team/mohammaderfan-mohit/" element={<MohammaderfanMohit2024 />} />
+        <Route path="/team/hamidreza-ermagan/" element={<HamidrezaErmagan2024 />} />
+        <Route path="/team/baharan-nouriinanloo/" element={<BaharanNouriinanloo2024 />} />
+        <Route path="/team/melika-seyedi/" element={<MelikaSeyedi2024 />} />
+        <Route path="/team/mina-taraghi/" element={<MinaTaraghi2024 />} />
+        <Route path="/team/motahareh-pourrahimi/" element={<MotaharehPourrahimi2024 />} />
+        <Route path="/team/pegah-einakchi/" element={<PegahEinakchi2024 />} />
+        <Route path="/team/royan-jafari/" element={<RoyanJafari2024 />} />
+        <Route path="/team/edwin-meriaux/" element={<EdwinMeriaux2024 />} />
+        <Route path="/team/amin-shamshiri/" element={<AminShamshiri2024 />} />
+        <Route path="/team/mohammad-hasan-azad/" element={<MohammadHassanAzad2024 />} />
+        <Route path="/team/mohammad-bigdeli/" element={<MohammadBigdeli2024 />} />
+        <Route path="/team/ehsan-mortazavi/" element={<EhsanMortazavi2024 />} />
+        <Route path="/team/iran-zare/" element={<IranZare2024 />} />
+        <Route path="/team/arash-aghazade/" element={<ArashAghazade2024 />} />
+
+        <Route path="/speakers/" element={<SpeakersPage />} />
+        <Route path="/speakers/brian-robinson" element={<BrianRobinson />} />
+        <Route path="/speakers/charles-onu" element={<CharlesOnu />} />
+        <Route path="/speakers/christopher-buddle" element={<ChristopherBuddle />} />
+        <Route path="/speakers/ehson-kazerooni" element={<EhsonKazerooni />} />
+        <Route path="/speakers/henry-mintzberg" element={<HenryMintzberg />} />
+        <Route path="/speakers/sami-ramirez" element={<SamiRamirez />} />
+        <Route path="/speakers/shaun-lovejoy" element={<ShaunLovejoy />} />
+        <Route path="/speakers/sylvain-allard" element={<SylvainAllard />} />
+        <Route path="/speakers/valerie-desroches" element={<ValerieDesroches />} />
       </Routes>
     </AnimatePresence>
   );

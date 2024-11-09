@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import { Box, Link, SimpleGrid, Text, useColorModeValue } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
+import { Link as RouterLink } from "react-router-dom";
 import gsap from 'gsap';
 import './styles.css';
 import {
@@ -105,9 +106,9 @@ const BlockSpeakerGrid2024: React.FC = () => {
             >
                 {/* Item 1 */}
                 <Link
-                    href="https://ca.linkedin.com/in/henrymintzberg"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    as={RouterLink}
+                    to={`/speakers/henry-mintzberg/`}
+                    href={`/speakers/henry-mintzberg/`}
                 >
                     <Box className="item" id="item-1">
                         <Box className="item-img">
@@ -157,9 +158,9 @@ const BlockSpeakerGrid2024: React.FC = () => {
 
                 {/* Item 2 */}
                 <Link
-                    href="https://ca.linkedin.com/in/sylvain-allard-31974b15/en"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    as={RouterLink}
+                    to={`/speakers/sylvain-allard/`}
+                    href={`/speakers/sylvain-allard/`}
                 >
                     <Box className="item" id="item-2">
                         <Box className="item-img">
@@ -209,9 +210,9 @@ const BlockSpeakerGrid2024: React.FC = () => {
 
                 {/* Item 3 */}
                 <Link
-                    href="https://ca.linkedin.com/in/sandramr1"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    as={RouterLink}
+                    to={`/speakers/sami-ramirez/`}
+                    href={`/speakers/sami-ramirez/`}
                 >
                     <Box className="item" id="item-1">
                         <Box className="item-img">
@@ -261,9 +262,9 @@ const BlockSpeakerGrid2024: React.FC = () => {
 
                 {/* Item 4 */}
                 <Link
-                    href="https://ca.linkedin.com/in/brianerobinson"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    as={RouterLink}
+                    to={`/speakers/brian-robinson/`}
+                    href={`/speakers/brian-robinson/`}
                 >
                     <Box className="item" id="item-2">
                         <Box className="item-img">
@@ -313,9 +314,9 @@ const BlockSpeakerGrid2024: React.FC = () => {
 
                 {/* Item 5 */}
                 <Link
-                    href="https://ca.linkedin.com/in/christopher-buddle-981722297"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    as={RouterLink}
+                    to={`/speakers/christopher-buddle/`}
+                    href={`/speakers/christopher-buddle/`}
                 >
                     <Box className="item" id="item-1">
                         <Box className="item-img">
@@ -365,9 +366,9 @@ const BlockSpeakerGrid2024: React.FC = () => {
 
                 {/* Item 6 */}
                 <Link
-                    href="https://ca.linkedin.com/in/ehson-kazerooni-3b691125b"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    as={RouterLink}
+                    to={`/speakers/ehson-kazerooni/`}
+                    href={`/speakers/ehson-kazerooni/`}
                 >
                     <Box className="item" id="item-2">
                         <Box className="item-img">
@@ -417,9 +418,9 @@ const BlockSpeakerGrid2024: React.FC = () => {
 
                 {/* Item 7 */}
                 <Link
-                    href="https://ca.linkedin.com/in/shaun-lovejoy-39a24838"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    as={RouterLink}
+                    to={`/speakers/shaun-lovejoy/`}
+                    href={`/speakers/shaun-lovejoy/`}
                 >
                     <Box className="item" id="item-1">
                         <Box className="item-img">
@@ -469,9 +470,9 @@ const BlockSpeakerGrid2024: React.FC = () => {
 
                 {/* Item 8 */}
                 <Link
-                    href="https://www.linkedin.com/in/onucharles"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    as={RouterLink}
+                    to={`/speakers/charles-onu/`}
+                    href={`/speakers/charles-onu/`}
                 >
                     <Box className="item" id="item-2">
                         <Box className="item-img">
@@ -521,9 +522,9 @@ const BlockSpeakerGrid2024: React.FC = () => {
 
                 {/* Item 9 */}
                 <Link
-                    href="#"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    as={RouterLink}
+                    to={`/speakers/valerie-desroches/`}
+                    href={`/speakers/valerie-desroches/`}
                 >
                     <Box className="item" id="item-1">
                         <Box className="item-img">
@@ -570,7 +571,6 @@ const BlockSpeakerGrid2024: React.FC = () => {
                         </Box>
                     </Box>
                 </Link>
-
             </SimpleGrid>
         </Box>
     );

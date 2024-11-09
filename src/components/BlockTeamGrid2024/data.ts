@@ -31,11 +31,10 @@ export interface Item {
 
 export const items: Item[] = [
     // ======================== Samin Majidi ========================
-    // ======================== Samin Majidi ========================
     {
         id: 1,
         imageSrc: saminBG2024,
-        profileSrc: "/samin-majidi",
+        profileSrc: "samin-majidi",
         firstName: "samin",
         lastName: "majidi",
         fullName: "saminMajidi",
@@ -46,7 +45,7 @@ export const items: Item[] = [
     {
         id: 2,
         imageSrc: fatemehBG2024,
-        profileSrc: "/fatemeh-tavanaei",
+        profileSrc: "fatemeh-tavanaei",
         firstName: "fatemeh",
         lastName: "tavanaei",
         fullName: "fatemehTavanaei",
@@ -57,7 +56,7 @@ export const items: Item[] = [
     {
         id: 3,
         imageSrc: mohammaderfanBG2024,
-        profileSrc: "/mohammaderfan-mohit",
+        profileSrc: "mohammaderfan-mohit",
         firstName: "erfan",
         lastName: "mohit",
         fullName: "mohammadErfanMohit",
@@ -68,7 +67,7 @@ export const items: Item[] = [
     {
         id: 4,
         imageSrc: aminBG2024,
-        profileSrc: "/amin-shamshiri",
+        profileSrc: "amin-shamshiri",
         firstName: "amin",
         lastName: "shamshiri",
         fullName: "mohammadAminShamshiri",
@@ -79,7 +78,7 @@ export const items: Item[] = [
     {
         id: 5,
         imageSrc: pegahBG2024,
-        profileSrc: "/pegah-einakchi",
+        profileSrc: "pegah-einakchi",
         firstName: "pegah",
         lastName: "einakchi",
         fullName: "pegahEinakchi",
@@ -90,7 +89,7 @@ export const items: Item[] = [
     {
         id: 6,
         imageSrc: mohammadhasanBG2024,
-        profileSrc: "/mohammadhasan-azad",
+        profileSrc: "mohammad-hasan-azad",
         firstName: "mohammadHasan",
         lastName: "azad",
         fullName: "mohammadHasanAzad",
@@ -101,7 +100,7 @@ export const items: Item[] = [
     {
         id: 7,
         imageSrc: reihanehBG2024,
-        profileSrc: "/reihaneh-ghoroghchian",
+        profileSrc: "reihaneh-ghoroghchian",
         firstName: "reihaneh",
         lastName: "ghoroghchian",
         fullName: "reihanehGhoroghchian",
@@ -112,7 +111,7 @@ export const items: Item[] = [
     {
         id: 8,
         imageSrc: ehsanBG2024,
-        profileSrc: "/ehsan-mortazavi",
+        profileSrc: "ehsan-mortazavi",
         firstName: "ehsan",
         lastName: "mortazavi",
         fullName: "ehsanMortazavi",
@@ -123,7 +122,7 @@ export const items: Item[] = [
     {
         id: 9,
         imageSrc: iranBG2024,
-        profileSrc: "/iran-zare",
+        profileSrc: "iran-zare",
         firstName: "iran",
         lastName: "zare",
         fullName: "iranZare",
@@ -134,7 +133,7 @@ export const items: Item[] = [
     {
         id: 10,
         imageSrc: baharanBG2024,
-        profileSrc: "/baharan-nouriinanloo",
+        profileSrc: "baharan-nouriinanloo",
         firstName: "baharan",
         lastName: "nouriinanloo",
         fullName: "baharanNouriinanloo",
@@ -145,7 +144,7 @@ export const items: Item[] = [
     {
         id: 11,
         imageSrc: motaharehBG2024,
-        profileSrc: "/motahareh-pourrahimi",
+        profileSrc: "motahareh-pourrahimi",
         firstName: "motahareh",
         lastName: "pourrahimi",
         fullName: "motaharehPourrahimi",
@@ -156,7 +155,7 @@ export const items: Item[] = [
     {
         id: 12,
         imageSrc: minaBG2024,
-        profileSrc: "/mina-taraghi",
+        profileSrc: "mina-taraghi",
         firstName: "mina",
         lastName: "taraghi",
         fullName: "minaTaraghi",
@@ -167,7 +166,7 @@ export const items: Item[] = [
     {
         id: 13,
         imageSrc: hamidrezaBG2024,
-        profileSrc: "/hamidreza-ermagan",
+        profileSrc: "hamidreza-ermagan",
         firstName: "hamidreza",
         lastName: "ermagan",
         fullName: "hamidrezaErmagan",
@@ -178,7 +177,7 @@ export const items: Item[] = [
     {
         id: 14,
         imageSrc: edwinBG2024,
-        profileSrc: "/edwin-meriaux",
+        profileSrc: "edwin-meriaux",
         firstName: "edwin",
         lastName: "meriaux",
         fullName: "edwinMeriaux",
@@ -189,7 +188,7 @@ export const items: Item[] = [
     {
         id: 15,
         imageSrc: melikaBG2024,
-        profileSrc: "/melika-seyedi",
+        profileSrc: "melika-seyedi",
         firstName: "melika",
         lastName: "seyedi",
         fullName: "melikaSeyedi",
@@ -200,7 +199,7 @@ export const items: Item[] = [
     {
         id: 16,
         imageSrc: mohammadBG2024,
-        profileSrc: "/mohammad-bigdeli",
+        profileSrc: "mohammad-bigdeli",
         firstName: "mohammad",
         lastName: "bigdeli",
         fullName: "mohammadBigdeli",
@@ -211,7 +210,7 @@ export const items: Item[] = [
     {
         id: 17,
         imageSrc: royanBG2024,
-        profileSrc: "/royan-jafari",
+        profileSrc: "royan-jafari",
         firstName: "royan",
         lastName: "jafari",
         fullName: "royanJafari",
@@ -222,7 +221,7 @@ export const items: Item[] = [
     {
         id: 18,
         imageSrc: arashBG2024,
-        profileSrc: "/arash-aghazade",
+        profileSrc: "arash-aghazade",
         firstName: "arash",
         lastName: "aghazade",
         fullName: "arashAghazade",
