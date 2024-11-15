@@ -33,7 +33,7 @@ const ValerieDesroches: React.FC = () => {
                     name={t("Valerie Desroches")}
                     title={t("Para-athlete in Karate and Athletics")}
                     biography={t("valerieBiography")}
-                    talkTopic={t("ehsanTitle2024")}
+                    talkTopic={t("valerieTalkTopic")}
                     imageSrc={valerie}
                 />
                 <BlockFooter />

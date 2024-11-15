@@ -31,9 +31,9 @@ const ShaunLovejoy: React.FC = () => {
                 <Navigationbar />
                 <SpeakerProfile2024
                     name={t("Shaun Lovejoy")}
-                    title={t("Executive Coach with a Holistic Approach")}
+                    title={t("Professor of Physics | McGill")}
                     biography={t("shaunBiography")}
-                    talkTopic={t("ehsanTitle2024")}
+                    talkTopic={t("shaunTalkTopic")}
                     imageSrc={shaun}
                 />
                 <BlockFooter />
