@@ -968,7 +968,7 @@ export const BlockFooter = () => {
                 marginBottom="1rem"
               />
             </Link>
-            <Text
+            {/* <Text
               className="p footer__copyright"
               marginTop="0"
               fontSize={{ base: "1.8rem", lg: "1.7rem" }}
@@ -977,7 +977,7 @@ export const BlockFooter = () => {
               _dark={{ opacity: "0.3" }}
             >
               Copyright 2024 TEDxPlateauMontRoyal
-            </Text>
+            </Text> */}
           </Flex>
         </Grid>
       </Box>
