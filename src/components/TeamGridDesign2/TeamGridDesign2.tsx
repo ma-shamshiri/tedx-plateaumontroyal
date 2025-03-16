@@ -122,7 +122,7 @@ const TeamGridDesign2: React.FC = () => {
                                                 pointerEvents="none"
                                                 maxWidth="25rem"
                                                 align="center"
-                                                sx={sxTitle}
+                                                // sx={sxTitle}
                                             >
                                                 {slide.firstName}
                                             </Text>
@@ -246,7 +246,7 @@ const TeamGridDesign2: React.FC = () => {
                                             transition={`opacity ${hoveredIndex === index ? '1s' : '0.3s'} ease-in-out`}
                                             pointerEvents="none"
                                             align="center"
-                                            sx={sxTitle}
+                                            // sx={sxTitle}
                                         >
                                             {slide.firstName}
                                         </Text>

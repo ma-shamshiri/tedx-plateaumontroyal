@@ -88,11 +88,10 @@ const MarqueeComponent: React.FC = () => {
     }, []);
 
     return (
-        <div
-            style={{
-                width: "100%",
-                overflow: "hidden"
-            }}
+        <Box
+            display={{ base: "none", lg: "block" }}
+            width="100%"
+            overflow="hidden"
         >
             <Box
                 className="marquees"
@@ -221,11 +220,11 @@ const MarqueeComponent: React.FC = () => {
                         <div className="item">
                             <img src={cubes62} alt="img101" />
                         </div>
-                        <div 
-                        className="item with-text"
-                        style={{
-                            flex: 1.2
-                        }}
+                        <div
+                            className="item with-text"
+                            style={{
+                                flex: 1.2
+                            }}
                         >
                             <Text
                                 as="h1"
@@ -243,7 +242,7 @@ const MarqueeComponent: React.FC = () => {
                     </div>
                 </div>
             </Box>
-        </div>
+        </Box>
     );
 };
 

@@ -8,7 +8,7 @@ const BlockDivider: React.FC = () => {
         <Box
             position="relative"
             width="100%"
-            height={{base:"5rem", lg:"20rem"}}
+            height={{base:"5rem", lg:"13rem"}}
             bg="#D9D4C1"
             overflow="hidden"
         >
